@@ -15,6 +15,7 @@ PBs:
 #include "SplendorGame.h"
 #include "Agent.h"
 #include "Board.h"
+#include "MemoryTool.h"
 using namespace std;
 
 class GeneticAlgorithm
@@ -291,15 +292,23 @@ vector<LayerBase> layers;
 
 int main()
 {
+    int thread_count = 10;
     setbuf(stdout, nullptr);
     layers.emplace_back(0, "sigmoid"); // first layer will automatically initialise
     layers.emplace_back(300, "linear");
     layers.emplace_back(200, "relu");
     layers.emplace_back(100, "sigmoid");
     layers.emplace_back(60, "relu");
+    int player_count = 2;
     // training time is mostly dependent on population_size * rounds
-    GeneticAlgorithm handler = GeneticAlgorithm(2, 6, 4, 0.01, 0.05,
-                                                layers, false, true, false);
+    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 40, 4, 0.01, 0.05,
+                                                layers, true, true, false);
+
+
+    printf("Approximate memory usage (neural network): %.3LfMB, (boards): %.3LfMB\n",
+           (long double)handler.population[0].nn.vectify().size() * 8.0 * handler.population_size / 1048576.0,
+           ((long double)handler.test_board.vectify(0).size() * 8.0 / 1048576.0 +
+           (long double)handler.population[0].nn.vectify().size() * 8.0 * player_count / 1048576.0) * thread_count);
 
     for(int i = 0; i < 100; ++i)
     {
