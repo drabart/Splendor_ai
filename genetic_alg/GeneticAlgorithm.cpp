@@ -275,10 +275,13 @@ public:
 
         printf("Unfinished games: %d\n", unfinished);
 
-        // print only top ten best
-        for (int i = 0; i < min(temporary_population.size(), 10ul); ++i) {
-            printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].second == 0) ? gen1+1 : gen2+1,
-                   temporary_population[i].first.uid, temporary_population[i].first.fitness);
+        if(print_fitness)
+        {
+            // print only top ten best
+            for (int i = 0; i < min(temporary_population.size(), 10ul); ++i) {
+                printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].second == 0) ? gen1 + 1 : gen2 + 1,
+                       temporary_population[i].first.uid, temporary_population[i].first.fitness);
+            }
         }
 
         int sum_over_gen1 = 0;
@@ -296,9 +299,9 @@ public:
                double(sum_over_gen1) / saved_agents, gen2+1, double(sum_over_gen2) / saved_agents);
 
         if(sum_over_gen1 > sum_over_gen2)
-            printf("Improvement! (gen %d lost to gen %d)\n\n", gen1+1, gen2+1);
+            printf("gen %d lost to gen %d\n\n", gen1+1, gen2+1);
         else
-            printf("Downgrade (gen %d lost to gen %d)\n\n", gen2+1, gen1+1);
+            printf("gen %d lost to gen %d\n\n", gen2+1, gen1+1);
     }
 
     // replace worst performing agents with new random ones
@@ -438,9 +441,12 @@ int main()
         // TODO more crossovers
         // TODO add way to play with ai
         handler.proceed_one_generation(10, max_move, "divide_parents");
-        if(handler.generation != 1)
+        if(handler.generation % 10 == 0)
         {
-            handler.compare_generations(handler.generation - 1, handler.generation, max_move);
+            for(int j = 0; j < handler.generation - 1; ++j)
+            {
+                handler.compare_generations(j+1, handler.generation, max_move);
+            }
         }
     }
 }

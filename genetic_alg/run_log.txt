@@ -1,0 +1,5592 @@
+/home/drabart/CLionProjects/Splendor_ai/cmake-build-debug/Splendor_ai
+Approximate memory usage (neural network): 178.754MB, (boards): 13.760MB, (saved networks per generation): 13.750MB
+----------------------------------------------------------------------------
+Generation: 1
+Playing done, took: 34.943863 s
+uid: 1372739908, fitness: 10990
+uid: 1410405470, fitness: 11087
+uid: 449906158, fitness: 11277
+uid: 1590313938, fitness: 20833
+uid: 695092361, fitness: 21037
+uid: 875852872, fitness: 21328
+uid: 1916041364, fitness: 31030
+uid: 336205834, fitness: 31135
+uid: 881839918, fitness: 31286
+uid: 1322872257, fitness: 31383
+
+Unfinished games: 1
+Average fitness across population: 69688.903846
+Crossover and mutation took: 3.438167 s
+----------------------------------------------------------------------------
+Generation: 2
+Playing done, took: 33.985599 s
+uid: 1410405470, fitness: 982
+uid: 609899854, fitness: 10781
+uid: 1322872257, fitness: 21082
+uid: 881839918, fitness: 21180
+uid: 1079291762, fitness: 21232
+uid: 999414192, fitness: 21332
+uid: 1768662590, fitness: 21480
+uid: 695092361, fitness: 21534
+uid: 2121685754, fitness: 21577
+uid: 984607572, fitness: 31533
+
+Unfinished games: 1
+Average fitness across population: 69716.480769
+Crossover and mutation took: 3.430346 s
+----------------------------------------------------------------------------
+Generation: 3
+Playing done, took: 32.300279 s
+uid: 1983385005, fitness: 10831
+uid: 1410405470, fitness: 10887
+uid: 775333531, fitness: 21082
+uid: 1079291762, fitness: 21181
+uid: 970821435, fitness: 31034
+uid: 321049896, fitness: 31079
+uid: 966111541, fitness: 31083
+uid: 609899854, fitness: 31275
+uid: 138623166, fitness: 31277
+uid: 1999398725, fitness: 31282
+
+Unfinished games: 0
+Average fitness across population: 61984.019231
+Crossover and mutation took: 3.424744 s
+----------------------------------------------------------------------------
+Generation: 4
+Playing done, took: 31.837712 s
+uid: 102035771, fitness: 683
+uid: 899512455, fitness: 889
+uid: 1691195314, fitness: 21081
+uid: 1868946774, fitness: 21179
+uid: 1365035036, fitness: 21328
+uid: 1700457028, fitness: 31029
+uid: 1410405470, fitness: 31180
+uid: 1999398725, fitness: 31181
+uid: 616036781, fitness: 41282
+uid: 775333531, fitness: 41430
+
+Unfinished games: 0
+Average fitness across population: 61882.192308
+Crossover and mutation took: 3.427262 s
+----------------------------------------------------------------------------
+Generation: 5
+Playing done, took: 33.014602 s
+uid: 102035771, fitness: 21181
+uid: 1038680060, fitness: 21233
+uid: 636638383, fitness: 21382
+uid: 1884388166, fitness: 21423
+uid: 1999398725, fitness: 30734
+uid: 775333531, fitness: 31085
+uid: 1691195314, fitness: 31283
+uid: 1587156017, fitness: 31527
+uid: 2104840380, fitness: 31778
+uid: 132241008, fitness: 41082
+
+Unfinished games: 1
+Average fitness across population: 69646.192308
+Crossover and mutation took: 3.452580 s
+----------------------------------------------------------------------------
+Generation: 6
+Playing done, took: 32.169175 s
+uid: 1901628473, fitness: 10886
+uid: 2104840380, fitness: 20982
+uid: 2049873183, fitness: 21031
+uid: 636638383, fitness: 21133
+uid: 1587156017, fitness: 21383
+uid: 1975427348, fitness: 31279
+uid: 132241008, fitness: 40982
+uid: 1038680060, fitness: 41231
+uid: 775333531, fitness: 41282
+uid: 102035771, fitness: 41382
+
+Unfinished games: 0
+Average fitness across population: 61768.538462
+Crossover and mutation took: 3.440584 s
+----------------------------------------------------------------------------
+Generation: 7
+Playing done, took: 31.436452 s
+uid: 1975427348, fitness: 10829
+uid: 14872224, fitness: 21080
+uid: 116507942, fitness: 21085
+uid: 981443849, fitness: 21086
+uid: 775333531, fitness: 21534
+uid: 2082032944, fitness: 31081
+uid: 506227337, fitness: 31185
+uid: 102035771, fitness: 31330
+uid: 1276068153, fitness: 31629
+uid: 636638383, fitness: 41031
+
+Unfinished games: 0
+Average fitness across population: 61854.846154
+Crossover and mutation took: 3.434731 s
+----------------------------------------------------------------------------
+Generation: 8
+Playing done, took: 31.876334 s
+uid: 6180689, fitness: 10981
+uid: 1538676197, fitness: 20839
+uid: 456504022, fitness: 21031
+uid: 102035771, fitness: 30782
+uid: 221966197, fitness: 31081
+uid: 644684470, fitness: 31181
+uid: 1432029780, fitness: 31279
+uid: 981443849, fitness: 31283
+uid: 1675594864, fitness: 31327
+uid: 342137364, fitness: 41029
+
+Unfinished games: 0
+Average fitness across population: 61798.538462
+Crossover and mutation took: 3.436510 s
+----------------------------------------------------------------------------
+Generation: 9
+Playing done, took: 31.250828 s
+uid: 293931840, fitness: 833
+uid: 156397104, fitness: 10585
+uid: 2129878723, fitness: 10980
+uid: 39146345, fitness: 21027
+uid: 456504022, fitness: 21031
+uid: 342137364, fitness: 21329
+uid: 352320943, fitness: 31327
+uid: 1952904866, fitness: 31431
+uid: 1076233764, fitness: 31529
+uid: 934706247, fitness: 31627
+
+Unfinished games: 0
+Average fitness across population: 61882.519231
+Crossover and mutation took: 3.434183 s
+----------------------------------------------------------------------------
+Generation: 10
+Playing done, took: 31.091943 s
+uid: 342137364, fitness: 10930
+uid: 777743131, fitness: 21032
+uid: 1845803901, fitness: 21279
+uid: 1201073523, fitness: 21280
+uid: 1499929149, fitness: 30681
+uid: 214090142, fitness: 31479
+uid: 293931840, fitness: 31679
+uid: 1076233764, fitness: 41477
+uid: 2129878723, fitness: 41480
+uid: 352320943, fitness: 41584
+
+Unfinished games: 0
+Average fitness across population: 61970.076923
+Crossover and mutation took: 3.426404 s
+
+Comparing gen 1 and gen 10 done, took: 7.245913 s
+Unfinished games: 0
+gen: 10, uid: 1845803901, fitness: 51698
+gen: 10, uid: 342137364, fitness: 51798
+gen: 10, uid: 1201073523, fitness: 72743
+gen: 10, uid: 777743131, fitness: 82698
+gen: 1, uid: 1372739908, fitness: 92939
+gen: 1, uid: 449906158, fitness: 123381
+gen: 1, uid: 1410405470, fitness: 133089
+gen: 1, uid: 1590313938, fitness: 133283
+gen 1 fitness avg: 120673.000000
+gen 10 fitness avg: 64734.250000
+gen 1 lost to gen 10
+
+
+Comparing gen 2 and gen 10 done, took: 8.605820 s
+Unfinished games: 1
+gen: 10, uid: 777743131, fitness: 61850
+gen: 10, uid: 1201073523, fitness: 82345
+gen: 2, uid: 1410405470, fitness: 92847
+gen: 10, uid: 342137364, fitness: 103147
+gen: 10, uid: 1845803901, fitness: 153089
+gen: 2, uid: 609899854, fitness: 204028
+gen: 2, uid: 881839918, fitness: 213579
+gen: 2, uid: 1322872257, fitness: 234374
+gen 2 fitness avg: 186207.000000
+gen 10 fitness avg: 100107.750000
+gen 2 lost to gen 10
+
+
+Comparing gen 3 and gen 10 done, took: 7.151741 s
+Unfinished games: 0
+gen: 3, uid: 775333531, fitness: 41151
+gen: 3, uid: 1983385005, fitness: 72442
+gen: 10, uid: 342137364, fitness: 92539
+gen: 10, uid: 1845803901, fitness: 92891
+gen: 3, uid: 1410405470, fitness: 93141
+gen: 10, uid: 777743131, fitness: 93240
+gen: 10, uid: 1201073523, fitness: 112895
+gen: 3, uid: 1079291762, fitness: 143784
+gen 3 fitness avg: 87629.500000
+gen 10 fitness avg: 97891.250000
+gen 10 lost to gen 3
+
+
+Comparing gen 4 and gen 10 done, took: 7.177561 s
+Unfinished games: 0
+gen: 10, uid: 777743131, fitness: 62544
+gen: 10, uid: 1201073523, fitness: 72249
+gen: 10, uid: 1845803901, fitness: 81994
+gen: 4, uid: 102035771, fitness: 92488
+gen: 4, uid: 899512455, fitness: 102848
+gen: 4, uid: 1691195314, fitness: 104232
+gen: 4, uid: 1868946774, fitness: 113190
+gen: 10, uid: 342137364, fitness: 113194
+gen 4 fitness avg: 103189.500000
+gen 10 fitness avg: 82495.250000
+gen 4 lost to gen 10
+
+
+Comparing gen 5 and gen 10 done, took: 7.078185 s
+Unfinished games: 0
+gen: 10, uid: 777743131, fitness: 61946
+gen: 5, uid: 636638383, fitness: 72692
+gen: 10, uid: 1201073523, fitness: 82348
+gen: 5, uid: 1038680060, fitness: 82695
+gen: 5, uid: 102035771, fitness: 92985
+gen: 5, uid: 1884388166, fitness: 113231
+gen: 10, uid: 342137364, fitness: 113340
+gen: 10, uid: 1845803901, fitness: 122590
+gen 5 fitness avg: 90400.750000
+gen 10 fitness avg: 95056.000000
+gen 10 lost to gen 5
+
+
+Comparing gen 6 and gen 10 done, took: 6.921700 s
+Unfinished games: 0
+gen: 6, uid: 636638383, fitness: 21747
+gen: 10, uid: 1201073523, fitness: 52194
+gen: 10, uid: 777743131, fitness: 62795
+gen: 10, uid: 1845803901, fitness: 83488
+gen: 6, uid: 2049873183, fitness: 93240
+gen: 6, uid: 1901628473, fitness: 102445
+gen: 6, uid: 2104840380, fitness: 153787
+gen: 10, uid: 342137364, fitness: 174384
+gen 6 fitness avg: 92804.750000
+gen 10 fitness avg: 93215.250000
+gen 10 lost to gen 6
+
+
+Comparing gen 7 and gen 10 done, took: 7.221407 s
+Unfinished games: 0
+gen: 10, uid: 1201073523, fitness: 30999
+gen: 10, uid: 777743131, fitness: 62250
+gen: 7, uid: 1975427348, fitness: 72542
+gen: 7, uid: 981443849, fitness: 102546
+gen: 10, uid: 1845803901, fitness: 102691
+gen: 7, uid: 116507942, fitness: 113289
+gen: 10, uid: 342137364, fitness: 123589
+gen: 7, uid: 14872224, fitness: 134080
+gen 7 fitness avg: 105614.250000
+gen 10 fitness avg: 79882.250000
+gen 7 lost to gen 10
+
+
+Comparing gen 8 and gen 10 done, took: 7.134626 s
+Unfinished games: 0
+gen: 8, uid: 102035771, fitness: 41947
+gen: 10, uid: 1845803901, fitness: 72890
+gen: 10, uid: 777743131, fitness: 82643
+gen: 10, uid: 1201073523, fitness: 83141
+gen: 8, uid: 6180689, fitness: 103244
+gen: 8, uid: 1538676197, fitness: 113293
+gen: 8, uid: 456504022, fitness: 123682
+gen: 10, uid: 342137364, fitness: 123783
+gen 8 fitness avg: 95541.500000
+gen 10 fitness avg: 90614.250000
+gen 8 lost to gen 10
+
+
+Comparing gen 9 and gen 10 done, took: 6.947803 s
+Unfinished games: 0
+gen: 9, uid: 39146345, fitness: 52684
+gen: 9, uid: 156397104, fitness: 62346
+gen: 10, uid: 777743131, fitness: 82449
+gen: 10, uid: 342137364, fitness: 82790
+gen: 10, uid: 1201073523, fitness: 82795
+gen: 9, uid: 293931840, fitness: 113289
+gen: 9, uid: 2129878723, fitness: 113789
+gen: 10, uid: 1845803901, fitness: 154384
+gen 9 fitness avg: 85527.000000
+gen 10 fitness avg: 100604.500000
+gen 10 lost to gen 9
+
+----------------------------------------------------------------------------
+Generation: 11
+Playing done, took: 31.190116 s
+uid: 199722600, fitness: 631
+uid: 1499929149, fitness: 21025
+uid: 1985230166, fitness: 21279
+uid: 1884238404, fitness: 21478
+uid: 211292715, fitness: 31029
+uid: 777743131, fitness: 31237
+uid: 1149406122, fitness: 31330
+uid: 1641364187, fitness: 41479
+uid: 1973600821, fitness: 41531
+uid: 977568457, fitness: 42273
+
+Unfinished games: 0
+Average fitness across population: 61863.250000
+Crossover and mutation took: 3.410693 s
+----------------------------------------------------------------------------
+Generation: 12
+Playing done, took: 31.642817 s
+uid: 1726638829, fitness: 10381
+uid: 1565142344, fitness: 31131
+uid: 1202907918, fitness: 31182
+uid: 1499929149, fitness: 31330
+uid: 1149406122, fitness: 31475
+uid: 528754573, fitness: 41031
+uid: 211292715, fitness: 41078
+uid: 2080712998, fitness: 41130
+uid: 2082506982, fitness: 41132
+uid: 760531898, fitness: 41182
+
+Unfinished games: 0
+Average fitness across population: 61699.673077
+Crossover and mutation took: 3.446323 s
+----------------------------------------------------------------------------
+Generation: 13
+Playing done, took: 30.753857 s
+uid: 1459016131, fitness: 10827
+uid: 32942080, fitness: 21283
+uid: 1017724364, fitness: 31230
+uid: 367321906, fitness: 31280
+uid: 743894048, fitness: 31379
+uid: 2118461658, fitness: 31679
+uid: 1701513517, fitness: 41181
+uid: 584286640, fitness: 41323
+uid: 2143798276, fitness: 41328
+uid: 917752236, fitness: 41976
+
+Unfinished games: 0
+Average fitness across population: 61872.192308
+Crossover and mutation took: 3.422726 s
+----------------------------------------------------------------------------
+Generation: 14
+Playing done, took: 31.424325 s
+uid: 1102091616, fitness: 11028
+uid: 998855536, fitness: 20883
+uid: 1024097147, fitness: 21127
+uid: 275638151, fitness: 30982
+uid: 1701513517, fitness: 31082
+uid: 1645177057, fitness: 41129
+uid: 1863506563, fitness: 41184
+uid: 2094755097, fitness: 41230
+uid: 743894048, fitness: 41330
+uid: 1515004774, fitness: 41330
+
+Unfinished games: 0
+Average fitness across population: 61764.057692
+Crossover and mutation took: 3.440606 s
+----------------------------------------------------------------------------
+Generation: 15
+Playing done, took: 31.019258 s
+uid: 455120197, fitness: 11030
+uid: 688635345, fitness: 20982
+uid: 275638151, fitness: 21380
+uid: 2037886644, fitness: 31333
+uid: 1994593839, fitness: 31426
+uid: 2086095482, fitness: 41230
+uid: 1222606959, fitness: 41331
+uid: 1238124146, fitness: 41380
+uid: 790058936, fitness: 41382
+uid: 1900143438, fitness: 41429
+
+Unfinished games: 0
+Average fitness across population: 61784.019231
+Crossover and mutation took: 3.405774 s
+----------------------------------------------------------------------------
+Generation: 16
+Playing done, took: 31.015547 s
+uid: 1717437295, fitness: 881
+uid: 455120197, fitness: 20830
+uid: 1436884976, fitness: 21433
+uid: 859167902, fitness: 30932
+uid: 135416204, fitness: 31327
+uid: 1431686112, fitness: 31375
+uid: 1382192613, fitness: 31430
+uid: 2037886644, fitness: 31531
+uid: 236325622, fitness: 31581
+uid: 2086095482, fitness: 41277
+
+Unfinished games: 0
+Average fitness across population: 61878.500000
+Crossover and mutation took: 3.407757 s
+----------------------------------------------------------------------------
+Generation: 17
+Playing done, took: 30.881206 s
+uid: 236325622, fitness: 733
+uid: 129141432, fitness: 10734
+uid: 373409063, fitness: 20934
+uid: 859167902, fitness: 21178
+uid: 2110307280, fitness: 21326
+uid: 1264278232, fitness: 31281
+uid: 455120197, fitness: 31329
+uid: 1933947039, fitness: 31677
+uid: 1237480838, fitness: 41080
+uid: 275871179, fitness: 41327
+
+Unfinished games: 0
+Average fitness across population: 61853.230769
+Crossover and mutation took: 3.409520 s
+----------------------------------------------------------------------------
+Generation: 18
+Playing done, took: 30.785373 s
+uid: 1264278232, fitness: 532
+uid: 1535504753, fitness: 20982
+uid: 373409063, fitness: 21180
+uid: 1624451738, fitness: 21281
+uid: 1596358060, fitness: 31181
+uid: 618464551, fitness: 31328
+uid: 1237480838, fitness: 31430
+uid: 1389352043, fitness: 31528
+uid: 859167902, fitness: 31583
+uid: 759267833, fitness: 41132
+
+Unfinished games: 0
+Average fitness across population: 61788.211538
+Crossover and mutation took: 3.406769 s
+----------------------------------------------------------------------------
+Generation: 19
+Playing done, took: 32.725316 s
+uid: 532935567, fitness: 10682
+uid: 1566681063, fitness: 21134
+uid: 1707127078, fitness: 30880
+uid: 1508699209, fitness: 31032
+uid: 195682722, fitness: 31130
+uid: 1498769466, fitness: 31131
+uid: 1337868799, fitness: 31179
+uid: 1189501205, fitness: 31676
+uid: 2105485696, fitness: 41183
+uid: 1624451738, fitness: 41280
+
+Unfinished games: 1
+Average fitness across population: 69421.403846
+Crossover and mutation took: 3.419664 s
+----------------------------------------------------------------------------
+Generation: 20
+Playing done, took: 31.581452 s
+uid: 889091339, fitness: 10932
+uid: 195682722, fitness: 20984
+uid: 2090970977, fitness: 21232
+uid: 709864227, fitness: 30985
+uid: 90738703, fitness: 31131
+uid: 1189501205, fitness: 31430
+uid: 38148221, fitness: 31530
+uid: 760439128, fitness: 31631
+uid: 1877430874, fitness: 41229
+uid: 1490526257, fitness: 41330
+
+Unfinished games: 0
+Average fitness across population: 61688.307692
+Crossover and mutation took: 3.419786 s
+
+Comparing gen 1 and gen 20 done, took: 7.192911 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 21153
+gen: 20, uid: 709864227, fitness: 52295
+gen: 20, uid: 2090970977, fitness: 61852
+gen: 20, uid: 195682722, fitness: 102398
+gen: 1, uid: 1410405470, fitness: 112949
+gen: 1, uid: 1590313938, fitness: 123374
+gen: 1, uid: 449906158, fitness: 133228
+gen: 1, uid: 1372739908, fitness: 133681
+gen 1 fitness avg: 125808.000000
+gen 20 fitness avg: 59424.500000
+gen 1 lost to gen 20
+
+
+Comparing gen 2 and gen 20 done, took: 7.261580 s
+Unfinished games: 0
+gen: 20, uid: 709864227, fitness: 41949
+gen: 20, uid: 889091339, fitness: 72046
+gen: 2, uid: 1410405470, fitness: 72193
+gen: 20, uid: 195682722, fitness: 72649
+gen: 20, uid: 2090970977, fitness: 82548
+gen: 2, uid: 609899854, fitness: 122988
+gen: 2, uid: 881839918, fitness: 123338
+gen: 2, uid: 1322872257, fitness: 154383
+gen 2 fitness avg: 118225.500000
+gen 20 fitness avg: 67298.000000
+gen 2 lost to gen 20
+
+
+Comparing gen 3 and gen 20 done, took: 7.245749 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 21496
+gen: 20, uid: 2090970977, fitness: 31799
+gen: 3, uid: 1983385005, fitness: 82340
+gen: 20, uid: 195682722, fitness: 92446
+gen: 20, uid: 709864227, fitness: 102990
+gen: 3, uid: 1079291762, fitness: 123333
+gen: 3, uid: 775333531, fitness: 132594
+gen: 3, uid: 1410405470, fitness: 154030
+gen 3 fitness avg: 123074.250000
+gen 20 fitness avg: 62182.750000
+gen 3 lost to gen 20
+
+
+Comparing gen 4 and gen 20 done, took: 7.298001 s
+Unfinished games: 0
+gen: 4, uid: 102035771, fitness: 41992
+gen: 20, uid: 2090970977, fitness: 42050
+gen: 20, uid: 889091339, fitness: 62945
+gen: 20, uid: 709864227, fitness: 82101
+gen: 4, uid: 1691195314, fitness: 82587
+gen: 20, uid: 195682722, fitness: 122648
+gen: 4, uid: 899512455, fitness: 133043
+gen: 4, uid: 1868946774, fitness: 173979
+gen 4 fitness avg: 107900.250000
+gen 20 fitness avg: 77436.000000
+gen 4 lost to gen 20
+
+
+Comparing gen 5 and gen 20 done, took: 7.061487 s
+Unfinished games: 0
+gen: 20, uid: 195682722, fitness: 61895
+gen: 20, uid: 889091339, fitness: 62194
+gen: 20, uid: 709864227, fitness: 72739
+gen: 5, uid: 636638383, fitness: 72887
+gen: 5, uid: 102035771, fitness: 93188
+gen: 5, uid: 1884388166, fitness: 113529
+gen: 20, uid: 2090970977, fitness: 133192
+gen: 5, uid: 1038680060, fitness: 133243
+gen 5 fitness avg: 103211.750000
+gen 20 fitness avg: 82505.000000
+gen 5 lost to gen 20
+
+
+Comparing gen 6 and gen 20 done, took: 7.109470 s
+Unfinished games: 0
+gen: 20, uid: 709864227, fitness: 81997
+gen: 20, uid: 2090970977, fitness: 82300
+gen: 20, uid: 889091339, fitness: 82341
+gen: 6, uid: 1901628473, fitness: 82494
+gen: 6, uid: 636638383, fitness: 82742
+gen: 20, uid: 195682722, fitness: 102299
+gen: 6, uid: 2049873183, fitness: 103179
+gen: 6, uid: 2104840380, fitness: 122986
+gen 6 fitness avg: 97850.250000
+gen 20 fitness avg: 87234.250000
+gen 6 lost to gen 20
+
+
+Comparing gen 7 and gen 20 done, took: 7.223321 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 31699
+gen: 7, uid: 981443849, fitness: 52146
+gen: 7, uid: 116507942, fitness: 62192
+gen: 20, uid: 709864227, fitness: 82145
+gen: 7, uid: 1975427348, fitness: 122889
+gen: 20, uid: 2090970977, fitness: 123141
+gen: 7, uid: 14872224, fitness: 123590
+gen: 20, uid: 195682722, fitness: 143890
+gen 7 fitness avg: 90204.250000
+gen 20 fitness avg: 95218.750000
+gen 20 lost to gen 7
+
+
+Comparing gen 8 and gen 20 done, took: 7.153176 s
+Unfinished games: 0
+gen: 8, uid: 6180689, fitness: 31740
+gen: 8, uid: 102035771, fitness: 61844
+gen: 8, uid: 456504022, fitness: 92687
+gen: 20, uid: 709864227, fitness: 93045
+gen: 8, uid: 1538676197, fitness: 103095
+gen: 20, uid: 2090970977, fitness: 112493
+gen: 20, uid: 889091339, fitness: 122790
+gen: 20, uid: 195682722, fitness: 122940
+gen 8 fitness avg: 72341.500000
+gen 20 fitness avg: 112817.000000
+gen 20 lost to gen 8
+
+
+Comparing gen 9 and gen 20 done, took: 7.107188 s
+Unfinished games: 0
+gen: 9, uid: 156397104, fitness: 51749
+gen: 20, uid: 889091339, fitness: 52435
+gen: 9, uid: 293931840, fitness: 82243
+gen: 20, uid: 709864227, fitness: 82695
+gen: 20, uid: 195682722, fitness: 102790
+gen: 20, uid: 2090970977, fitness: 102848
+gen: 9, uid: 39146345, fitness: 123978
+gen: 9, uid: 2129878723, fitness: 144132
+gen 9 fitness avg: 100525.500000
+gen 20 fitness avg: 85192.000000
+gen 9 lost to gen 20
+
+
+Comparing gen 10 and gen 20 done, took: 7.193855 s
+Unfinished games: 0
+gen: 20, uid: 709864227, fitness: 42049
+gen: 10, uid: 1201073523, fitness: 92094
+gen: 20, uid: 889091339, fitness: 92939
+gen: 10, uid: 777743131, fitness: 102341
+gen: 20, uid: 195682722, fitness: 102599
+gen: 10, uid: 1845803901, fitness: 102936
+gen: 20, uid: 2090970977, fitness: 102997
+gen: 10, uid: 342137364, fitness: 103579
+gen 10 fitness avg: 100237.500000
+gen 20 fitness avg: 85146.000000
+gen 10 lost to gen 20
+
+
+Comparing gen 11 and gen 20 done, took: 6.931293 s
+Unfinished games: 0
+gen: 11, uid: 1985230166, fitness: 62144
+gen: 11, uid: 199722600, fitness: 82191
+gen: 11, uid: 1884238404, fitness: 82689
+gen: 20, uid: 2090970977, fitness: 82694
+gen: 20, uid: 889091339, fitness: 82987
+gen: 20, uid: 709864227, fitness: 112491
+gen: 11, uid: 1499929149, fitness: 112688
+gen: 20, uid: 195682722, fitness: 123289
+gen 11 fitness avg: 84928.000000
+gen 20 fitness avg: 100365.250000
+gen 20 lost to gen 11
+
+
+Comparing gen 12 and gen 20 done, took: 6.948014 s
+Unfinished games: 0
+gen: 12, uid: 1202907918, fitness: 62587
+gen: 20, uid: 709864227, fitness: 72097
+gen: 20, uid: 889091339, fitness: 82694
+gen: 20, uid: 2090970977, fitness: 92696
+gen: 12, uid: 1499929149, fitness: 93287
+gen: 12, uid: 1565142344, fitness: 102588
+gen: 12, uid: 1726638829, fitness: 112644
+gen: 20, uid: 195682722, fitness: 123891
+gen 12 fitness avg: 92776.500000
+gen 20 fitness avg: 92844.500000
+gen 20 lost to gen 12
+
+
+Comparing gen 13 and gen 20 done, took: 7.036034 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 42190
+gen: 13, uid: 1459016131, fitness: 82936
+gen: 20, uid: 195682722, fitness: 92648
+gen: 13, uid: 367321906, fitness: 92987
+gen: 13, uid: 32942080, fitness: 102541
+gen: 20, uid: 2090970977, fitness: 103242
+gen: 20, uid: 709864227, fitness: 112843
+gen: 13, uid: 1017724364, fitness: 113437
+gen 13 fitness avg: 97975.250000
+gen 20 fitness avg: 87730.750000
+gen 13 lost to gen 20
+
+
+Comparing gen 14 and gen 20 done, took: 7.085630 s
+Unfinished games: 0
+gen: 14, uid: 998855536, fitness: 62641
+gen: 14, uid: 1102091616, fitness: 72297
+gen: 14, uid: 1024097147, fitness: 82740
+gen: 20, uid: 709864227, fitness: 92442
+gen: 20, uid: 889091339, fitness: 92988
+gen: 20, uid: 2090970977, fitness: 102941
+gen: 20, uid: 195682722, fitness: 113045
+gen: 14, uid: 275638151, fitness: 123192
+gen 14 fitness avg: 85217.500000
+gen 20 fitness avg: 100354.000000
+gen 20 lost to gen 14
+
+
+Comparing gen 15 and gen 20 done, took: 7.091995 s
+Unfinished games: 0
+gen: 15, uid: 688635345, fitness: 62189
+gen: 20, uid: 709864227, fitness: 72190
+gen: 20, uid: 889091339, fitness: 82637
+gen: 20, uid: 195682722, fitness: 83096
+gen: 15, uid: 2037886644, fitness: 103091
+gen: 15, uid: 455120197, fitness: 103293
+gen: 20, uid: 2090970977, fitness: 113785
+gen: 15, uid: 275638151, fitness: 124431
+gen 15 fitness avg: 98251.000000
+gen 20 fitness avg: 87927.000000
+gen 15 lost to gen 20
+
+
+Comparing gen 16 and gen 20 done, took: 6.957827 s
+Unfinished games: 0
+gen: 16, uid: 455120197, fitness: 41797
+gen: 16, uid: 859167902, fitness: 82194
+gen: 20, uid: 889091339, fitness: 83234
+gen: 16, uid: 1436884976, fitness: 92340
+gen: 20, uid: 709864227, fitness: 102738
+gen: 20, uid: 2090970977, fitness: 103387
+gen: 16, uid: 1717437295, fitness: 113736
+gen: 20, uid: 195682722, fitness: 123043
+gen 16 fitness avg: 82516.750000
+gen 20 fitness avg: 103100.500000
+gen 20 lost to gen 16
+
+
+Comparing gen 17 and gen 20 done, took: 7.129743 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 52087
+gen: 20, uid: 709864227, fitness: 52640
+gen: 17, uid: 373409063, fitness: 62246
+gen: 20, uid: 195682722, fitness: 82346
+gen: 17, uid: 859167902, fitness: 92744
+gen: 17, uid: 129141432, fitness: 102995
+gen: 17, uid: 236325622, fitness: 112940
+gen: 20, uid: 2090970977, fitness: 183340
+gen 17 fitness avg: 92731.250000
+gen 20 fitness avg: 92603.250000
+gen 17 lost to gen 20
+
+
+Comparing gen 18 and gen 20 done, took: 7.233062 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 42291
+gen: 18, uid: 1264278232, fitness: 72193
+gen: 18, uid: 1624451738, fitness: 72195
+gen: 18, uid: 373409063, fitness: 82397
+gen: 20, uid: 709864227, fitness: 102041
+gen: 18, uid: 1535504753, fitness: 112692
+gen: 20, uid: 195682722, fitness: 122796
+gen: 20, uid: 2090970977, fitness: 132693
+gen 18 fitness avg: 84869.250000
+gen 20 fitness avg: 99955.250000
+gen 20 lost to gen 18
+
+
+Comparing gen 19 and gen 20 done, took: 6.901601 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 62345
+gen: 19, uid: 532935567, fitness: 62386
+gen: 20, uid: 709864227, fitness: 72444
+gen: 20, uid: 195682722, fitness: 82446
+gen: 19, uid: 1566681063, fitness: 102944
+gen: 19, uid: 1707127078, fitness: 103034
+gen: 19, uid: 1508699209, fitness: 103435
+gen: 20, uid: 2090970977, fitness: 153889
+gen 19 fitness avg: 92949.750000
+gen 20 fitness avg: 92781.000000
+gen 19 lost to gen 20
+
+----------------------------------------------------------------------------
+Generation: 21
+Playing done, took: 30.932810 s
+uid: 463408482, fitness: 10934
+uid: 142744137, fitness: 20879
+uid: 215812676, fitness: 21127
+uid: 759934790, fitness: 31081
+uid: 177991192, fitness: 31176
+uid: 462750142, fitness: 31179
+uid: 1479064097, fitness: 31330
+uid: 889091339, fitness: 31480
+uid: 1730787162, fitness: 41180
+uid: 1758971041, fitness: 41325
+
+Unfinished games: 0
+Average fitness across population: 61744.461538
+Crossover and mutation took: 3.406592 s
+----------------------------------------------------------------------------
+Generation: 22
+Playing done, took: 31.115330 s
+uid: 1773721540, fitness: 11233
+uid: 479606159, fitness: 21379
+uid: 2128468846, fitness: 30934
+uid: 889091339, fitness: 31031
+uid: 1860944857, fitness: 31081
+uid: 2118228951, fitness: 31283
+uid: 1189046933, fitness: 31333
+uid: 1465089607, fitness: 31778
+uid: 594759060, fitness: 41083
+uid: 142744137, fitness: 41178
+
+Unfinished games: 0
+Average fitness across population: 61706.192308
+Crossover and mutation took: 3.411874 s
+----------------------------------------------------------------------------
+Generation: 23
+Playing done, took: 30.543872 s
+uid: 1863873683, fitness: 11029
+uid: 339425511, fitness: 20883
+uid: 2020034786, fitness: 20982
+uid: 707560100, fitness: 31132
+uid: 2118228951, fitness: 31132
+uid: 2033850414, fitness: 31228
+uid: 931286403, fitness: 31478
+uid: 1238979644, fitness: 31527
+uid: 2010620416, fitness: 31527
+uid: 1997958638, fitness: 31528
+
+Unfinished games: 0
+Average fitness across population: 61800.076923
+Crossover and mutation took: 3.415190 s
+----------------------------------------------------------------------------
+Generation: 24
+Playing done, took: 30.890736 s
+uid: 60534648, fitness: 633
+uid: 2046351730, fitness: 20833
+uid: 1988902058, fitness: 20977
+uid: 2118228951, fitness: 21032
+uid: 1527614575, fitness: 21176
+uid: 578416617, fitness: 31079
+uid: 1392660240, fitness: 31081
+uid: 707560100, fitness: 31182
+uid: 208407006, fitness: 31183
+uid: 1217776339, fitness: 31232
+
+Unfinished games: 0
+Average fitness across population: 61809.807692
+Crossover and mutation took: 3.402458 s
+----------------------------------------------------------------------------
+Generation: 25
+Playing done, took: 31.407623 s
+uid: 163262404, fitness: 782
+uid: 491616364, fitness: 30881
+uid: 1823198775, fitness: 31129
+uid: 2073651071, fitness: 31129
+uid: 307077686, fitness: 31131
+uid: 402871333, fitness: 31181
+uid: 1217776339, fitness: 31184
+uid: 976942323, fitness: 31233
+uid: 475598569, fitness: 31381
+uid: 1641095555, fitness: 31381
+
+Unfinished games: 0
+Average fitness across population: 61684.519231
+Crossover and mutation took: 3.427318 s
+----------------------------------------------------------------------------
+Generation: 26
+Playing done, took: 32.376588 s
+uid: 121027183, fitness: 933
+uid: 756529530, fitness: 20782
+uid: 475598569, fitness: 20834
+uid: 854772668, fitness: 21875
+uid: 340507695, fitness: 31329
+uid: 1008354110, fitness: 40931
+uid: 1599407548, fitness: 41332
+uid: 402871333, fitness: 41377
+uid: 1257052638, fitness: 41432
+uid: 1327745682, fitness: 41478
+
+Unfinished games: 1
+Average fitness across population: 69514.057692
+Crossover and mutation took: 3.416872 s
+----------------------------------------------------------------------------
+Generation: 27
+Playing done, took: 30.444440 s
+uid: 433175475, fitness: 634
+uid: 1327745682, fitness: 10934
+uid: 624250961, fitness: 20930
+uid: 1298432242, fitness: 21278
+uid: 375809230, fitness: 30931
+uid: 340507695, fitness: 31182
+uid: 217934794, fitness: 31184
+uid: 1168104671, fitness: 31185
+uid: 874718879, fitness: 31333
+uid: 546652230, fitness: 31378
+
+Unfinished games: 0
+Average fitness across population: 61816.230769
+Crossover and mutation took: 3.545667 s
+----------------------------------------------------------------------------
+Generation: 28
+Playing done, took: 33.082381 s
+uid: 647429818, fitness: 10731
+uid: 247736863, fitness: 20735
+uid: 1208600164, fitness: 20884
+uid: 640181650, fitness: 20932
+uid: 217934794, fitness: 31033
+uid: 695245106, fitness: 31128
+uid: 1879000157, fitness: 31178
+uid: 249362085, fitness: 31434
+uid: 1222980563, fitness: 41083
+uid: 904797874, fitness: 41180
+
+Unfinished games: 1
+Average fitness across population: 69429.846154
+Crossover and mutation took: 3.490904 s
+----------------------------------------------------------------------------
+Generation: 29
+Playing done, took: 31.399839 s
+uid: 695245106, fitness: 11085
+uid: 1739569302, fitness: 20978
+uid: 1435450585, fitness: 21329
+uid: 247736863, fitness: 21582
+uid: 78604943, fitness: 31181
+uid: 948349909, fitness: 31184
+uid: 1096033384, fitness: 31328
+uid: 1484353710, fitness: 31330
+uid: 1201521184, fitness: 31331
+uid: 249362085, fitness: 41333
+
+Unfinished games: 0
+Average fitness across population: 61807.673077
+Crossover and mutation took: 3.458011 s
+----------------------------------------------------------------------------
+Generation: 30
+Playing done, took: 31.601039 s
+uid: 1432071287, fitness: 20931
+uid: 699247464, fitness: 20983
+uid: 147992401, fitness: 21228
+uid: 248186322, fitness: 21279
+uid: 1484353710, fitness: 21377
+uid: 695245106, fitness: 30931
+uid: 2056394874, fitness: 31178
+uid: 2092755900, fitness: 31380
+uid: 423825482, fitness: 31428
+uid: 642660698, fitness: 41381
+
+Unfinished games: 0
+Average fitness across population: 61818.923077
+Crossover and mutation took: 3.420547 s
+
+Comparing gen 1 and gen 30 done, took: 7.091030 s
+Unfinished games: 0
+gen: 30, uid: 248186322, fitness: 11248
+gen: 1, uid: 1410405470, fitness: 62695
+gen: 30, uid: 147992401, fitness: 82745
+gen: 30, uid: 699247464, fitness: 82945
+gen: 1, uid: 1590313938, fitness: 93329
+gen: 30, uid: 1432071287, fitness: 102897
+gen: 1, uid: 1372739908, fitness: 133982
+gen: 1, uid: 449906158, fitness: 174623
+gen 1 fitness avg: 116157.250000
+gen 30 fitness avg: 69958.750000
+gen 1 lost to gen 30
+
+
+Comparing gen 2 and gen 30 done, took: 7.047203 s
+Unfinished games: 0
+gen: 30, uid: 1432071287, fitness: 51853
+gen: 30, uid: 147992401, fitness: 62151
+gen: 30, uid: 248186322, fitness: 81991
+gen: 2, uid: 609899854, fitness: 92838
+gen: 30, uid: 699247464, fitness: 103140
+gen: 2, uid: 881839918, fitness: 103189
+gen: 2, uid: 1410405470, fitness: 113436
+gen: 2, uid: 1322872257, fitness: 133729
+gen 2 fitness avg: 110798.000000
+gen 30 fitness avg: 74783.750000
+gen 2 lost to gen 30
+
+
+Comparing gen 3 and gen 30 done, took: 6.971756 s
+Unfinished games: 0
+gen: 3, uid: 1983385005, fitness: 52143
+gen: 3, uid: 1079291762, fitness: 72186
+gen: 30, uid: 699247464, fitness: 81991
+gen: 30, uid: 147992401, fitness: 82497
+gen: 30, uid: 1432071287, fitness: 92247
+gen: 3, uid: 775333531, fitness: 92344
+gen: 30, uid: 248186322, fitness: 113333
+gen: 3, uid: 1410405470, fitness: 153937
+gen 3 fitness avg: 92652.500000
+gen 30 fitness avg: 92517.000000
+gen 3 lost to gen 30
+
+
+Comparing gen 4 and gen 30 done, took: 7.057953 s
+Unfinished games: 0
+gen: 4, uid: 102035771, fitness: 21995
+gen: 30, uid: 1432071287, fitness: 62397
+gen: 30, uid: 147992401, fitness: 82496
+gen: 30, uid: 248186322, fitness: 92692
+gen: 30, uid: 699247464, fitness: 93194
+gen: 4, uid: 899512455, fitness: 122692
+gen: 4, uid: 1868946774, fitness: 133581
+gen: 4, uid: 1691195314, fitness: 133586
+gen 4 fitness avg: 102963.500000
+gen 30 fitness avg: 82694.750000
+gen 4 lost to gen 30
+
+
+Comparing gen 5 and gen 30 done, took: 7.116490 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 31395
+gen: 30, uid: 248186322, fitness: 62442
+gen: 5, uid: 1038680060, fitness: 82645
+gen: 30, uid: 147992401, fitness: 92640
+gen: 5, uid: 636638383, fitness: 102495
+gen: 30, uid: 1432071287, fitness: 102595
+gen: 5, uid: 102035771, fitness: 113534
+gen: 5, uid: 1884388166, fitness: 153830
+gen 5 fitness avg: 113126.000000
+gen 30 fitness avg: 72268.000000
+gen 5 lost to gen 30
+
+
+Comparing gen 6 and gen 30 done, took: 7.090959 s
+Unfinished games: 0
+gen: 30, uid: 1432071287, fitness: 51553
+gen: 6, uid: 1901628473, fitness: 72141
+gen: 30, uid: 147992401, fitness: 72297
+gen: 30, uid: 699247464, fitness: 72542
+gen: 6, uid: 636638383, fitness: 82296
+gen: 6, uid: 2104840380, fitness: 113436
+gen: 30, uid: 248186322, fitness: 123486
+gen: 6, uid: 2049873183, fitness: 153636
+gen 6 fitness avg: 105377.250000
+gen 30 fitness avg: 79969.500000
+gen 6 lost to gen 30
+
+
+Comparing gen 7 and gen 30 done, took: 7.103146 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 62047
+gen: 30, uid: 1432071287, fitness: 72351
+gen: 7, uid: 981443849, fitness: 82746
+gen: 30, uid: 147992401, fitness: 92489
+gen: 7, uid: 1975427348, fitness: 92794
+gen: 7, uid: 116507942, fitness: 112489
+gen: 30, uid: 248186322, fitness: 112641
+gen: 7, uid: 14872224, fitness: 112892
+gen 7 fitness avg: 100230.250000
+gen 30 fitness avg: 84882.000000
+gen 7 lost to gen 30
+
+
+Comparing gen 8 and gen 30 done, took: 7.072872 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 41795
+gen: 30, uid: 147992401, fitness: 41798
+gen: 30, uid: 1432071287, fitness: 52095
+gen: 8, uid: 102035771, fitness: 92740
+gen: 8, uid: 6180689, fitness: 102845
+gen: 30, uid: 248186322, fitness: 122890
+gen: 8, uid: 456504022, fitness: 133580
+gen: 8, uid: 1538676197, fitness: 153695
+gen 8 fitness avg: 120715.000000
+gen 30 fitness avg: 64644.500000
+gen 8 lost to gen 30
+
+
+Comparing gen 9 and gen 30 done, took: 7.074334 s
+Unfinished games: 0
+gen: 30, uid: 147992401, fitness: 31995
+gen: 30, uid: 248186322, fitness: 51946
+gen: 30, uid: 1432071287, fitness: 71950
+gen: 9, uid: 39146345, fitness: 82781
+gen: 9, uid: 156397104, fitness: 92941
+gen: 30, uid: 699247464, fitness: 112994
+gen: 9, uid: 293931840, fitness: 143642
+gen: 9, uid: 2129878723, fitness: 154034
+gen 9 fitness avg: 118349.500000
+gen 30 fitness avg: 67221.250000
+gen 9 lost to gen 30
+
+
+Comparing gen 10 and gen 30 done, took: 7.090825 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 41697
+gen: 30, uid: 248186322, fitness: 62244
+gen: 30, uid: 147992401, fitness: 82343
+gen: 10, uid: 777743131, fitness: 102889
+gen: 10, uid: 1201073523, fitness: 102940
+gen: 30, uid: 1432071287, fitness: 103143
+gen: 10, uid: 1845803901, fitness: 122893
+gen: 10, uid: 342137364, fitness: 123137
+gen 10 fitness avg: 112964.750000
+gen 30 fitness avg: 72356.750000
+gen 10 lost to gen 30
+
+
+Comparing gen 11 and gen 30 done, took: 7.127401 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 31496
+gen: 30, uid: 147992401, fitness: 72290
+gen: 11, uid: 1884238404, fitness: 92991
+gen: 11, uid: 1985230166, fitness: 102645
+gen: 30, uid: 248186322, fitness: 102739
+gen: 30, uid: 1432071287, fitness: 102748
+gen: 11, uid: 199722600, fitness: 112936
+gen: 11, uid: 1499929149, fitness: 122736
+gen 11 fitness avg: 107827.000000
+gen 30 fitness avg: 77318.250000
+gen 11 lost to gen 30
+
+
+Comparing gen 12 and gen 30 done, took: 7.112544 s
+Unfinished games: 0
+gen: 12, uid: 1202907918, fitness: 62341
+gen: 12, uid: 1726638829, fitness: 73245
+gen: 30, uid: 147992401, fitness: 82540
+gen: 30, uid: 699247464, fitness: 82744
+gen: 12, uid: 1565142344, fitness: 92294
+gen: 30, uid: 248186322, fitness: 112644
+gen: 12, uid: 1499929149, fitness: 113338
+gen: 30, uid: 1432071287, fitness: 123337
+gen 12 fitness avg: 85304.500000
+gen 30 fitness avg: 100316.250000
+gen 30 lost to gen 12
+
+
+Comparing gen 13 and gen 30 done, took: 6.938195 s
+Unfinished games: 0
+gen: 30, uid: 1432071287, fitness: 32198
+gen: 30, uid: 147992401, fitness: 41893
+gen: 30, uid: 699247464, fitness: 51995
+gen: 13, uid: 32942080, fitness: 92495
+gen: 30, uid: 248186322, fitness: 92743
+gen: 13, uid: 1017724364, fitness: 133392
+gen: 13, uid: 367321906, fitness: 144181
+gen: 13, uid: 1459016131, fitness: 153531
+gen 13 fitness avg: 130899.750000
+gen 30 fitness avg: 54707.250000
+gen 13 lost to gen 30
+
+
+Comparing gen 14 and gen 30 done, took: 7.143138 s
+Unfinished games: 0
+gen: 30, uid: 147992401, fitness: 41894
+gen: 30, uid: 699247464, fitness: 82096
+gen: 14, uid: 1024097147, fitness: 83089
+gen: 30, uid: 1432071287, fitness: 92593
+gen: 30, uid: 248186322, fitness: 92593
+gen: 14, uid: 1102091616, fitness: 102992
+gen: 14, uid: 275638151, fitness: 103387
+gen: 14, uid: 998855536, fitness: 143591
+gen 14 fitness avg: 108264.750000
+gen 30 fitness avg: 77294.000000
+gen 14 lost to gen 30
+
+
+Comparing gen 15 and gen 30 done, took: 7.231645 s
+Unfinished games: 0
+gen: 15, uid: 455120197, fitness: 31297
+gen: 30, uid: 1432071287, fitness: 41800
+gen: 30, uid: 699247464, fitness: 82594
+gen: 15, uid: 688635345, fitness: 92492
+gen: 30, uid: 147992401, fitness: 92740
+gen: 30, uid: 248186322, fitness: 112941
+gen: 15, uid: 275638151, fitness: 133289
+gen: 15, uid: 2037886644, fitness: 153492
+gen 15 fitness avg: 102642.500000
+gen 30 fitness avg: 82518.750000
+gen 15 lost to gen 30
+
+
+Comparing gen 16 and gen 30 done, took: 6.944734 s
+Unfinished games: 0
+gen: 30, uid: 147992401, fitness: 52238
+gen: 16, uid: 859167902, fitness: 73292
+gen: 30, uid: 248186322, fitness: 82439
+gen: 30, uid: 699247464, fitness: 82991
+gen: 16, uid: 1436884976, fitness: 92945
+gen: 30, uid: 1432071287, fitness: 93239
+gen: 16, uid: 455120197, fitness: 112992
+gen: 16, uid: 1717437295, fitness: 153784
+gen 16 fitness avg: 108253.250000
+gen 30 fitness avg: 77726.750000
+gen 16 lost to gen 30
+
+
+Comparing gen 17 and gen 30 done, took: 7.390324 s
+Unfinished games: 0
+gen: 17, uid: 236325622, fitness: 62393
+gen: 17, uid: 129141432, fitness: 82544
+gen: 30, uid: 699247464, fitness: 82592
+gen: 30, uid: 147992401, fitness: 82642
+gen: 30, uid: 248186322, fitness: 92343
+gen: 17, uid: 859167902, fitness: 112741
+gen: 17, uid: 373409063, fitness: 112744
+gen: 30, uid: 1432071287, fitness: 112841
+gen 17 fitness avg: 92605.500000
+gen 30 fitness avg: 92604.500000
+gen 17 lost to gen 30
+
+
+Comparing gen 18 and gen 30 done, took: 7.021366 s
+Unfinished games: 0
+gen: 30, uid: 147992401, fitness: 31846
+gen: 30, uid: 699247464, fitness: 62538
+gen: 18, uid: 1264278232, fitness: 72239
+gen: 30, uid: 248186322, fitness: 82641
+gen: 18, uid: 1535504753, fitness: 92995
+gen: 18, uid: 1624451738, fitness: 103390
+gen: 30, uid: 1432071287, fitness: 133542
+gen: 18, uid: 373409063, fitness: 163892
+gen 18 fitness avg: 108129.000000
+gen 30 fitness avg: 77641.750000
+gen 18 lost to gen 30
+
+
+Comparing gen 19 and gen 30 done, took: 7.692603 s
+Unfinished games: 0
+gen: 30, uid: 248186322, fitness: 51848
+gen: 30, uid: 147992401, fitness: 61942
+gen: 30, uid: 699247464, fitness: 72145
+gen: 30, uid: 1432071287, fitness: 81950
+gen: 19, uid: 1508699209, fitness: 82497
+gen: 19, uid: 1707127078, fitness: 102589
+gen: 19, uid: 1566681063, fitness: 132993
+gen: 19, uid: 532935567, fitness: 153386
+gen 19 fitness avg: 117866.250000
+gen 30 fitness avg: 66971.250000
+gen 19 lost to gen 30
+
+
+Comparing gen 20 and gen 30 done, took: 7.651613 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 61998
+gen: 20, uid: 2090970977, fitness: 62244
+gen: 30, uid: 248186322, fitness: 72487
+gen: 20, uid: 195682722, fitness: 81948
+gen: 30, uid: 147992401, fitness: 92543
+gen: 20, uid: 889091339, fitness: 113483
+gen: 20, uid: 709864227, fitness: 123191
+gen: 30, uid: 1432071287, fitness: 132848
+gen 20 fitness avg: 95216.500000
+gen 30 fitness avg: 89969.000000
+gen 20 lost to gen 30
+
+
+Comparing gen 21 and gen 30 done, took: 6.790595 s
+Unfinished games: 0
+gen: 21, uid: 215812676, fitness: 52191
+gen: 21, uid: 142744137, fitness: 62291
+gen: 30, uid: 147992401, fitness: 72492
+gen: 21, uid: 759934790, fitness: 82741
+gen: 30, uid: 248186322, fitness: 93336
+gen: 30, uid: 699247464, fitness: 112742
+gen: 30, uid: 1432071287, fitness: 123543
+gen: 21, uid: 463408482, fitness: 144293
+gen 21 fitness avg: 85379.000000
+gen 30 fitness avg: 100528.250000
+gen 30 lost to gen 21
+
+
+Comparing gen 22 and gen 30 done, took: 7.253209 s
+Unfinished games: 0
+gen: 30, uid: 1432071287, fitness: 51750
+gen: 22, uid: 2128468846, fitness: 61596
+gen: 30, uid: 147992401, fitness: 72339
+gen: 22, uid: 889091339, fitness: 92399
+gen: 22, uid: 479606159, fitness: 102792
+gen: 22, uid: 1773721540, fitness: 102942
+gen: 30, uid: 699247464, fitness: 112239
+gen: 30, uid: 248186322, fitness: 143391
+gen 22 fitness avg: 89932.250000
+gen 30 fitness avg: 94929.750000
+gen 30 lost to gen 22
+
+
+Comparing gen 23 and gen 30 done, took: 7.273575 s
+Unfinished games: 0
+gen: 23, uid: 339425511, fitness: 51846
+gen: 23, uid: 707560100, fitness: 62096
+gen: 30, uid: 699247464, fitness: 72194
+gen: 30, uid: 248186322, fitness: 82391
+gen: 30, uid: 1432071287, fitness: 102549
+gen: 30, uid: 147992401, fitness: 112639
+gen: 23, uid: 1863873683, fitness: 122988
+gen: 23, uid: 2020034786, fitness: 132747
+gen 23 fitness avg: 92419.250000
+gen 30 fitness avg: 92443.250000
+gen 30 lost to gen 23
+
+
+Comparing gen 24 and gen 30 done, took: 7.272165 s
+Unfinished games: 0
+gen: 24, uid: 60534648, fitness: 51748
+gen: 30, uid: 147992401, fitness: 61698
+gen: 30, uid: 699247464, fitness: 72144
+gen: 24, uid: 1988902058, fitness: 92439
+gen: 30, uid: 248186322, fitness: 102642
+gen: 24, uid: 2118228951, fitness: 112548
+gen: 24, uid: 2046351730, fitness: 113040
+gen: 30, uid: 1432071287, fitness: 132895
+gen 24 fitness avg: 92443.750000
+gen 30 fitness avg: 92344.750000
+gen 24 lost to gen 30
+
+
+Comparing gen 25 and gen 30 done, took: 7.188758 s
+Unfinished games: 0
+gen: 30, uid: 248186322, fitness: 52045
+gen: 25, uid: 491616364, fitness: 61699
+gen: 30, uid: 1432071287, fitness: 72295
+gen: 25, uid: 1823198775, fitness: 83091
+gen: 25, uid: 163262404, fitness: 92942
+gen: 25, uid: 2073651071, fitness: 112541
+gen: 30, uid: 147992401, fitness: 123139
+gen: 30, uid: 699247464, fitness: 143343
+gen 25 fitness avg: 87568.250000
+gen 30 fitness avg: 97705.500000
+gen 30 lost to gen 25
+
+
+Comparing gen 26 and gen 30 done, took: 7.115557 s
+Unfinished games: 0
+gen: 30, uid: 1432071287, fitness: 31451
+gen: 26, uid: 756529530, fitness: 82588
+gen: 26, uid: 854772668, fitness: 82693
+gen: 30, uid: 147992401, fitness: 92291
+gen: 26, uid: 121027183, fitness: 92893
+gen: 30, uid: 699247464, fitness: 112591
+gen: 26, uid: 475598569, fitness: 122945
+gen: 30, uid: 248186322, fitness: 123034
+gen 26 fitness avg: 95279.750000
+gen 30 fitness avg: 89841.750000
+gen 26 lost to gen 30
+
+
+Comparing gen 27 and gen 30 done, took: 7.145159 s
+Unfinished games: 0
+gen: 27, uid: 1327745682, fitness: 31844
+gen: 30, uid: 248186322, fitness: 72396
+gen: 27, uid: 433175475, fitness: 82237
+gen: 30, uid: 1432071287, fitness: 92548
+gen: 27, uid: 1298432242, fitness: 112244
+gen: 27, uid: 624250961, fitness: 112790
+gen: 30, uid: 147992401, fitness: 112994
+gen: 30, uid: 699247464, fitness: 123240
+gen 27 fitness avg: 84778.750000
+gen 30 fitness avg: 100294.500000
+gen 30 lost to gen 27
+
+
+Comparing gen 28 and gen 30 done, took: 7.252889 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 41745
+gen: 30, uid: 1432071287, fitness: 51901
+gen: 30, uid: 147992401, fitness: 62144
+gen: 30, uid: 248186322, fitness: 82392
+gen: 28, uid: 247736863, fitness: 92346
+gen: 28, uid: 647429818, fitness: 133187
+gen: 28, uid: 640181650, fitness: 133336
+gen: 28, uid: 1208600164, fitness: 143339
+gen 28 fitness avg: 125552.000000
+gen 30 fitness avg: 59545.500000
+gen 28 lost to gen 30
+
+
+Comparing gen 29 and gen 30 done, took: 6.680252 s
+Unfinished games: 0
+gen: 30, uid: 248186322, fitness: 62789
+gen: 30, uid: 699247464, fitness: 62789
+gen: 30, uid: 1432071287, fitness: 82740
+gen: 29, uid: 695245106, fitness: 82892
+gen: 29, uid: 1435450585, fitness: 103088
+gen: 29, uid: 1739569302, fitness: 113038
+gen: 29, uid: 247736863, fitness: 113887
+gen: 30, uid: 147992401, fitness: 123244
+gen 29 fitness avg: 103226.250000
+gen 30 fitness avg: 82890.500000
+gen 29 lost to gen 30
+
+----------------------------------------------------------------------------
+Generation: 31
+Playing done, took: 31.375650 s
+uid: 1384204817, fitness: 31031
+uid: 147992401, fitness: 31080
+uid: 1872125354, fitness: 31081
+uid: 907673531, fitness: 31082
+uid: 1768734592, fitness: 31478
+uid: 1486527309, fitness: 41078
+uid: 642660698, fitness: 41130
+uid: 73201742, fitness: 41278
+uid: 1803604870, fitness: 41283
+uid: 2056394874, fitness: 41526
+
+Unfinished games: 0
+Average fitness across population: 61697.653846
+Crossover and mutation took: 3.445932 s
+----------------------------------------------------------------------------
+Generation: 32
+Playing done, took: 31.189833 s
+uid: 2025215966, fitness: 10877
+uid: 1943022039, fitness: 11031
+uid: 40363780, fitness: 31034
+uid: 980629202, fitness: 31178
+uid: 1514504166, fitness: 31328
+uid: 501579743, fitness: 41332
+uid: 955615044, fitness: 41529
+uid: 1803604870, fitness: 41530
+uid: 565218586, fitness: 41532
+uid: 1872125354, fitness: 51429
+
+Unfinished games: 0
+Average fitness across population: 61742.653846
+Crossover and mutation took: 3.452287 s
+----------------------------------------------------------------------------
+Generation: 33
+Playing done, took: 30.958707 s
+uid: 1080101558, fitness: 21025
+uid: 1872125354, fitness: 21130
+uid: 1245239236, fitness: 21131
+uid: 2061503421, fitness: 21182
+uid: 1616017239, fitness: 31330
+uid: 1201504348, fitness: 31378
+uid: 2025215966, fitness: 41079
+uid: 565218586, fitness: 41132
+uid: 1535560748, fitness: 41377
+uid: 984324826, fitness: 41532
+
+Unfinished games: 0
+Average fitness across population: 61774.038462
+Crossover and mutation took: 3.461972 s
+----------------------------------------------------------------------------
+Generation: 34
+Playing done, took: 31.320244 s
+uid: 2140297496, fitness: 21033
+uid: 1535560748, fitness: 21081
+uid: 1112151237, fitness: 21130
+uid: 1245239236, fitness: 21328
+uid: 444227434, fitness: 30778
+uid: 1616727387, fitness: 31131
+uid: 110598308, fitness: 31276
+uid: 305333243, fitness: 31430
+uid: 2025215966, fitness: 31629
+uid: 331789857, fitness: 41329
+
+Unfinished games: 0
+Average fitness across population: 61765.326923
+Crossover and mutation took: 3.446463 s
+----------------------------------------------------------------------------
+Generation: 35
+Playing done, took: 31.228513 s
+uid: 675329758, fitness: 10979
+uid: 1839002177, fitness: 21277
+uid: 1699397713, fitness: 21478
+uid: 331789857, fitness: 30731
+uid: 1824075312, fitness: 31329
+uid: 1098865831, fitness: 31478
+uid: 305333243, fitness: 31678
+uid: 1576625777, fitness: 40932
+uid: 348742743, fitness: 41330
+uid: 1812199898, fitness: 41378
+
+Unfinished games: 0
+Average fitness across population: 61703.269231
+Crossover and mutation took: 3.412448 s
+----------------------------------------------------------------------------
+Generation: 36
+Playing done, took: 31.398345 s
+uid: 844952004, fitness: 20833
+uid: 536317256, fitness: 20931
+uid: 130669881, fitness: 21383
+uid: 1946382252, fitness: 30983
+uid: 2034145321, fitness: 31378
+uid: 1812199898, fitness: 31382
+uid: 1098865831, fitness: 31428
+uid: 305333243, fitness: 31429
+uid: 949904396, fitness: 31430
+uid: 2064477713, fitness: 41178
+
+Unfinished games: 0
+Average fitness across population: 61793.538462
+Crossover and mutation took: 3.412698 s
+----------------------------------------------------------------------------
+Generation: 37
+Playing done, took: 30.193295 s
+uid: 762373103, fitness: 21179
+uid: 314688983, fitness: 21329
+uid: 480946605, fitness: 31183
+uid: 1098865831, fitness: 31277
+uid: 525536049, fitness: 31631
+uid: 1633014755, fitness: 31828
+uid: 280058921, fitness: 41333
+uid: 843945100, fitness: 41429
+uid: 1859178443, fitness: 41429
+uid: 1907749605, fitness: 41431
+
+Unfinished games: 0
+Average fitness across population: 61858.442308
+Crossover and mutation took: 3.403544 s
+----------------------------------------------------------------------------
+Generation: 38
+Playing done, took: 31.208226 s
+uid: 301063294, fitness: 21080
+uid: 442931248, fitness: 30931
+uid: 1644776248, fitness: 31178
+uid: 643202333, fitness: 31231
+uid: 1569655581, fitness: 41231
+uid: 1271352813, fitness: 41330
+uid: 1182896058, fitness: 41482
+uid: 2072064433, fitness: 41581
+uid: 1907749605, fitness: 41581
+uid: 67077870, fitness: 41777
+
+Unfinished games: 0
+Average fitness across population: 61704.519231
+Crossover and mutation took: 3.416059 s
+----------------------------------------------------------------------------
+Generation: 39
+Playing done, took: 30.661214 s
+uid: 265158675, fitness: 10629
+uid: 773362593, fitness: 10831
+uid: 541566861, fitness: 20882
+uid: 41719336, fitness: 21130
+uid: 1569655581, fitness: 21280
+uid: 442931248, fitness: 31227
+uid: 173118140, fitness: 31281
+uid: 442621077, fitness: 41033
+uid: 1169062912, fitness: 41232
+uid: 221704666, fitness: 41426
+
+Unfinished games: 0
+Average fitness across population: 61738.673077
+Crossover and mutation took: 3.404777 s
+----------------------------------------------------------------------------
+Generation: 40
+Playing done, took: 30.951163 s
+uid: 173118140, fitness: 21328
+uid: 519976525, fitness: 21378
+uid: 1722514703, fitness: 21428
+uid: 251259745, fitness: 31031
+uid: 728880013, fitness: 31179
+uid: 1314339358, fitness: 31282
+uid: 1512925960, fitness: 31336
+uid: 1592959995, fitness: 31578
+uid: 1169062912, fitness: 41078
+uid: 41719336, fitness: 41132
+
+Unfinished games: 0
+Average fitness across population: 61704.538462
+Crossover and mutation took: 3.413325 s
+
+Comparing gen 1 and gen 40 done, took: 7.305767 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 31695
+gen: 40, uid: 251259745, fitness: 41403
+gen: 40, uid: 173118140, fitness: 61899
+gen: 40, uid: 1722514703, fitness: 102948
+gen: 1, uid: 449906158, fitness: 113532
+gen: 1, uid: 1410405470, fitness: 123140
+gen: 1, uid: 1590313938, fitness: 123582
+gen: 1, uid: 1372739908, fitness: 143091
+gen 1 fitness avg: 125836.250000
+gen 40 fitness avg: 59486.250000
+gen 1 lost to gen 40
+
+
+Comparing gen 2 and gen 40 done, took: 7.074910 s
+Unfinished games: 0
+gen: 40, uid: 251259745, fitness: 62294
+gen: 40, uid: 519976525, fitness: 62441
+gen: 40, uid: 173118140, fitness: 62599
+gen: 2, uid: 609899854, fitness: 72638
+gen: 2, uid: 1410405470, fitness: 102790
+gen: 40, uid: 1722514703, fitness: 103395
+gen: 2, uid: 1322872257, fitness: 133686
+gen: 2, uid: 881839918, fitness: 143986
+gen 2 fitness avg: 113275.000000
+gen 40 fitness avg: 72682.250000
+gen 2 lost to gen 40
+
+
+Comparing gen 3 and gen 40 done, took: 7.003899 s
+Unfinished games: 0
+gen: 40, uid: 173118140, fitness: 41598
+gen: 3, uid: 1983385005, fitness: 52141
+gen: 3, uid: 775333531, fitness: 52392
+gen: 40, uid: 251259745, fitness: 72243
+gen: 40, uid: 519976525, fitness: 92590
+gen: 3, uid: 1079291762, fitness: 112934
+gen: 40, uid: 1722514703, fitness: 153695
+gen: 3, uid: 1410405470, fitness: 163542
+gen 3 fitness avg: 95252.250000
+gen 40 fitness avg: 90031.500000
+gen 3 lost to gen 40
+
+
+Comparing gen 4 and gen 40 done, took: 7.034172 s
+Unfinished games: 0
+gen: 40, uid: 1722514703, fitness: 41947
+gen: 40, uid: 251259745, fitness: 51848
+gen: 40, uid: 173118140, fitness: 92745
+gen: 40, uid: 519976525, fitness: 102592
+gen: 4, uid: 1691195314, fitness: 102889
+gen: 4, uid: 1868946774, fitness: 103631
+gen: 4, uid: 899512455, fitness: 113290
+gen: 4, uid: 102035771, fitness: 133539
+gen 4 fitness avg: 113337.250000
+gen 40 fitness avg: 72283.000000
+gen 4 lost to gen 40
+
+
+Comparing gen 5 and gen 40 done, took: 7.027325 s
+Unfinished games: 0
+gen: 5, uid: 636638383, fitness: 32290
+gen: 40, uid: 1722514703, fitness: 82695
+gen: 5, uid: 102035771, fitness: 82887
+gen: 40, uid: 519976525, fitness: 92740
+gen: 40, uid: 251259745, fitness: 92744
+gen: 5, uid: 1884388166, fitness: 103231
+gen: 40, uid: 173118140, fitness: 103295
+gen: 5, uid: 1038680060, fitness: 153786
+gen 5 fitness avg: 93048.500000
+gen 40 fitness avg: 92868.500000
+gen 5 lost to gen 40
+
+
+Comparing gen 6 and gen 40 done, took: 7.149311 s
+Unfinished games: 0
+gen: 40, uid: 251259745, fitness: 41945
+gen: 6, uid: 636638383, fitness: 62344
+gen: 6, uid: 1901628473, fitness: 82249
+gen: 40, uid: 1722514703, fitness: 82699
+gen: 40, uid: 519976525, fitness: 102791
+gen: 40, uid: 173118140, fitness: 113044
+gen: 6, uid: 2049873183, fitness: 123581
+gen: 6, uid: 2104840380, fitness: 133288
+gen 6 fitness avg: 100365.500000
+gen 40 fitness avg: 85119.750000
+gen 6 lost to gen 40
+
+
+Comparing gen 7 and gen 40 done, took: 7.074154 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 51593
+gen: 40, uid: 251259745, fitness: 62643
+gen: 40, uid: 173118140, fitness: 92746
+gen: 40, uid: 1722514703, fitness: 93193
+gen: 7, uid: 14872224, fitness: 102942
+gen: 7, uid: 981443849, fitness: 102943
+gen: 7, uid: 1975427348, fitness: 103236
+gen: 7, uid: 116507942, fitness: 133936
+gen 7 fitness avg: 110764.250000
+gen 40 fitness avg: 75043.750000
+gen 7 lost to gen 40
+
+
+Comparing gen 8 and gen 40 done, took: 7.255548 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 61996
+gen: 40, uid: 251259745, fitness: 62241
+gen: 40, uid: 173118140, fitness: 82648
+gen: 8, uid: 6180689, fitness: 92593
+gen: 8, uid: 102035771, fitness: 102841
+gen: 8, uid: 456504022, fitness: 102936
+gen: 40, uid: 1722514703, fitness: 102990
+gen: 8, uid: 1538676197, fitness: 133198
+gen 8 fitness avg: 107892.000000
+gen 40 fitness avg: 77468.750000
+gen 8 lost to gen 40
+
+
+Comparing gen 9 and gen 40 done, took: 7.279324 s
+Unfinished games: 0
+gen: 40, uid: 1722514703, fitness: 41449
+gen: 9, uid: 293931840, fitness: 41742
+gen: 9, uid: 156397104, fitness: 51944
+gen: 40, uid: 519976525, fitness: 72294
+gen: 40, uid: 251259745, fitness: 102543
+gen: 40, uid: 173118140, fitness: 133194
+gen: 9, uid: 2129878723, fitness: 133442
+gen: 9, uid: 39146345, fitness: 163286
+gen 9 fitness avg: 97603.500000
+gen 40 fitness avg: 87370.000000
+gen 9 lost to gen 40
+
+
+Comparing gen 10 and gen 40 done, took: 7.222413 s
+Unfinished games: 0
+gen: 10, uid: 1201073523, fitness: 51846
+gen: 10, uid: 777743131, fitness: 61991
+gen: 40, uid: 519976525, fitness: 72696
+gen: 40, uid: 1722514703, fitness: 82591
+gen: 40, uid: 251259745, fitness: 82986
+gen: 40, uid: 173118140, fitness: 112846
+gen: 10, uid: 342137364, fitness: 133585
+gen: 10, uid: 1845803901, fitness: 143787
+gen 10 fitness avg: 97802.250000
+gen 40 fitness avg: 87779.750000
+gen 10 lost to gen 40
+
+
+Comparing gen 11 and gen 40 done, took: 7.285785 s
+Unfinished games: 0
+gen: 11, uid: 199722600, fitness: 31845
+gen: 11, uid: 1985230166, fitness: 82940
+gen: 40, uid: 251259745, fitness: 91843
+gen: 40, uid: 519976525, fitness: 93030
+gen: 11, uid: 1884238404, fitness: 102244
+gen: 40, uid: 1722514703, fitness: 102747
+gen: 40, uid: 173118140, fitness: 112347
+gen: 11, uid: 1499929149, fitness: 122637
+gen 11 fitness avg: 84916.500000
+gen 40 fitness avg: 99991.750000
+gen 40 lost to gen 11
+
+
+Comparing gen 12 and gen 40 done, took: 6.856985 s
+Unfinished games: 0
+gen: 12, uid: 1499929149, fitness: 61941
+gen: 40, uid: 251259745, fitness: 72387
+gen: 40, uid: 1722514703, fitness: 72644
+gen: 40, uid: 173118140, fitness: 82095
+gen: 12, uid: 1202907918, fitness: 102745
+gen: 40, uid: 519976525, fitness: 103233
+gen: 12, uid: 1726638829, fitness: 103291
+gen: 12, uid: 1565142344, fitness: 143838
+gen 12 fitness avg: 102953.750000
+gen 40 fitness avg: 82589.750000
+gen 12 lost to gen 40
+
+
+Comparing gen 13 and gen 40 done, took: 7.146529 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 51841
+gen: 40, uid: 1722514703, fitness: 52299
+gen: 40, uid: 251259745, fitness: 52540
+gen: 40, uid: 173118140, fitness: 72047
+gen: 13, uid: 32942080, fitness: 123044
+gen: 13, uid: 367321906, fitness: 123084
+gen: 13, uid: 1459016131, fitness: 133039
+gen: 13, uid: 1017724364, fitness: 133732
+gen 13 fitness avg: 128224.750000
+gen 40 fitness avg: 57181.750000
+gen 13 lost to gen 40
+
+
+Comparing gen 14 and gen 40 done, took: 7.197943 s
+Unfinished games: 0
+gen: 14, uid: 998855536, fitness: 42038
+gen: 40, uid: 173118140, fitness: 52051
+gen: 40, uid: 251259745, fitness: 82438
+gen: 14, uid: 1024097147, fitness: 82442
+gen: 14, uid: 1102091616, fitness: 82492
+gen: 40, uid: 1722514703, fitness: 93145
+gen: 14, uid: 275638151, fitness: 143640
+gen: 40, uid: 519976525, fitness: 163441
+gen 14 fitness avg: 87653.000000
+gen 40 fitness avg: 97768.750000
+gen 40 lost to gen 14
+
+
+Comparing gen 15 and gen 40 done, took: 7.297262 s
+Unfinished games: 0
+gen: 40, uid: 1722514703, fitness: 52246
+gen: 15, uid: 688635345, fitness: 52441
+gen: 15, uid: 2037886644, fitness: 61798
+gen: 40, uid: 251259745, fitness: 82537
+gen: 40, uid: 173118140, fitness: 92544
+gen: 15, uid: 455120197, fitness: 122793
+gen: 40, uid: 519976525, fitness: 133131
+gen: 15, uid: 275638151, fitness: 143491
+gen 15 fitness avg: 95130.750000
+gen 40 fitness avg: 90114.500000
+gen 15 lost to gen 40
+
+
+Comparing gen 16 and gen 40 done, took: 7.252234 s
+Unfinished games: 0
+gen: 40, uid: 251259745, fitness: 11345
+gen: 40, uid: 519976525, fitness: 82435
+gen: 16, uid: 1436884976, fitness: 93192
+gen: 16, uid: 455120197, fitness: 102047
+gen: 40, uid: 173118140, fitness: 102546
+gen: 40, uid: 1722514703, fitness: 102698
+gen: 16, uid: 859167902, fitness: 113390
+gen: 16, uid: 1717437295, fitness: 133088
+gen 16 fitness avg: 110429.250000
+gen 40 fitness avg: 74756.000000
+gen 16 lost to gen 40
+
+
+Comparing gen 17 and gen 40 done, took: 7.248904 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 62140
+gen: 17, uid: 859167902, fitness: 62245
+gen: 17, uid: 129141432, fitness: 62440
+gen: 17, uid: 373409063, fitness: 72094
+gen: 40, uid: 1722514703, fitness: 82198
+gen: 40, uid: 251259745, fitness: 113030
+gen: 40, uid: 173118140, fitness: 142849
+gen: 17, uid: 236325622, fitness: 142996
+gen 17 fitness avg: 84943.750000
+gen 40 fitness avg: 100054.250000
+gen 40 lost to gen 17
+
+
+Comparing gen 18 and gen 40 done, took: 7.141899 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 62142
+gen: 18, uid: 1624451738, fitness: 62291
+gen: 18, uid: 1535504753, fitness: 82744
+gen: 18, uid: 373409063, fitness: 92644
+gen: 40, uid: 173118140, fitness: 102399
+gen: 40, uid: 251259745, fitness: 102837
+gen: 18, uid: 1264278232, fitness: 112541
+gen: 40, uid: 1722514703, fitness: 122989
+gen 18 fitness avg: 87555.000000
+gen 40 fitness avg: 97591.750000
+gen 40 lost to gen 18
+
+
+Comparing gen 19 and gen 40 done, took: 7.201758 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 41897
+gen: 19, uid: 1707127078, fitness: 62486
+gen: 40, uid: 251259745, fitness: 82641
+gen: 19, uid: 1566681063, fitness: 92592
+gen: 19, uid: 1508699209, fitness: 92697
+gen: 40, uid: 1722514703, fitness: 102699
+gen: 19, uid: 532935567, fitness: 133234
+gen: 40, uid: 173118140, fitness: 133344
+gen 19 fitness avg: 95252.250000
+gen 40 fitness avg: 90145.250000
+gen 19 lost to gen 40
+
+
+Comparing gen 20 and gen 40 done, took: 6.965167 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 41590
+gen: 20, uid: 709864227, fitness: 51740
+gen: 40, uid: 519976525, fitness: 52239
+gen: 20, uid: 195682722, fitness: 72145
+gen: 20, uid: 2090970977, fitness: 112991
+gen: 40, uid: 251259745, fitness: 122740
+gen: 40, uid: 173118140, fitness: 132894
+gen: 40, uid: 1722514703, fitness: 153589
+gen 20 fitness avg: 69616.500000
+gen 40 fitness avg: 115365.500000
+gen 40 lost to gen 20
+
+
+Comparing gen 21 and gen 40 done, took: 7.314361 s
+Unfinished games: 0
+gen: 21, uid: 759934790, fitness: 41294
+gen: 40, uid: 1722514703, fitness: 61898
+gen: 40, uid: 251259745, fitness: 82493
+gen: 40, uid: 519976525, fitness: 92541
+gen: 21, uid: 463408482, fitness: 92549
+gen: 21, uid: 215812676, fitness: 112142
+gen: 40, uid: 173118140, fitness: 123044
+gen: 21, uid: 142744137, fitness: 133041
+gen 21 fitness avg: 94756.500000
+gen 40 fitness avg: 89994.000000
+gen 21 lost to gen 40
+
+
+Comparing gen 22 and gen 40 done, took: 7.176381 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 62042
+gen: 22, uid: 2128468846, fitness: 71744
+gen: 22, uid: 889091339, fitness: 71997
+gen: 22, uid: 479606159, fitness: 92491
+gen: 22, uid: 1773721540, fitness: 102785
+gen: 40, uid: 1722514703, fitness: 102995
+gen: 40, uid: 251259745, fitness: 112296
+gen: 40, uid: 173118140, fitness: 123293
+gen 22 fitness avg: 84754.250000
+gen 40 fitness avg: 100156.500000
+gen 40 lost to gen 22
+
+
+Comparing gen 23 and gen 40 done, took: 7.217902 s
+Unfinished games: 0
+gen: 23, uid: 707560100, fitness: 61693
+gen: 40, uid: 173118140, fitness: 62046
+gen: 40, uid: 519976525, fitness: 71994
+gen: 40, uid: 251259745, fitness: 92642
+gen: 40, uid: 1722514703, fitness: 102649
+gen: 23, uid: 2020034786, fitness: 102744
+gen: 23, uid: 339425511, fitness: 122892
+gen: 23, uid: 1863873683, fitness: 123534
+gen 23 fitness avg: 102715.750000
+gen 40 fitness avg: 82332.750000
+gen 23 lost to gen 40
+
+
+Comparing gen 24 and gen 40 done, took: 6.996039 s
+Unfinished games: 0
+gen: 24, uid: 60534648, fitness: 11196
+gen: 24, uid: 2118228951, fitness: 62198
+gen: 24, uid: 2046351730, fitness: 92492
+gen: 40, uid: 519976525, fitness: 92789
+gen: 40, uid: 251259745, fitness: 92836
+gen: 24, uid: 1988902058, fitness: 112883
+gen: 40, uid: 1722514703, fitness: 122946
+gen: 40, uid: 173118140, fitness: 153744
+gen 24 fitness avg: 69692.250000
+gen 40 fitness avg: 115578.750000
+gen 40 lost to gen 24
+
+
+Comparing gen 25 and gen 40 done, took: 7.189341 s
+Unfinished games: 0
+gen: 25, uid: 491616364, fitness: 41600
+gen: 40, uid: 519976525, fitness: 72191
+gen: 25, uid: 163262404, fitness: 82192
+gen: 25, uid: 2073651071, fitness: 92787
+gen: 40, uid: 251259745, fitness: 102441
+gen: 40, uid: 173118140, fitness: 102697
+gen: 40, uid: 1722514703, fitness: 112699
+gen: 25, uid: 1823198775, fitness: 133586
+gen 25 fitness avg: 87541.250000
+gen 40 fitness avg: 97507.000000
+gen 40 lost to gen 25
+
+
+Comparing gen 26 and gen 40 done, took: 7.114887 s
+Unfinished games: 0
+gen: 26, uid: 756529530, fitness: 52388
+gen: 40, uid: 251259745, fitness: 72444
+gen: 26, uid: 475598569, fitness: 72497
+gen: 26, uid: 121027183, fitness: 82499
+gen: 40, uid: 519976525, fitness: 82632
+gen: 40, uid: 173118140, fitness: 102695
+gen: 26, uid: 854772668, fitness: 103092
+gen: 40, uid: 1722514703, fitness: 174036
+gen 26 fitness avg: 77619.000000
+gen 40 fitness avg: 107951.750000
+gen 40 lost to gen 26
+
+
+Comparing gen 27 and gen 40 done, took: 6.930368 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 52294
+gen: 27, uid: 1327745682, fitness: 62391
+gen: 27, uid: 433175475, fitness: 73034
+gen: 40, uid: 251259745, fitness: 82742
+gen: 27, uid: 624250961, fitness: 102891
+gen: 40, uid: 173118140, fitness: 122948
+gen: 27, uid: 1298432242, fitness: 123286
+gen: 40, uid: 1722514703, fitness: 123840
+gen 27 fitness avg: 90400.500000
+gen 40 fitness avg: 95456.000000
+gen 40 lost to gen 27
+
+
+Comparing gen 28 and gen 40 done, took: 7.166629 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 31896
+gen: 40, uid: 251259745, fitness: 42044
+gen: 40, uid: 173118140, fitness: 92548
+gen: 28, uid: 640181650, fitness: 92888
+gen: 40, uid: 1722514703, fitness: 112997
+gen: 28, uid: 1208600164, fitness: 113241
+gen: 28, uid: 247736863, fitness: 123492
+gen: 28, uid: 647429818, fitness: 133531
+gen 28 fitness avg: 115788.000000
+gen 40 fitness avg: 69871.250000
+gen 28 lost to gen 40
+
+
+Comparing gen 29 and gen 40 done, took: 7.272116 s
+Unfinished games: 0
+gen: 29, uid: 1435450585, fitness: 21546
+gen: 40, uid: 1722514703, fitness: 62595
+gen: 40, uid: 251259745, fitness: 72536
+gen: 29, uid: 1739569302, fitness: 82090
+gen: 40, uid: 519976525, fitness: 102987
+gen: 29, uid: 247736863, fitness: 123293
+gen: 40, uid: 173118140, fitness: 133144
+gen: 29, uid: 695245106, fitness: 143145
+gen 29 fitness avg: 92518.500000
+gen 40 fitness avg: 92815.500000
+gen 40 lost to gen 29
+
+
+Comparing gen 30 and gen 40 done, took: 7.044256 s
+Unfinished games: 0
+gen: 30, uid: 248186322, fitness: 72341
+gen: 40, uid: 1722514703, fitness: 72447
+gen: 40, uid: 251259745, fitness: 72638
+gen: 40, uid: 519976525, fitness: 92539
+gen: 40, uid: 173118140, fitness: 92794
+gen: 30, uid: 147992401, fitness: 112987
+gen: 30, uid: 1432071287, fitness: 113295
+gen: 30, uid: 699247464, fitness: 113837
+gen 30 fitness avg: 103115.000000
+gen 40 fitness avg: 82604.500000
+gen 30 lost to gen 40
+
+
+Comparing gen 31 and gen 40 done, took: 7.043446 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 72291
+gen: 40, uid: 251259745, fitness: 72687
+gen: 31, uid: 1872125354, fitness: 82244
+gen: 40, uid: 173118140, fitness: 82542
+gen: 40, uid: 1722514703, fitness: 82545
+gen: 31, uid: 1384204817, fitness: 92795
+gen: 31, uid: 907673531, fitness: 122891
+gen: 31, uid: 147992401, fitness: 133243
+gen 31 fitness avg: 107793.250000
+gen 40 fitness avg: 77516.250000
+gen 31 lost to gen 40
+
+
+Comparing gen 32 and gen 40 done, took: 7.166241 s
+Unfinished games: 0
+gen: 32, uid: 1943022039, fitness: 31595
+gen: 32, uid: 40363780, fitness: 71796
+gen: 32, uid: 980629202, fitness: 72341
+gen: 40, uid: 1722514703, fitness: 92847
+gen: 40, uid: 519976525, fitness: 102942
+gen: 40, uid: 251259745, fitness: 112739
+gen: 40, uid: 173118140, fitness: 123240
+gen: 32, uid: 2025215966, fitness: 132742
+gen 32 fitness avg: 77118.500000
+gen 40 fitness avg: 107942.000000
+gen 40 lost to gen 32
+
+
+Comparing gen 33 and gen 40 done, took: 7.138289 s
+Unfinished games: 0
+gen: 40, uid: 251259745, fitness: 51741
+gen: 33, uid: 1872125354, fitness: 62442
+gen: 33, uid: 1245239236, fitness: 82292
+gen: 40, uid: 519976525, fitness: 82443
+gen: 33, uid: 2061503421, fitness: 82448
+gen: 33, uid: 1080101558, fitness: 92495
+gen: 40, uid: 173118140, fitness: 122694
+gen: 40, uid: 1722514703, fitness: 163592
+gen 33 fitness avg: 79919.250000
+gen 40 fitness avg: 105117.500000
+gen 40 lost to gen 33
+
+
+Comparing gen 34 and gen 40 done, took: 7.106407 s
+Unfinished games: 0
+gen: 34, uid: 1245239236, fitness: 42192
+gen: 34, uid: 1535560748, fitness: 72493
+gen: 40, uid: 251259745, fitness: 82389
+gen: 40, uid: 519976525, fitness: 102636
+gen: 40, uid: 173118140, fitness: 102648
+gen: 34, uid: 2140297496, fitness: 103090
+gen: 40, uid: 1722514703, fitness: 112991
+gen: 34, uid: 1112151237, fitness: 123590
+gen 34 fitness avg: 85341.250000
+gen 40 fitness avg: 100166.000000
+gen 40 lost to gen 34
+
+
+Comparing gen 35 and gen 40 done, took: 6.995199 s
+Unfinished games: 0
+gen: 40, uid: 251259745, fitness: 41893
+gen: 35, uid: 1699397713, fitness: 52140
+gen: 35, uid: 1839002177, fitness: 92244
+gen: 40, uid: 519976525, fitness: 102488
+gen: 35, uid: 331789857, fitness: 102541
+gen: 35, uid: 675329758, fitness: 112198
+gen: 40, uid: 1722514703, fitness: 112492
+gen: 40, uid: 173118140, fitness: 122996
+gen 35 fitness avg: 89780.750000
+gen 40 fitness avg: 94967.250000
+gen 40 lost to gen 35
+
+
+Comparing gen 36 and gen 40 done, took: 7.215029 s
+Unfinished games: 0
+gen: 36, uid: 536317256, fitness: 41894
+gen: 40, uid: 251259745, fitness: 51692
+gen: 36, uid: 844952004, fitness: 72044
+gen: 40, uid: 519976525, fitness: 72241
+gen: 40, uid: 173118140, fitness: 102598
+gen: 36, uid: 130669881, fitness: 112742
+gen: 40, uid: 1722514703, fitness: 132943
+gen: 36, uid: 1946382252, fitness: 153294
+gen 36 fitness avg: 94993.500000
+gen 40 fitness avg: 89868.500000
+gen 36 lost to gen 40
+
+
+Comparing gen 37 and gen 40 done, took: 7.348884 s
+Unfinished games: 0
+gen: 37, uid: 314688983, fitness: 61750
+gen: 40, uid: 251259745, fitness: 71891
+gen: 40, uid: 173118140, fitness: 82147
+gen: 37, uid: 1098865831, fitness: 82395
+gen: 40, uid: 519976525, fitness: 92684
+gen: 37, uid: 480946605, fitness: 102439
+gen: 40, uid: 1722514703, fitness: 112798
+gen: 37, uid: 762373103, fitness: 133291
+gen 37 fitness avg: 94968.750000
+gen 40 fitness avg: 89880.000000
+gen 37 lost to gen 40
+
+
+Comparing gen 38 and gen 40 done, took: 7.046718 s
+Unfinished games: 0
+gen: 38, uid: 1644776248, fitness: 31597
+gen: 40, uid: 251259745, fitness: 42340
+gen: 40, uid: 173118140, fitness: 92645
+gen: 38, uid: 442931248, fitness: 92790
+gen: 40, uid: 519976525, fitness: 93385
+gen: 40, uid: 1722514703, fitness: 112890
+gen: 38, uid: 643202333, fitness: 133690
+gen: 38, uid: 301063294, fitness: 144087
+gen 38 fitness avg: 100541.000000
+gen 40 fitness avg: 85315.000000
+gen 38 lost to gen 40
+
+
+Comparing gen 39 and gen 40 done, took: 7.124641 s
+Unfinished games: 0
+gen: 40, uid: 519976525, fitness: 41989
+gen: 39, uid: 773362593, fitness: 62541
+gen: 39, uid: 41719336, fitness: 82441
+gen: 39, uid: 265158675, fitness: 92739
+gen: 39, uid: 541566861, fitness: 102643
+gen: 40, uid: 1722514703, fitness: 112248
+gen: 40, uid: 251259745, fitness: 112543
+gen: 40, uid: 173118140, fitness: 132696
+gen 39 fitness avg: 85091.000000
+gen 40 fitness avg: 99869.000000
+gen 40 lost to gen 39
+
+----------------------------------------------------------------------------
+Generation: 41
+Playing done, took: 31.183988 s
+uid: 1509314419, fitness: 20880
+uid: 2068120519, fitness: 21179
+uid: 1766848493, fitness: 31030
+uid: 1115221447, fitness: 31232
+uid: 41719336, fitness: 31330
+uid: 1335735455, fitness: 31431
+uid: 810338959, fitness: 31474
+uid: 1106845863, fitness: 41182
+uid: 146523205, fitness: 41331
+uid: 1030146578, fitness: 41428
+
+Unfinished games: 0
+Average fitness across population: 61801.038462
+Crossover and mutation took: 3.396259 s
+----------------------------------------------------------------------------
+Generation: 42
+Playing done, took: 30.178582 s
+uid: 1115221447, fitness: 21283
+uid: 738968427, fitness: 21432
+uid: 93419456, fitness: 31126
+uid: 1362019808, fitness: 31180
+uid: 1169560100, fitness: 31379
+uid: 41719336, fitness: 41133
+uid: 146523205, fitness: 41227
+uid: 1509314419, fitness: 41427
+uid: 1471924233, fitness: 41427
+uid: 1897627462, fitness: 41577
+
+Unfinished games: 0
+Average fitness across population: 61838.615385
+Crossover and mutation took: 3.400732 s
+----------------------------------------------------------------------------
+Generation: 43
+Playing done, took: 30.478907 s
+uid: 110785536, fitness: 10882
+uid: 641446563, fitness: 11132
+uid: 480717777, fitness: 20929
+uid: 1439661357, fitness: 20933
+uid: 962867915, fitness: 21283
+uid: 1934666782, fitness: 31129
+uid: 901593921, fitness: 31281
+uid: 223933017, fitness: 31379
+uid: 2128560283, fitness: 31379
+uid: 556402698, fitness: 31380
+
+Unfinished games: 0
+Average fitness across population: 61811.307692
+Crossover and mutation took: 3.403722 s
+----------------------------------------------------------------------------
+Generation: 44
+Playing done, took: 30.475363 s
+uid: 1439661357, fitness: 21228
+uid: 1060241737, fitness: 31133
+uid: 994264431, fitness: 31135
+uid: 1747358443, fitness: 31231
+uid: 641446563, fitness: 31234
+uid: 454176070, fitness: 31329
+uid: 1143300280, fitness: 31330
+uid: 322579905, fitness: 31533
+uid: 1644738941, fitness: 41130
+uid: 110785536, fitness: 41429
+
+Unfinished games: 0
+Average fitness across population: 61798.750000
+Crossover and mutation took: 3.402292 s
+----------------------------------------------------------------------------
+Generation: 45
+Playing done, took: 30.867586 s
+uid: 1186303704, fitness: 10785
+uid: 322579905, fitness: 21181
+uid: 1307739557, fitness: 21184
+uid: 465664765, fitness: 30882
+uid: 825387897, fitness: 31282
+uid: 454176070, fitness: 31979
+uid: 994264431, fitness: 41282
+uid: 1318355820, fitness: 41382
+uid: 1917997997, fitness: 41427
+uid: 1143300280, fitness: 41578
+
+Unfinished games: 0
+Average fitness across population: 61773.884615
+Crossover and mutation took: 3.525509 s
+----------------------------------------------------------------------------
+Generation: 46
+Playing done, took: 31.495980 s
+uid: 505405953, fitness: 20532
+uid: 465664765, fitness: 20882
+uid: 1857034463, fitness: 21031
+uid: 322579905, fitness: 21081
+uid: 1308208588, fitness: 21084
+uid: 1921585787, fitness: 31178
+uid: 140526773, fitness: 31380
+uid: 1147040495, fitness: 40880
+uid: 103458372, fitness: 41232
+uid: 220034752, fitness: 41427
+
+Unfinished games: 0
+Average fitness across population: 61742.326923
+Crossover and mutation took: 3.464235 s
+----------------------------------------------------------------------------
+Generation: 47
+Playing done, took: 32.490429 s
+uid: 1671190868, fitness: 21030
+uid: 567802768, fitness: 21178
+uid: 17907527, fitness: 21333
+uid: 140526773, fitness: 30386
+uid: 1318587453, fitness: 30884
+uid: 474430401, fitness: 31182
+uid: 376145469, fitness: 31379
+uid: 322579905, fitness: 31427
+uid: 1921585787, fitness: 31630
+uid: 486095141, fitness: 41080
+
+Unfinished games: 1
+Average fitness across population: 69453.576923
+Crossover and mutation took: 3.409455 s
+----------------------------------------------------------------------------
+Generation: 48
+Playing done, took: 30.978060 s
+uid: 1563546172, fitness: 10487
+uid: 1483075536, fitness: 20733
+uid: 1536535518, fitness: 21032
+uid: 1982403063, fitness: 21430
+uid: 1771468511, fitness: 31084
+uid: 567802768, fitness: 31280
+uid: 1450735481, fitness: 40832
+uid: 1983184912, fitness: 41130
+uid: 452727025, fitness: 41131
+uid: 1033194296, fitness: 41234
+
+Unfinished games: 0
+Average fitness across population: 61701.000000
+Crossover and mutation took: 3.426094 s
+----------------------------------------------------------------------------
+Generation: 49
+Playing done, took: 30.970326 s
+uid: 109105688, fitness: 783
+uid: 1982403063, fitness: 11431
+uid: 1563546172, fitness: 21429
+uid: 645172518, fitness: 30933
+uid: 957578625, fitness: 31228
+uid: 1790694459, fitness: 31230
+uid: 2099227722, fitness: 31282
+uid: 1999364285, fitness: 41129
+uid: 1983184912, fitness: 41229
+uid: 546763284, fitness: 41278
+
+Unfinished games: 0
+Average fitness across population: 61739.326923
+Crossover and mutation took: 3.420711 s
+----------------------------------------------------------------------------
+Generation: 50
+Playing done, took: 30.686294 s
+uid: 1588815602, fitness: 532
+uid: 404263984, fitness: 10633
+uid: 1186053274, fitness: 21082
+uid: 546763284, fitness: 31034
+uid: 1790694459, fitness: 31385
+uid: 645172518, fitness: 31478
+uid: 154288194, fitness: 31481
+uid: 1982403063, fitness: 31580
+uid: 2037749992, fitness: 31728
+uid: 2012752117, fitness: 41179
+
+Unfinished games: 0
+Average fitness across population: 61788.307692
+Crossover and mutation took: 3.418414 s
+
+Comparing gen 1 and gen 50 done, took: 7.448714 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 21852
+gen: 50, uid: 1186053274, fitness: 41700
+gen: 50, uid: 404263984, fitness: 51952
+gen: 1, uid: 1590313938, fitness: 93427
+gen: 1, uid: 449906158, fitness: 112884
+gen: 50, uid: 1588815602, fitness: 123243
+gen: 1, uid: 1372739908, fitness: 133195
+gen: 1, uid: 1410405470, fitness: 163638
+gen 1 fitness avg: 125786.000000
+gen 50 fitness avg: 59686.750000
+gen 1 lost to gen 50
+
+
+Comparing gen 2 and gen 50 done, took: 7.528182 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 31350
+gen: 2, uid: 609899854, fitness: 61994
+gen: 50, uid: 1186053274, fitness: 62100
+gen: 50, uid: 404263984, fitness: 72396
+gen: 50, uid: 1588815602, fitness: 102543
+gen: 2, uid: 1322872257, fitness: 123531
+gen: 2, uid: 1410405470, fitness: 133783
+gen: 2, uid: 881839918, fitness: 153546
+gen 2 fitness avg: 118213.500000
+gen 50 fitness avg: 67097.250000
+gen 2 lost to gen 50
+
+
+Comparing gen 3 and gen 50 done, took: 7.251794 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 11347
+gen: 3, uid: 775333531, fitness: 51800
+gen: 50, uid: 404263984, fitness: 72048
+gen: 50, uid: 1186053274, fitness: 92446
+gen: 50, uid: 546763284, fitness: 112894
+gen: 3, uid: 1983385005, fitness: 113137
+gen: 3, uid: 1079291762, fitness: 123134
+gen: 3, uid: 1410405470, fitness: 164288
+gen 3 fitness avg: 113089.750000
+gen 50 fitness avg: 72183.750000
+gen 3 lost to gen 50
+
+
+Comparing gen 4 and gen 50 done, took: 7.010411 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 21599
+gen: 4, uid: 102035771, fitness: 61743
+gen: 50, uid: 404263984, fitness: 62190
+gen: 50, uid: 546763284, fitness: 102945
+gen: 4, uid: 899512455, fitness: 112993
+gen: 50, uid: 1186053274, fitness: 123244
+gen: 4, uid: 1691195314, fitness: 124088
+gen: 4, uid: 1868946774, fitness: 134234
+gen 4 fitness avg: 108264.500000
+gen 50 fitness avg: 77494.500000
+gen 4 lost to gen 50
+
+
+Comparing gen 5 and gen 50 done, took: 7.236742 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 52196
+gen: 5, uid: 636638383, fitness: 62197
+gen: 5, uid: 1884388166, fitness: 72583
+gen: 5, uid: 102035771, fitness: 92991
+gen: 50, uid: 404263984, fitness: 112892
+gen: 50, uid: 1588815602, fitness: 112941
+gen: 5, uid: 1038680060, fitness: 112996
+gen: 50, uid: 546763284, fitness: 123433
+gen 5 fitness avg: 85191.750000
+gen 50 fitness avg: 100365.500000
+gen 50 lost to gen 5
+
+
+Comparing gen 6 and gen 50 done, took: 7.299234 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 31997
+gen: 50, uid: 404263984, fitness: 72047
+gen: 6, uid: 1901628473, fitness: 82348
+gen: 50, uid: 1186053274, fitness: 102394
+gen: 6, uid: 2049873183, fitness: 102489
+gen: 6, uid: 2104840380, fitness: 103192
+gen: 50, uid: 546763284, fitness: 122544
+gen: 6, uid: 636638383, fitness: 122894
+gen 6 fitness avg: 102730.750000
+gen 50 fitness avg: 82245.500000
+gen 6 lost to gen 50
+
+
+Comparing gen 7 and gen 50 done, took: 6.978236 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 32096
+gen: 50, uid: 404263984, fitness: 51796
+gen: 50, uid: 1186053274, fitness: 72995
+gen: 50, uid: 546763284, fitness: 82690
+gen: 7, uid: 1975427348, fitness: 102694
+gen: 7, uid: 14872224, fitness: 112591
+gen: 7, uid: 981443849, fitness: 122794
+gen: 7, uid: 116507942, fitness: 164380
+gen 7 fitness avg: 125614.750000
+gen 50 fitness avg: 59894.250000
+gen 7 lost to gen 50
+
+
+Comparing gen 8 and gen 50 done, took: 7.141264 s
+Unfinished games: 0
+gen: 8, uid: 6180689, fitness: 41097
+gen: 50, uid: 546763284, fitness: 62041
+gen: 8, uid: 102035771, fitness: 82194
+gen: 50, uid: 1588815602, fitness: 82446
+gen: 50, uid: 1186053274, fitness: 102494
+gen: 50, uid: 404263984, fitness: 102846
+gen: 8, uid: 456504022, fitness: 103037
+gen: 8, uid: 1538676197, fitness: 164093
+gen 8 fitness avg: 97605.250000
+gen 50 fitness avg: 87456.750000
+gen 8 lost to gen 50
+
+
+Comparing gen 9 and gen 50 done, took: 6.867215 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 21749
+gen: 50, uid: 1588815602, fitness: 62397
+gen: 9, uid: 156397104, fitness: 72500
+gen: 50, uid: 546763284, fitness: 103437
+gen: 50, uid: 404263984, fitness: 112592
+gen: 9, uid: 2129878723, fitness: 113388
+gen: 9, uid: 293931840, fitness: 123138
+gen: 9, uid: 39146345, fitness: 133131
+gen 9 fitness avg: 110539.250000
+gen 50 fitness avg: 75043.750000
+gen 9 lost to gen 50
+
+
+Comparing gen 10 and gen 50 done, took: 6.982099 s
+Unfinished games: 0
+gen: 10, uid: 1201073523, fitness: 21848
+gen: 10, uid: 777743131, fitness: 52145
+gen: 50, uid: 404263984, fitness: 92942
+gen: 10, uid: 342137364, fitness: 102889
+gen: 50, uid: 1588815602, fitness: 103240
+gen: 10, uid: 1845803901, fitness: 113138
+gen: 50, uid: 1186053274, fitness: 123390
+gen: 50, uid: 546763284, fitness: 133640
+gen 10 fitness avg: 72505.000000
+gen 50 fitness avg: 113303.000000
+gen 50 lost to gen 10
+
+
+Comparing gen 11 and gen 50 done, took: 7.189797 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 21550
+gen: 11, uid: 1985230166, fitness: 62543
+gen: 11, uid: 199722600, fitness: 72194
+gen: 11, uid: 1499929149, fitness: 82189
+gen: 50, uid: 1588815602, fitness: 102994
+gen: 50, uid: 546763284, fitness: 113140
+gen: 50, uid: 1186053274, fitness: 132990
+gen: 11, uid: 1884238404, fitness: 153491
+gen 11 fitness avg: 92604.250000
+gen 50 fitness avg: 92668.500000
+gen 50 lost to gen 11
+
+
+Comparing gen 12 and gen 50 done, took: 7.054396 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 41691
+gen: 50, uid: 1186053274, fitness: 41895
+gen: 50, uid: 404263984, fitness: 72244
+gen: 12, uid: 1202907918, fitness: 102593
+gen: 50, uid: 546763284, fitness: 112943
+gen: 12, uid: 1499929149, fitness: 113485
+gen: 12, uid: 1726638829, fitness: 122946
+gen: 12, uid: 1565142344, fitness: 133194
+gen 12 fitness avg: 118054.500000
+gen 50 fitness avg: 67193.250000
+gen 12 lost to gen 50
+
+
+Comparing gen 13 and gen 50 done, took: 6.873149 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 41550
+gen: 13, uid: 1017724364, fitness: 52142
+gen: 50, uid: 546763284, fitness: 62294
+gen: 50, uid: 1588815602, fitness: 72388
+gen: 50, uid: 404263984, fitness: 102997
+gen: 13, uid: 32942080, fitness: 113143
+gen: 13, uid: 367321906, fitness: 144278
+gen: 13, uid: 1459016131, fitness: 153738
+gen 13 fitness avg: 115825.250000
+gen 50 fitness avg: 69807.250000
+gen 13 lost to gen 50
+
+
+Comparing gen 14 and gen 50 done, took: 7.200459 s
+Unfinished games: 0
+gen: 14, uid: 998855536, fitness: 21738
+gen: 50, uid: 1588815602, fitness: 72293
+gen: 50, uid: 1186053274, fitness: 92597
+gen: 50, uid: 404263984, fitness: 92794
+gen: 14, uid: 1024097147, fitness: 102592
+gen: 14, uid: 1102091616, fitness: 112545
+gen: 50, uid: 546763284, fitness: 112696
+gen: 14, uid: 275638151, fitness: 133487
+gen 14 fitness avg: 92590.500000
+gen 50 fitness avg: 92595.000000
+gen 50 lost to gen 14
+
+
+Comparing gen 15 and gen 50 done, took: 6.967509 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 11245
+gen: 15, uid: 688635345, fitness: 62247
+gen: 50, uid: 1186053274, fitness: 72544
+gen: 50, uid: 1588815602, fitness: 82536
+gen: 15, uid: 455120197, fitness: 102992
+gen: 15, uid: 2037886644, fitness: 103048
+gen: 50, uid: 546763284, fitness: 143591
+gen: 15, uid: 275638151, fitness: 163934
+gen 15 fitness avg: 108055.250000
+gen 50 fitness avg: 77479.000000
+gen 15 lost to gen 50
+
+
+Comparing gen 16 and gen 50 done, took: 7.237132 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 21741
+gen: 50, uid: 404263984, fitness: 52442
+gen: 50, uid: 1186053274, fitness: 62788
+gen: 16, uid: 1436884976, fitness: 71894
+gen: 16, uid: 859167902, fitness: 112891
+gen: 50, uid: 1588815602, fitness: 133340
+gen: 16, uid: 455120197, fitness: 143595
+gen: 16, uid: 1717437295, fitness: 143736
+gen 16 fitness avg: 118029.000000
+gen 50 fitness avg: 67577.750000
+gen 16 lost to gen 50
+
+
+Comparing gen 17 and gen 50 done, took: 7.210225 s
+Unfinished games: 0
+gen: 17, uid: 373409063, fitness: 72343
+gen: 17, uid: 129141432, fitness: 82397
+gen: 50, uid: 404263984, fitness: 82543
+gen: 17, uid: 236325622, fitness: 92997
+gen: 50, uid: 1588815602, fitness: 102592
+gen: 17, uid: 859167902, fitness: 102740
+gen: 50, uid: 546763284, fitness: 102789
+gen: 50, uid: 1186053274, fitness: 102989
+gen 17 fitness avg: 87619.250000
+gen 50 fitness avg: 97728.250000
+gen 50 lost to gen 17
+
+
+Comparing gen 18 and gen 50 done, took: 7.277583 s
+Unfinished games: 0
+gen: 18, uid: 373409063, fitness: 62348
+gen: 18, uid: 1535504753, fitness: 62393
+gen: 50, uid: 1588815602, fitness: 72142
+gen: 50, uid: 404263984, fitness: 72496
+gen: 50, uid: 1186053274, fitness: 112840
+gen: 50, uid: 546763284, fitness: 113485
+gen: 18, uid: 1624451738, fitness: 123294
+gen: 18, uid: 1264278232, fitness: 123342
+gen 18 fitness avg: 92844.250000
+gen 50 fitness avg: 92740.750000
+gen 18 lost to gen 50
+
+
+Comparing gen 19 and gen 50 done, took: 7.513495 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 41847
+gen: 19, uid: 1566681063, fitness: 42096
+gen: 50, uid: 404263984, fitness: 61695
+gen: 19, uid: 1707127078, fitness: 92587
+gen: 50, uid: 1588815602, fitness: 92693
+gen: 50, uid: 1186053274, fitness: 122639
+gen: 19, uid: 1508699209, fitness: 122949
+gen: 19, uid: 532935567, fitness: 163541
+gen 19 fitness avg: 105293.250000
+gen 50 fitness avg: 79718.500000
+gen 19 lost to gen 50
+
+
+Comparing gen 20 and gen 50 done, took: 7.403569 s
+Unfinished games: 0
+gen: 20, uid: 889091339, fitness: 52040
+gen: 50, uid: 1588815602, fitness: 72191
+gen: 50, uid: 1186053274, fitness: 72343
+gen: 20, uid: 709864227, fitness: 81899
+gen: 50, uid: 404263984, fitness: 92693
+gen: 50, uid: 546763284, fitness: 112695
+gen: 20, uid: 2090970977, fitness: 122799
+gen: 20, uid: 195682722, fitness: 133393
+gen 20 fitness avg: 97532.750000
+gen 50 fitness avg: 87480.500000
+gen 20 lost to gen 50
+
+
+Comparing gen 21 and gen 50 done, took: 7.071716 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 31945
+gen: 21, uid: 759934790, fitness: 62197
+gen: 50, uid: 1588815602, fitness: 62491
+gen: 50, uid: 404263984, fitness: 72542
+gen: 50, uid: 1186053274, fitness: 93185
+gen: 21, uid: 142744137, fitness: 133638
+gen: 21, uid: 215812676, fitness: 143443
+gen: 21, uid: 463408482, fitness: 143444
+gen 21 fitness avg: 120680.500000
+gen 50 fitness avg: 65040.750000
+gen 21 lost to gen 50
+
+
+Comparing gen 22 and gen 50 done, took: 7.467998 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 41601
+gen: 22, uid: 479606159, fitness: 72092
+gen: 50, uid: 1186053274, fitness: 82146
+gen: 22, uid: 2128468846, fitness: 92547
+gen: 50, uid: 546763284, fitness: 92692
+gen: 22, uid: 1773721540, fitness: 101795
+gen: 50, uid: 1588815602, fitness: 103141
+gen: 22, uid: 889091339, fitness: 153594
+gen 22 fitness avg: 105007.000000
+gen 50 fitness avg: 79895.000000
+gen 22 lost to gen 50
+
+
+Comparing gen 23 and gen 50 done, took: 7.038301 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 42592
+gen: 23, uid: 339425511, fitness: 52050
+gen: 23, uid: 2020034786, fitness: 82197
+gen: 50, uid: 1588815602, fitness: 82690
+gen: 50, uid: 404263984, fitness: 82742
+gen: 23, uid: 707560100, fitness: 82836
+gen: 50, uid: 546763284, fitness: 144135
+gen: 23, uid: 1863873683, fitness: 174437
+gen 23 fitness avg: 97880.000000
+gen 50 fitness avg: 88039.750000
+gen 23 lost to gen 50
+
+
+Comparing gen 24 and gen 50 done, took: 6.958539 s
+Unfinished games: 0
+gen: 24, uid: 2046351730, fitness: 52446
+gen: 50, uid: 404263984, fitness: 72297
+gen: 50, uid: 1186053274, fitness: 72390
+gen: 50, uid: 546763284, fitness: 82641
+gen: 24, uid: 60534648, fitness: 82744
+gen: 24, uid: 1988902058, fitness: 112840
+gen: 50, uid: 1588815602, fitness: 133442
+gen: 24, uid: 2118228951, fitness: 133738
+gen 24 fitness avg: 95442.000000
+gen 50 fitness avg: 90192.500000
+gen 24 lost to gen 50
+
+
+Comparing gen 25 and gen 50 done, took: 7.235066 s
+Unfinished games: 0
+gen: 25, uid: 163262404, fitness: 41948
+gen: 50, uid: 404263984, fitness: 51798
+gen: 50, uid: 546763284, fitness: 51996
+gen: 50, uid: 1588815602, fitness: 92245
+gen: 25, uid: 491616364, fitness: 112795
+gen: 25, uid: 1823198775, fitness: 123187
+gen: 25, uid: 2073651071, fitness: 123341
+gen: 50, uid: 1186053274, fitness: 143190
+gen 25 fitness avg: 100317.750000
+gen 50 fitness avg: 84807.250000
+gen 25 lost to gen 50
+
+
+Comparing gen 26 and gen 50 done, took: 7.061578 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 31946
+gen: 50, uid: 1186053274, fitness: 62389
+gen: 26, uid: 756529530, fitness: 82392
+gen: 26, uid: 854772668, fitness: 92591
+gen: 50, uid: 1588815602, fitness: 102691
+gen: 26, uid: 121027183, fitness: 112846
+gen: 50, uid: 546763284, fitness: 113535
+gen: 26, uid: 475598569, fitness: 143542
+gen 26 fitness avg: 107842.750000
+gen 50 fitness avg: 77640.250000
+gen 26 lost to gen 50
+
+
+Comparing gen 27 and gen 50 done, took: 7.203761 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 31696
+gen: 27, uid: 433175475, fitness: 82443
+gen: 50, uid: 1588815602, fitness: 82790
+gen: 27, uid: 1327745682, fitness: 92398
+gen: 50, uid: 546763284, fitness: 92543
+gen: 27, uid: 1298432242, fitness: 113092
+gen: 27, uid: 624250961, fitness: 122839
+gen: 50, uid: 404263984, fitness: 122848
+gen 27 fitness avg: 102693.000000
+gen 50 fitness avg: 82469.250000
+gen 27 lost to gen 50
+
+
+Comparing gen 28 and gen 50 done, took: 7.180726 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 52143
+gen: 28, uid: 640181650, fitness: 82441
+gen: 50, uid: 404263984, fitness: 92095
+gen: 50, uid: 1588815602, fitness: 92592
+gen: 50, uid: 546763284, fitness: 93042
+gen: 28, uid: 647429818, fitness: 102641
+gen: 28, uid: 1208600164, fitness: 112545
+gen: 28, uid: 247736863, fitness: 112744
+gen 28 fitness avg: 102592.750000
+gen 50 fitness avg: 82468.000000
+gen 28 lost to gen 50
+
+
+Comparing gen 29 and gen 50 done, took: 7.248395 s
+Unfinished games: 0
+gen: 29, uid: 247736863, fitness: 51850
+gen: 50, uid: 404263984, fitness: 52198
+gen: 50, uid: 546763284, fitness: 72138
+gen: 50, uid: 1588815602, fitness: 72640
+gen: 50, uid: 1186053274, fitness: 82794
+gen: 29, uid: 1739569302, fitness: 113037
+gen: 29, uid: 1435450585, fitness: 133493
+gen: 29, uid: 695245106, fitness: 163490
+gen 29 fitness avg: 115467.500000
+gen 50 fitness avg: 69942.500000
+gen 29 lost to gen 50
+
+
+Comparing gen 30 and gen 50 done, took: 7.239700 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 51892
+gen: 50, uid: 1588815602, fitness: 52189
+gen: 30, uid: 1432071287, fitness: 92450
+gen: 30, uid: 699247464, fitness: 102595
+gen: 50, uid: 546763284, fitness: 103089
+gen: 50, uid: 1186053274, fitness: 103337
+gen: 30, uid: 147992401, fitness: 112642
+gen: 30, uid: 248186322, fitness: 122944
+gen 30 fitness avg: 107657.750000
+gen 50 fitness avg: 77626.750000
+gen 30 lost to gen 50
+
+
+Comparing gen 31 and gen 50 done, took: 6.960301 s
+Unfinished games: 0
+gen: 31, uid: 907673531, fitness: 82595
+gen: 31, uid: 1872125354, fitness: 83140
+gen: 50, uid: 404263984, fitness: 92241
+gen: 31, uid: 1384204817, fitness: 92595
+gen: 50, uid: 546763284, fitness: 92937
+gen: 50, uid: 1588815602, fitness: 93138
+gen: 31, uid: 147992401, fitness: 102742
+gen: 50, uid: 1186053274, fitness: 102938
+gen 31 fitness avg: 90268.000000
+gen 50 fitness avg: 95313.500000
+gen 50 lost to gen 31
+
+
+Comparing gen 32 and gen 50 done, took: 6.982903 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 52243
+gen: 50, uid: 1186053274, fitness: 72444
+gen: 32, uid: 1943022039, fitness: 72542
+gen: 32, uid: 2025215966, fitness: 82792
+gen: 32, uid: 980629202, fitness: 92940
+gen: 50, uid: 1588815602, fitness: 122944
+gen: 50, uid: 404263984, fitness: 123138
+gen: 32, uid: 40363780, fitness: 123196
+gen 32 fitness avg: 92867.500000
+gen 50 fitness avg: 92692.250000
+gen 32 lost to gen 50
+
+
+Comparing gen 33 and gen 50 done, took: 7.168677 s
+Unfinished games: 0
+gen: 33, uid: 1080101558, fitness: 61896
+gen: 50, uid: 1186053274, fitness: 81995
+gen: 33, uid: 1245239236, fitness: 82443
+gen: 50, uid: 404263984, fitness: 92496
+gen: 33, uid: 2061503421, fitness: 92594
+gen: 50, uid: 546763284, fitness: 102592
+gen: 33, uid: 1872125354, fitness: 103193
+gen: 50, uid: 1588815602, fitness: 123092
+gen 33 fitness avg: 85031.500000
+gen 50 fitness avg: 100043.750000
+gen 50 lost to gen 33
+
+
+Comparing gen 34 and gen 50 done, took: 7.023267 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 51944
+gen: 34, uid: 1245239236, fitness: 72740
+gen: 34, uid: 2140297496, fitness: 92543
+gen: 50, uid: 1186053274, fitness: 92742
+gen: 50, uid: 546763284, fitness: 92940
+gen: 34, uid: 1535560748, fitness: 112840
+gen: 50, uid: 1588815602, fitness: 112939
+gen: 34, uid: 1112151237, fitness: 112947
+gen 34 fitness avg: 97767.500000
+gen 50 fitness avg: 87641.250000
+gen 34 lost to gen 50
+
+
+Comparing gen 35 and gen 50 done, took: 7.076416 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 72192
+gen: 35, uid: 675329758, fitness: 72251
+gen: 35, uid: 1699397713, fitness: 81893
+gen: 35, uid: 331789857, fitness: 82643
+gen: 50, uid: 404263984, fitness: 92443
+gen: 50, uid: 546763284, fitness: 92594
+gen: 50, uid: 1186053274, fitness: 112990
+gen: 35, uid: 1839002177, fitness: 132793
+gen 35 fitness avg: 92395.000000
+gen 50 fitness avg: 92554.750000
+gen 50 lost to gen 35
+
+
+Comparing gen 36 and gen 50 done, took: 7.381041 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 72193
+gen: 36, uid: 536317256, fitness: 72244
+gen: 36, uid: 844952004, fitness: 82146
+gen: 36, uid: 130669881, fitness: 82297
+gen: 50, uid: 1588815602, fitness: 92739
+gen: 36, uid: 1946382252, fitness: 92896
+gen: 50, uid: 546763284, fitness: 122739
+gen: 50, uid: 404263984, fitness: 122848
+gen 36 fitness avg: 82395.750000
+gen 50 fitness avg: 102629.750000
+gen 50 lost to gen 36
+
+
+Comparing gen 37 and gen 50 done, took: 7.242076 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 62193
+gen: 50, uid: 1588815602, fitness: 62294
+gen: 37, uid: 314688983, fitness: 72150
+gen: 50, uid: 1186053274, fitness: 82339
+gen: 37, uid: 762373103, fitness: 92939
+gen: 37, uid: 480946605, fitness: 112895
+gen: 50, uid: 404263984, fitness: 122648
+gen: 37, uid: 1098865831, fitness: 133091
+gen 37 fitness avg: 102768.750000
+gen 50 fitness avg: 82368.500000
+gen 37 lost to gen 50
+
+
+Comparing gen 38 and gen 50 done, took: 7.107319 s
+Unfinished games: 0
+gen: 38, uid: 442931248, fitness: 21498
+gen: 38, uid: 301063294, fitness: 82393
+gen: 50, uid: 1588815602, fitness: 82738
+gen: 50, uid: 404263984, fitness: 82791
+gen: 50, uid: 546763284, fitness: 82939
+gen: 50, uid: 1186053274, fitness: 102492
+gen: 38, uid: 1644776248, fitness: 122696
+gen: 38, uid: 643202333, fitness: 163794
+gen 38 fitness avg: 97595.250000
+gen 50 fitness avg: 87740.000000
+gen 38 lost to gen 50
+
+
+Comparing gen 39 and gen 50 done, took: 7.102822 s
+Unfinished games: 0
+gen: 39, uid: 265158675, fitness: 52095
+gen: 50, uid: 404263984, fitness: 71794
+gen: 50, uid: 546763284, fitness: 72397
+gen: 39, uid: 773362593, fitness: 82487
+gen: 39, uid: 41719336, fitness: 92593
+gen: 50, uid: 1186053274, fitness: 113485
+gen: 50, uid: 1588815602, fitness: 122992
+gen: 39, uid: 541566861, fitness: 133247
+gen 39 fitness avg: 90105.500000
+gen 50 fitness avg: 95167.000000
+gen 50 lost to gen 39
+
+
+Comparing gen 40 and gen 50 done, took: 7.258230 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 51595
+gen: 50, uid: 1588815602, fitness: 61845
+gen: 50, uid: 404263984, fitness: 82445
+gen: 40, uid: 519976525, fitness: 92141
+gen: 50, uid: 546763284, fitness: 92391
+gen: 40, uid: 173118140, fitness: 102846
+gen: 40, uid: 251259745, fitness: 112741
+gen: 40, uid: 1722514703, fitness: 142698
+gen 40 fitness avg: 112606.500000
+gen 50 fitness avg: 72069.000000
+gen 40 lost to gen 50
+
+
+Comparing gen 41 and gen 50 done, took: 7.249812 s
+Unfinished games: 0
+gen: 41, uid: 1115221447, fitness: 31798
+gen: 41, uid: 1766848493, fitness: 52145
+gen: 50, uid: 1588815602, fitness: 72443
+gen: 41, uid: 1509314419, fitness: 83040
+gen: 41, uid: 2068120519, fitness: 112894
+gen: 50, uid: 1186053274, fitness: 113138
+gen: 50, uid: 546763284, fitness: 123441
+gen: 50, uid: 404263984, fitness: 153247
+gen 41 fitness avg: 69969.250000
+gen 50 fitness avg: 115567.250000
+gen 50 lost to gen 41
+
+
+Comparing gen 42 and gen 50 done, took: 7.304942 s
+Unfinished games: 0
+gen: 50, uid: 1588815602, fitness: 72041
+gen: 42, uid: 93419456, fitness: 72543
+gen: 42, uid: 1362019808, fitness: 82296
+gen: 50, uid: 546763284, fitness: 92144
+gen: 42, uid: 1115221447, fitness: 92242
+gen: 50, uid: 404263984, fitness: 102793
+gen: 42, uid: 738968427, fitness: 112795
+gen: 50, uid: 1186053274, fitness: 112995
+gen 42 fitness avg: 89969.000000
+gen 50 fitness avg: 94993.250000
+gen 50 lost to gen 42
+
+
+Comparing gen 43 and gen 50 done, took: 7.106385 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 62243
+gen: 43, uid: 1439661357, fitness: 62544
+gen: 43, uid: 641446563, fitness: 72542
+gen: 43, uid: 110785536, fitness: 82092
+gen: 50, uid: 1186053274, fitness: 82687
+gen: 43, uid: 480717777, fitness: 122840
+gen: 50, uid: 546763284, fitness: 123191
+gen: 50, uid: 1588815602, fitness: 132894
+gen 43 fitness avg: 85004.500000
+gen 50 fitness avg: 100253.750000
+gen 50 lost to gen 43
+
+
+Comparing gen 44 and gen 50 done, took: 7.341866 s
+Unfinished games: 0
+gen: 50, uid: 546763284, fitness: 51895
+gen: 44, uid: 1060241737, fitness: 61596
+gen: 44, uid: 1439661357, fitness: 72644
+gen: 50, uid: 1588815602, fitness: 91946
+gen: 50, uid: 404263984, fitness: 91998
+gen: 44, uid: 994264431, fitness: 102043
+gen: 44, uid: 1747358443, fitness: 102348
+gen: 50, uid: 1186053274, fitness: 163143
+gen 44 fitness avg: 84657.750000
+gen 50 fitness avg: 99745.500000
+gen 50 lost to gen 44
+
+
+Comparing gen 45 and gen 50 done, took: 6.996346 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 62194
+gen: 45, uid: 1307739557, fitness: 62396
+gen: 45, uid: 322579905, fitness: 82342
+gen: 45, uid: 465664765, fitness: 92793
+gen: 50, uid: 1588815602, fitness: 92943
+gen: 45, uid: 1186303704, fitness: 102546
+gen: 50, uid: 1186053274, fitness: 113734
+gen: 50, uid: 546763284, fitness: 133393
+gen 45 fitness avg: 85019.250000
+gen 50 fitness avg: 100566.000000
+gen 50 lost to gen 45
+
+
+Comparing gen 46 and gen 50 done, took: 7.124947 s
+Unfinished games: 0
+gen: 50, uid: 404263984, fitness: 11150
+gen: 46, uid: 1857034463, fitness: 72891
+gen: 46, uid: 322579905, fitness: 82738
+gen: 50, uid: 1588815602, fitness: 82892
+gen: 46, uid: 465664765, fitness: 112787
+gen: 50, uid: 1186053274, fitness: 113039
+gen: 46, uid: 505405953, fitness: 123146
+gen: 50, uid: 546763284, fitness: 143741
+gen 46 fitness avg: 97890.500000
+gen 50 fitness avg: 87705.500000
+gen 46 lost to gen 50
+
+
+Comparing gen 47 and gen 50 done, took: 8.363558 s
+Unfinished games: 1
+gen: 50, uid: 546763284, fitness: 51548
+gen: 47, uid: 140526773, fitness: 72595
+gen: 50, uid: 1588815602, fitness: 92441
+gen: 50, uid: 404263984, fitness: 123391
+gen: 47, uid: 567802768, fitness: 163036
+gen: 50, uid: 1186053274, fitness: 183434
+gen: 47, uid: 17907527, fitness: 193139
+gen: 47, uid: 1671190868, fitness: 263837
+gen 47 fitness avg: 173151.750000
+gen 50 fitness avg: 112703.500000
+gen 47 lost to gen 50
+
+
+Comparing gen 48 and gen 50 done, took: 7.008151 s
+Unfinished games: 0
+gen: 48, uid: 1483075536, fitness: 41797
+gen: 50, uid: 404263984, fitness: 61845
+gen: 48, uid: 1563546172, fitness: 62343
+gen: 50, uid: 1186053274, fitness: 82441
+gen: 48, uid: 1982403063, fitness: 92444
+gen: 50, uid: 1588815602, fitness: 113092
+gen: 48, uid: 1536535518, fitness: 143493
+gen: 50, uid: 546763284, fitness: 143589
+gen 48 fitness avg: 85019.250000
+gen 50 fitness avg: 100241.750000
+gen 50 lost to gen 48
+
+
+Comparing gen 49 and gen 50 done, took: 7.296068 s
+Unfinished games: 0
+gen: 49, uid: 109105688, fitness: 51697
+gen: 49, uid: 1982403063, fitness: 51699
+gen: 50, uid: 1588815602, fitness: 62047
+gen: 49, uid: 1563546172, fitness: 102494
+gen: 50, uid: 404263984, fitness: 102842
+gen: 49, uid: 645172518, fitness: 112594
+gen: 50, uid: 1186053274, fitness: 112793
+gen: 50, uid: 546763284, fitness: 143240
+gen 49 fitness avg: 79621.000000
+gen 50 fitness avg: 105230.500000
+gen 50 lost to gen 49
+
+----------------------------------------------------------------------------
+Generation: 51
+Playing done, took: 32.166811 s
+uid: 801535044, fitness: 11028
+uid: 1137776032, fitness: 20531
+uid: 1050782977, fitness: 21081
+uid: 844945457, fitness: 31082
+uid: 1790694459, fitness: 31230
+uid: 759776732, fitness: 31231
+uid: 546763284, fitness: 31331
+uid: 645172518, fitness: 41229
+uid: 67732635, fitness: 41279
+uid: 1803882417, fitness: 41432
+
+Unfinished games: 1
+Average fitness across population: 69478.288462
+Crossover and mutation took: 3.404312 s
+----------------------------------------------------------------------------
+Generation: 52
+Playing done, took: 31.083436 s
+uid: 1766621417, fitness: 20984
+uid: 645172518, fitness: 21080
+uid: 1803882417, fitness: 21380
+uid: 1592002709, fitness: 31279
+uid: 1465080186, fitness: 31281
+uid: 1212391416, fitness: 31378
+uid: 2073441099, fitness: 31428
+uid: 983989906, fitness: 41129
+uid: 1627516413, fitness: 41229
+uid: 1636536432, fitness: 41281
+
+Unfinished games: 0
+Average fitness across population: 61654.153846
+Crossover and mutation took: 3.396208 s
+----------------------------------------------------------------------------
+Generation: 53
+Playing done, took: 32.604593 s
+uid: 2125264354, fitness: 20781
+uid: 38650760, fitness: 20935
+uid: 73462823, fitness: 21085
+uid: 1616201416, fitness: 30982
+uid: 1592002709, fitness: 31331
+uid: 1255867977, fitness: 31334
+uid: 176125103, fitness: 31380
+uid: 1636536432, fitness: 31381
+uid: 1465080186, fitness: 41180
+uid: 1951888771, fitness: 41330
+
+Unfinished games: 1
+Average fitness across population: 69461.250000
+Crossover and mutation took: 3.425596 s
+----------------------------------------------------------------------------
+Generation: 54
+Playing done, took: 31.287915 s
+uid: 149200700, fitness: 10881
+uid: 763592606, fitness: 10932
+uid: 1245515529, fitness: 11081
+uid: 1924338936, fitness: 21032
+uid: 290530001, fitness: 31230
+uid: 812712168, fitness: 31231
+uid: 27906781, fitness: 31330
+uid: 1616201416, fitness: 31577
+uid: 13486067, fitness: 41081
+uid: 1157760002, fitness: 41134
+
+Unfinished games: 0
+Average fitness across population: 61739.634615
+Crossover and mutation took: 3.425816 s
+----------------------------------------------------------------------------
+Generation: 55
+Playing done, took: 31.083329 s
+uid: 1177957121, fitness: 10881
+uid: 100766510, fitness: 11032
+uid: 1157760002, fitness: 21033
+uid: 839135484, fitness: 21180
+uid: 1658995159, fitness: 31182
+uid: 763592606, fitness: 31529
+uid: 1455737661, fitness: 31579
+uid: 666680660, fitness: 41130
+uid: 1688999738, fitness: 41230
+uid: 27906781, fitness: 41331
+
+Unfinished games: 0
+Average fitness across population: 61709.000000
+Crossover and mutation took: 3.394327 s
+----------------------------------------------------------------------------
+Generation: 56
+Playing done, took: 32.174439 s
+uid: 447865610, fitness: 20780
+uid: 172124276, fitness: 21032
+uid: 1741543758, fitness: 21082
+uid: 89714224, fitness: 21084
+uid: 32190777, fitness: 21278
+uid: 1319256331, fitness: 31229
+uid: 794031577, fitness: 41426
+uid: 763592606, fitness: 41726
+uid: 1020724153, fitness: 51427
+uid: 1580942014, fitness: 51479
+
+Unfinished games: 1
+Average fitness across population: 69490.903846
+Crossover and mutation took: 3.402364 s
+----------------------------------------------------------------------------
+Generation: 57
+Playing done, took: 31.370314 s
+uid: 1349939858, fitness: 21130
+uid: 613172400, fitness: 21179
+uid: 89714224, fitness: 31135
+uid: 1580942014, fitness: 31329
+uid: 2030817385, fitness: 31332
+uid: 1520060787, fitness: 31381
+uid: 1800393611, fitness: 40930
+uid: 351163453, fitness: 41031
+uid: 172124276, fitness: 41080
+uid: 699772901, fitness: 41284
+
+Unfinished games: 0
+Average fitness across population: 61714.769231
+Crossover and mutation took: 3.397104 s
+----------------------------------------------------------------------------
+Generation: 58
+Playing done, took: 30.702220 s
+uid: 830454212, fitness: 10784
+uid: 1349939858, fitness: 10882
+uid: 351163453, fitness: 10931
+uid: 1332130067, fitness: 21031
+uid: 1008367955, fitness: 31132
+uid: 1051671239, fitness: 31379
+uid: 2030817385, fitness: 31528
+uid: 769659302, fitness: 41428
+uid: 1288188464, fitness: 41477
+uid: 89714224, fitness: 41629
+
+Unfinished games: 0
+Average fitness across population: 61688.923077
+Crossover and mutation took: 3.394442 s
+----------------------------------------------------------------------------
+Generation: 59
+Playing done, took: 30.355462 s
+uid: 437056555, fitness: 10831
+uid: 1464058304, fitness: 10880
+uid: 255992545, fitness: 21177
+uid: 1749098599, fitness: 21280
+uid: 1349939858, fitness: 31178
+uid: 541110891, fitness: 31233
+uid: 1598544377, fitness: 31583
+uid: 674414751, fitness: 41379
+uid: 991843994, fitness: 41430
+uid: 1217684605, fitness: 41527
+
+Unfinished games: 0
+Average fitness across population: 61797.980769
+Crossover and mutation took: 3.394144 s
+----------------------------------------------------------------------------
+Generation: 60
+Playing done, took: 30.329428 s
+uid: 1947585480, fitness: 10786
+uid: 1017609927, fitness: 20932
+uid: 585489309, fitness: 20980
+uid: 1287465468, fitness: 31533
+uid: 1349939858, fitness: 31581
+uid: 155318052, fitness: 41081
+uid: 1598544377, fitness: 41180
+uid: 1971299131, fitness: 41231
+uid: 670619861, fitness: 41331
+uid: 1252791608, fitness: 41383
+
+Unfinished games: 0
+Average fitness across population: 61769.269231
+Crossover and mutation took: 3.401532 s
+
+Comparing gen 1 and gen 60 done, took: 7.409721 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 41702
+gen: 60, uid: 585489309, fitness: 41795
+gen: 60, uid: 1017609927, fitness: 62003
+gen: 60, uid: 1287465468, fitness: 72750
+gen: 1, uid: 449906158, fitness: 93186
+gen: 1, uid: 1410405470, fitness: 112747
+gen: 1, uid: 1372739908, fitness: 153883
+gen: 1, uid: 1590313938, fitness: 163629
+gen 1 fitness avg: 130861.250000
+gen 60 fitness avg: 54562.500000
+gen 1 lost to gen 60
+
+
+Comparing gen 2 and gen 60 done, took: 7.116489 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 41549
+gen: 60, uid: 1017609927, fitness: 62247
+gen: 2, uid: 881839918, fitness: 82043
+gen: 60, uid: 1947585480, fitness: 82393
+gen: 2, uid: 1322872257, fitness: 102992
+gen: 60, uid: 585489309, fitness: 103094
+gen: 2, uid: 609899854, fitness: 133539
+gen: 2, uid: 1410405470, fitness: 133988
+gen 2 fitness avg: 113140.500000
+gen 60 fitness avg: 72320.750000
+gen 2 lost to gen 60
+
+
+Comparing gen 3 and gen 60 done, took: 7.313746 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 41796
+gen: 60, uid: 1017609927, fitness: 41849
+gen: 60, uid: 1947585480, fitness: 72348
+gen: 3, uid: 775333531, fitness: 92594
+gen: 3, uid: 1983385005, fitness: 102190
+gen: 60, uid: 585489309, fitness: 113046
+gen: 3, uid: 1079291762, fitness: 133384
+gen: 3, uid: 1410405470, fitness: 143989
+gen 3 fitness avg: 118039.250000
+gen 60 fitness avg: 67259.750000
+gen 3 lost to gen 60
+
+
+Comparing gen 4 and gen 60 done, took: 7.361079 s
+Unfinished games: 0
+gen: 4, uid: 899512455, fitness: 21007
+gen: 60, uid: 1017609927, fitness: 72199
+gen: 60, uid: 1287465468, fitness: 82098
+gen: 60, uid: 1947585480, fitness: 82645
+gen: 60, uid: 585489309, fitness: 92492
+gen: 4, uid: 1691195314, fitness: 102994
+gen: 4, uid: 1868946774, fitness: 133628
+gen: 4, uid: 102035771, fitness: 153687
+gen 4 fitness avg: 102829.000000
+gen 60 fitness avg: 82358.500000
+gen 4 lost to gen 60
+
+
+Comparing gen 5 and gen 60 done, took: 7.217934 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 11149
+gen: 60, uid: 1017609927, fitness: 31701
+gen: 5, uid: 102035771, fitness: 82891
+gen: 60, uid: 1287465468, fitness: 92791
+gen: 60, uid: 585489309, fitness: 92793
+gen: 5, uid: 636638383, fitness: 123036
+gen: 5, uid: 1884388166, fitness: 153779
+gen: 5, uid: 1038680060, fitness: 153946
+gen 5 fitness avg: 128413.000000
+gen 60 fitness avg: 57108.500000
+gen 5 lost to gen 60
+
+
+Comparing gen 6 and gen 60 done, took: 7.049647 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 61598
+gen: 60, uid: 585489309, fitness: 72846
+gen: 6, uid: 636638383, fitness: 82644
+gen: 60, uid: 1017609927, fitness: 92694
+gen: 60, uid: 1947585480, fitness: 102644
+gen: 6, uid: 2049873183, fitness: 103485
+gen: 6, uid: 2104840380, fitness: 113092
+gen: 6, uid: 1901628473, fitness: 113193
+gen 6 fitness avg: 103103.500000
+gen 60 fitness avg: 82445.500000
+gen 6 lost to gen 60
+
+
+Comparing gen 7 and gen 60 done, took: 7.113579 s
+Unfinished games: 0
+gen: 7, uid: 981443849, fitness: 31649
+gen: 60, uid: 1947585480, fitness: 41551
+gen: 60, uid: 1287465468, fitness: 61997
+gen: 60, uid: 585489309, fitness: 82843
+gen: 60, uid: 1017609927, fitness: 113239
+gen: 7, uid: 116507942, fitness: 122993
+gen: 7, uid: 14872224, fitness: 133585
+gen: 7, uid: 1975427348, fitness: 153789
+gen 7 fitness avg: 110504.000000
+gen 60 fitness avg: 74907.500000
+gen 7 lost to gen 60
+
+
+Comparing gen 8 and gen 60 done, took: 7.233701 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 41798
+gen: 8, uid: 6180689, fitness: 72643
+gen: 60, uid: 585489309, fitness: 92294
+gen: 8, uid: 102035771, fitness: 92693
+gen: 60, uid: 1947585480, fitness: 92842
+gen: 60, uid: 1017609927, fitness: 103141
+gen: 8, uid: 1538676197, fitness: 113149
+gen: 8, uid: 456504022, fitness: 133093
+gen 8 fitness avg: 102894.500000
+gen 60 fitness avg: 82518.750000
+gen 8 lost to gen 60
+
+
+Comparing gen 9 and gen 60 done, took: 6.933979 s
+Unfinished games: 0
+gen: 60, uid: 585489309, fitness: 52140
+gen: 60, uid: 1017609927, fitness: 52395
+gen: 9, uid: 156397104, fitness: 72798
+gen: 60, uid: 1947585480, fitness: 92394
+gen: 60, uid: 1287465468, fitness: 92644
+gen: 9, uid: 39146345, fitness: 113983
+gen: 9, uid: 2129878723, fitness: 123492
+gen: 9, uid: 293931840, fitness: 144087
+gen 9 fitness avg: 113590.000000
+gen 60 fitness avg: 72393.250000
+gen 9 lost to gen 60
+
+
+Comparing gen 10 and gen 60 done, took: 7.186658 s
+Unfinished games: 0
+gen: 60, uid: 585489309, fitness: 21696
+gen: 60, uid: 1287465468, fitness: 41799
+gen: 60, uid: 1017609927, fitness: 82247
+gen: 60, uid: 1947585480, fitness: 92298
+gen: 10, uid: 1845803901, fitness: 102844
+gen: 10, uid: 777743131, fitness: 123291
+gen: 10, uid: 1201073523, fitness: 133191
+gen: 10, uid: 342137364, fitness: 143388
+gen 10 fitness avg: 125678.500000
+gen 60 fitness avg: 59510.000000
+gen 10 lost to gen 60
+
+
+Comparing gen 11 and gen 60 done, took: 7.169653 s
+Unfinished games: 0
+gen: 11, uid: 199722600, fitness: 41545
+gen: 60, uid: 1947585480, fitness: 72344
+gen: 60, uid: 1017609927, fitness: 92293
+gen: 60, uid: 1287465468, fitness: 92741
+gen: 11, uid: 1884238404, fitness: 102798
+gen: 11, uid: 1985230166, fitness: 103244
+gen: 11, uid: 1499929149, fitness: 113339
+gen: 60, uid: 585489309, fitness: 123084
+gen 11 fitness avg: 90231.500000
+gen 60 fitness avg: 95115.500000
+gen 60 lost to gen 11
+
+
+Comparing gen 12 and gen 60 done, took: 7.113343 s
+Unfinished games: 0
+gen: 12, uid: 1499929149, fitness: 52140
+gen: 60, uid: 1947585480, fitness: 72144
+gen: 60, uid: 1017609927, fitness: 82495
+gen: 60, uid: 585489309, fitness: 92691
+gen: 60, uid: 1287465468, fitness: 102194
+gen: 12, uid: 1202907918, fitness: 102342
+gen: 12, uid: 1726638829, fitness: 112746
+gen: 12, uid: 1565142344, fitness: 122692
+gen 12 fitness avg: 97480.000000
+gen 60 fitness avg: 87381.000000
+gen 12 lost to gen 60
+
+
+Comparing gen 13 and gen 60 done, took: 7.066215 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 51848
+gen: 60, uid: 585489309, fitness: 62096
+gen: 60, uid: 1947585480, fitness: 72442
+gen: 60, uid: 1287465468, fitness: 72442
+gen: 13, uid: 1017724364, fitness: 92687
+gen: 13, uid: 367321906, fitness: 113189
+gen: 13, uid: 1459016131, fitness: 133437
+gen: 13, uid: 32942080, fitness: 143396
+gen 13 fitness avg: 120677.250000
+gen 60 fitness avg: 64707.000000
+gen 13 lost to gen 60
+
+
+Comparing gen 14 and gen 60 done, took: 7.294966 s
+Unfinished games: 0
+gen: 14, uid: 1024097147, fitness: 41101
+gen: 60, uid: 1017609927, fitness: 51746
+gen: 60, uid: 585489309, fitness: 82190
+gen: 60, uid: 1287465468, fitness: 82642
+gen: 14, uid: 1102091616, fitness: 92693
+gen: 60, uid: 1947585480, fitness: 102842
+gen: 14, uid: 998855536, fitness: 133637
+gen: 14, uid: 275638151, fitness: 153441
+gen 14 fitness avg: 105218.000000
+gen 60 fitness avg: 79855.000000
+gen 14 lost to gen 60
+
+
+Comparing gen 15 and gen 60 done, took: 7.336516 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 72142
+gen: 15, uid: 455120197, fitness: 72348
+gen: 60, uid: 585489309, fitness: 72390
+gen: 60, uid: 1287465468, fitness: 82692
+gen: 15, uid: 688635345, fitness: 82737
+gen: 60, uid: 1947585480, fitness: 102794
+gen: 15, uid: 2037886644, fitness: 122748
+gen: 15, uid: 275638151, fitness: 133488
+gen 15 fitness avg: 102830.250000
+gen 60 fitness avg: 82504.500000
+gen 15 lost to gen 60
+
+
+Comparing gen 16 and gen 60 done, took: 7.086284 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 31895
+gen: 60, uid: 585489309, fitness: 52141
+gen: 60, uid: 1947585480, fitness: 72093
+gen: 60, uid: 1017609927, fitness: 92742
+gen: 16, uid: 859167902, fitness: 102894
+gen: 16, uid: 1717437295, fitness: 123089
+gen: 16, uid: 455120197, fitness: 133442
+gen: 16, uid: 1436884976, fitness: 133542
+gen 16 fitness avg: 123241.750000
+gen 60 fitness avg: 62217.750000
+gen 16 lost to gen 60
+
+
+Comparing gen 17 and gen 60 done, took: 7.274429 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 72244
+gen: 60, uid: 1947585480, fitness: 72792
+gen: 60, uid: 585489309, fitness: 82391
+gen: 17, uid: 859167902, fitness: 82398
+gen: 17, uid: 129141432, fitness: 92545
+gen: 17, uid: 236325622, fitness: 102595
+gen: 60, uid: 1017609927, fitness: 113088
+gen: 17, uid: 373409063, fitness: 122846
+gen 17 fitness avg: 100096.000000
+gen 60 fitness avg: 85128.750000
+gen 17 lost to gen 60
+
+
+Comparing gen 18 and gen 60 done, took: 7.033670 s
+Unfinished games: 0
+gen: 18, uid: 1535504753, fitness: 62195
+gen: 60, uid: 585489309, fitness: 82345
+gen: 60, uid: 1017609927, fitness: 82442
+gen: 60, uid: 1287465468, fitness: 82490
+gen: 60, uid: 1947585480, fitness: 92790
+gen: 18, uid: 373409063, fitness: 92941
+gen: 18, uid: 1264278232, fitness: 102587
+gen: 18, uid: 1624451738, fitness: 143696
+gen 18 fitness avg: 100354.750000
+gen 60 fitness avg: 85016.750000
+gen 18 lost to gen 60
+
+
+Comparing gen 19 and gen 60 done, took: 7.053391 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 71843
+gen: 60, uid: 585489309, fitness: 72439
+gen: 60, uid: 1287465468, fitness: 82248
+gen: 60, uid: 1947585480, fitness: 82743
+gen: 19, uid: 532935567, fitness: 92293
+gen: 19, uid: 1707127078, fitness: 92941
+gen: 19, uid: 1508699209, fitness: 102997
+gen: 19, uid: 1566681063, fitness: 143744
+gen 19 fitness avg: 107993.750000
+gen 60 fitness avg: 77318.250000
+gen 19 lost to gen 60
+
+
+Comparing gen 20 and gen 60 done, took: 7.156163 s
+Unfinished games: 0
+gen: 60, uid: 585489309, fitness: 51695
+gen: 60, uid: 1947585480, fitness: 51796
+gen: 20, uid: 889091339, fitness: 61843
+gen: 60, uid: 1017609927, fitness: 92439
+gen: 60, uid: 1287465468, fitness: 112490
+gen: 20, uid: 195682722, fitness: 112600
+gen: 20, uid: 709864227, fitness: 112740
+gen: 20, uid: 2090970977, fitness: 143092
+gen 20 fitness avg: 107568.750000
+gen 60 fitness avg: 77105.000000
+gen 20 lost to gen 60
+
+
+Comparing gen 21 and gen 60 done, took: 6.987976 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 41994
+gen: 21, uid: 759934790, fitness: 62494
+gen: 21, uid: 463408482, fitness: 72596
+gen: 60, uid: 585489309, fitness: 92541
+gen: 60, uid: 1947585480, fitness: 92943
+gen: 21, uid: 215812676, fitness: 112697
+gen: 21, uid: 142744137, fitness: 123388
+gen: 60, uid: 1017609927, fitness: 143442
+gen 21 fitness avg: 92793.750000
+gen 60 fitness avg: 92730.000000
+gen 21 lost to gen 60
+
+
+Comparing gen 22 and gen 60 done, took: 7.119567 s
+Unfinished games: 0
+gen: 22, uid: 2128468846, fitness: 31947
+gen: 60, uid: 1287465468, fitness: 42196
+gen: 60, uid: 1017609927, fitness: 82445
+gen: 22, uid: 479606159, fitness: 102942
+gen: 60, uid: 585489309, fitness: 102993
+gen: 22, uid: 889091339, fitness: 123250
+gen: 60, uid: 1947585480, fitness: 123486
+gen: 22, uid: 1773721540, fitness: 133387
+gen 22 fitness avg: 97881.500000
+gen 60 fitness avg: 87780.000000
+gen 22 lost to gen 60
+
+
+Comparing gen 23 and gen 60 done, took: 7.027708 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 41944
+gen: 60, uid: 1017609927, fitness: 52247
+gen: 23, uid: 339425511, fitness: 62396
+gen: 60, uid: 1287465468, fitness: 82788
+gen: 23, uid: 707560100, fitness: 93042
+gen: 23, uid: 1863873683, fitness: 123339
+gen: 60, uid: 585489309, fitness: 142993
+gen: 23, uid: 2020034786, fitness: 143445
+gen 23 fitness avg: 105555.500000
+gen 60 fitness avg: 79993.000000
+gen 23 lost to gen 60
+
+
+Comparing gen 24 and gen 60 done, took: 6.928635 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 62295
+gen: 24, uid: 2046351730, fitness: 62298
+gen: 60, uid: 585489309, fitness: 62790
+gen: 24, uid: 60534648, fitness: 92198
+gen: 60, uid: 1287465468, fitness: 103287
+gen: 60, uid: 1017609927, fitness: 103435
+gen: 24, uid: 1988902058, fitness: 123286
+gen: 24, uid: 2118228951, fitness: 132943
+gen 24 fitness avg: 102681.250000
+gen 60 fitness avg: 82951.750000
+gen 24 lost to gen 60
+
+
+Comparing gen 25 and gen 60 done, took: 7.043132 s
+Unfinished games: 0
+gen: 25, uid: 1823198775, fitness: 72447
+gen: 25, uid: 491616364, fitness: 72448
+gen: 60, uid: 1947585480, fitness: 72544
+gen: 60, uid: 1287465468, fitness: 82246
+gen: 60, uid: 585489309, fitness: 83085
+gen: 60, uid: 1017609927, fitness: 92644
+gen: 25, uid: 163262404, fitness: 103092
+gen: 25, uid: 2073651071, fitness: 164330
+gen 25 fitness avg: 103079.250000
+gen 60 fitness avg: 82629.750000
+gen 25 lost to gen 60
+
+
+Comparing gen 26 and gen 60 done, took: 7.130051 s
+Unfinished games: 0
+gen: 26, uid: 121027183, fitness: 31597
+gen: 60, uid: 1947585480, fitness: 62045
+gen: 60, uid: 1287465468, fitness: 72141
+gen: 26, uid: 756529530, fitness: 72196
+gen: 60, uid: 1017609927, fitness: 82246
+gen: 60, uid: 585489309, fitness: 112889
+gen: 26, uid: 854772668, fitness: 133636
+gen: 26, uid: 475598569, fitness: 173795
+gen 26 fitness avg: 102806.000000
+gen 60 fitness avg: 82330.250000
+gen 26 lost to gen 60
+
+
+Comparing gen 27 and gen 60 done, took: 6.958411 s
+Unfinished games: 0
+gen: 27, uid: 624250961, fitness: 52441
+gen: 27, uid: 433175475, fitness: 71991
+gen: 60, uid: 1017609927, fitness: 72591
+gen: 60, uid: 1287465468, fitness: 82742
+gen: 60, uid: 1947585480, fitness: 83143
+gen: 60, uid: 585489309, fitness: 112498
+gen: 27, uid: 1298432242, fitness: 113291
+gen: 27, uid: 1327745682, fitness: 153844
+gen 27 fitness avg: 97891.750000
+gen 60 fitness avg: 87743.500000
+gen 27 lost to gen 60
+
+
+Comparing gen 28 and gen 60 done, took: 6.990621 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 31051
+gen: 28, uid: 247736863, fitness: 51646
+gen: 60, uid: 1947585480, fitness: 72249
+gen: 60, uid: 585489309, fitness: 92492
+gen: 28, uid: 647429818, fitness: 102985
+gen: 60, uid: 1287465468, fitness: 113341
+gen: 28, uid: 1208600164, fitness: 133586
+gen: 28, uid: 640181650, fitness: 143191
+gen 28 fitness avg: 107852.000000
+gen 60 fitness avg: 77283.250000
+gen 28 lost to gen 60
+
+
+Comparing gen 29 and gen 60 done, took: 7.222054 s
+Unfinished games: 0
+gen: 29, uid: 1435450585, fitness: 61850
+gen: 60, uid: 585489309, fitness: 62191
+gen: 29, uid: 695245106, fitness: 71798
+gen: 29, uid: 1739569302, fitness: 92194
+gen: 60, uid: 1947585480, fitness: 93089
+gen: 60, uid: 1017609927, fitness: 102591
+gen: 29, uid: 247736863, fitness: 113042
+gen: 60, uid: 1287465468, fitness: 143185
+gen 29 fitness avg: 84721.000000
+gen 60 fitness avg: 100264.000000
+gen 60 lost to gen 29
+
+
+Comparing gen 30 and gen 60 done, took: 7.161344 s
+Unfinished games: 0
+gen: 30, uid: 699247464, fitness: 71995
+gen: 30, uid: 1432071287, fitness: 72098
+gen: 60, uid: 585489309, fitness: 81841
+gen: 60, uid: 1287465468, fitness: 81946
+gen: 30, uid: 248186322, fitness: 92444
+gen: 60, uid: 1947585480, fitness: 92546
+gen: 60, uid: 1017609927, fitness: 92647
+gen: 30, uid: 147992401, fitness: 153187
+gen 30 fitness avg: 97431.000000
+gen 60 fitness avg: 87245.000000
+gen 30 lost to gen 60
+
+
+Comparing gen 31 and gen 60 done, took: 7.018863 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 51946
+gen: 60, uid: 1017609927, fitness: 82344
+gen: 60, uid: 1947585480, fitness: 82787
+gen: 31, uid: 907673531, fitness: 92148
+gen: 31, uid: 147992401, fitness: 92595
+gen: 60, uid: 585489309, fitness: 103084
+gen: 31, uid: 1872125354, fitness: 112746
+gen: 31, uid: 1384204817, fitness: 123487
+gen 31 fitness avg: 105244.000000
+gen 60 fitness avg: 80040.250000
+gen 31 lost to gen 60
+
+
+Comparing gen 32 and gen 60 done, took: 8.277003 s
+Unfinished games: 1
+gen: 32, uid: 2025215966, fitness: 82741
+gen: 60, uid: 1947585480, fitness: 103189
+gen: 32, uid: 980629202, fitness: 112939
+gen: 32, uid: 40363780, fitness: 143347
+gen: 60, uid: 1017609927, fitness: 153581
+gen: 60, uid: 1287465468, fitness: 162638
+gen: 32, uid: 1943022039, fitness: 193086
+gen: 60, uid: 585489309, fitness: 193134
+gen 32 fitness avg: 133028.250000
+gen 60 fitness avg: 153135.500000
+gen 60 lost to gen 32
+
+
+Comparing gen 33 and gen 60 done, took: 7.156931 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 72096
+gen: 60, uid: 1287465468, fitness: 82242
+gen: 33, uid: 1080101558, fitness: 82242
+gen: 60, uid: 1947585480, fitness: 82847
+gen: 33, uid: 2061503421, fitness: 92647
+gen: 60, uid: 585489309, fitness: 102143
+gen: 33, uid: 1872125354, fitness: 102844
+gen: 33, uid: 1245239236, fitness: 123138
+gen 33 fitness avg: 100217.750000
+gen 60 fitness avg: 84832.000000
+gen 33 lost to gen 60
+
+
+Comparing gen 34 and gen 60 done, took: 7.123512 s
+Unfinished games: 0
+gen: 34, uid: 2140297496, fitness: 72099
+gen: 60, uid: 1017609927, fitness: 82244
+gen: 60, uid: 1947585480, fitness: 82493
+gen: 34, uid: 1112151237, fitness: 82799
+gen: 60, uid: 1287465468, fitness: 92893
+gen: 34, uid: 1535560748, fitness: 102588
+gen: 60, uid: 585489309, fitness: 102638
+gen: 34, uid: 1245239236, fitness: 123139
+gen 34 fitness avg: 95156.250000
+gen 60 fitness avg: 90067.000000
+gen 34 lost to gen 60
+
+
+Comparing gen 35 and gen 60 done, took: 7.019316 s
+Unfinished games: 0
+gen: 35, uid: 331789857, fitness: 51399
+gen: 60, uid: 585489309, fitness: 72441
+gen: 60, uid: 1947585480, fitness: 72541
+gen: 35, uid: 1839002177, fitness: 92347
+gen: 60, uid: 1287465468, fitness: 102396
+gen: 35, uid: 1699397713, fitness: 102644
+gen: 60, uid: 1017609927, fitness: 113488
+gen: 35, uid: 675329758, fitness: 133490
+gen 35 fitness avg: 94970.000000
+gen 60 fitness avg: 90216.500000
+gen 35 lost to gen 60
+
+
+Comparing gen 36 and gen 60 done, took: 6.965906 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 32094
+gen: 60, uid: 1947585480, fitness: 62344
+gen: 36, uid: 536317256, fitness: 72541
+gen: 36, uid: 130669881, fitness: 93095
+gen: 60, uid: 585489309, fitness: 102792
+gen: 36, uid: 1946382252, fitness: 102888
+gen: 60, uid: 1017609927, fitness: 112596
+gen: 36, uid: 844952004, fitness: 163690
+gen 36 fitness avg: 108053.500000
+gen 60 fitness avg: 77456.500000
+gen 36 lost to gen 60
+
+
+Comparing gen 37 and gen 60 done, took: 7.014562 s
+Unfinished games: 0
+gen: 37, uid: 762373103, fitness: 62146
+gen: 37, uid: 480946605, fitness: 72441
+gen: 60, uid: 1287465468, fitness: 82245
+gen: 37, uid: 1098865831, fitness: 92586
+gen: 60, uid: 1017609927, fitness: 92593
+gen: 60, uid: 1947585480, fitness: 102696
+gen: 60, uid: 585489309, fitness: 113243
+gen: 37, uid: 314688983, fitness: 123096
+gen 37 fitness avg: 87567.250000
+gen 60 fitness avg: 97694.250000
+gen 60 lost to gen 37
+
+
+Comparing gen 38 and gen 60 done, took: 7.148780 s
+Unfinished games: 0
+gen: 38, uid: 301063294, fitness: 61892
+gen: 60, uid: 1947585480, fitness: 61997
+gen: 38, uid: 643202333, fitness: 72348
+gen: 60, uid: 1287465468, fitness: 72398
+gen: 38, uid: 442931248, fitness: 93086
+gen: 38, uid: 1644776248, fitness: 112699
+gen: 60, uid: 585489309, fitness: 133536
+gen: 60, uid: 1017609927, fitness: 133538
+gen 38 fitness avg: 85006.250000
+gen 60 fitness avg: 100367.250000
+gen 60 lost to gen 38
+
+
+Comparing gen 39 and gen 60 done, took: 7.188082 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 71948
+gen: 39, uid: 773362593, fitness: 72639
+gen: 39, uid: 265158675, fitness: 82097
+gen: 39, uid: 41719336, fitness: 83035
+gen: 60, uid: 585489309, fitness: 92792
+gen: 39, uid: 541566861, fitness: 102651
+gen: 60, uid: 1017609927, fitness: 112787
+gen: 60, uid: 1947585480, fitness: 123089
+gen 39 fitness avg: 85105.500000
+gen 60 fitness avg: 100154.000000
+gen 60 lost to gen 39
+
+
+Comparing gen 40 and gen 60 done, took: 7.229653 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 41991
+gen: 40, uid: 251259745, fitness: 62041
+gen: 60, uid: 585489309, fitness: 62396
+gen: 40, uid: 519976525, fitness: 72092
+gen: 60, uid: 1947585480, fitness: 82337
+gen: 40, uid: 1722514703, fitness: 132848
+gen: 40, uid: 173118140, fitness: 133300
+gen: 60, uid: 1287465468, fitness: 153785
+gen 40 fitness avg: 100070.250000
+gen 60 fitness avg: 85127.250000
+gen 40 lost to gen 60
+
+
+Comparing gen 41 and gen 60 done, took: 7.370932 s
+Unfinished games: 0
+gen: 41, uid: 1509314419, fitness: 52046
+gen: 41, uid: 1115221447, fitness: 62247
+gen: 41, uid: 2068120519, fitness: 72043
+gen: 60, uid: 1017609927, fitness: 81947
+gen: 60, uid: 1287465468, fitness: 82397
+gen: 41, uid: 1766848493, fitness: 112748
+gen: 60, uid: 1947585480, fitness: 132545
+gen: 60, uid: 585489309, fitness: 143536
+gen 41 fitness avg: 74771.000000
+gen 60 fitness avg: 110106.250000
+gen 60 lost to gen 41
+
+
+Comparing gen 42 and gen 60 done, took: 6.941152 s
+Unfinished games: 0
+gen: 42, uid: 93419456, fitness: 52640
+gen: 60, uid: 585489309, fitness: 62643
+gen: 42, uid: 738968427, fitness: 72942
+gen: 60, uid: 1287465468, fitness: 92843
+gen: 42, uid: 1115221447, fitness: 103048
+gen: 42, uid: 1362019808, fitness: 103089
+gen: 60, uid: 1947585480, fitness: 113041
+gen: 60, uid: 1017609927, fitness: 143541
+gen 42 fitness avg: 82929.750000
+gen 60 fitness avg: 103017.000000
+gen 60 lost to gen 42
+
+
+Comparing gen 43 and gen 60 done, took: 7.331310 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 72195
+gen: 60, uid: 1947585480, fitness: 82243
+gen: 43, uid: 1439661357, fitness: 82497
+gen: 60, uid: 1017609927, fitness: 92345
+gen: 43, uid: 110785536, fitness: 92447
+gen: 43, uid: 641446563, fitness: 92696
+gen: 60, uid: 585489309, fitness: 102490
+gen: 43, uid: 480717777, fitness: 122987
+gen 43 fitness avg: 97656.750000
+gen 60 fitness avg: 87318.250000
+gen 43 lost to gen 60
+
+
+Comparing gen 44 and gen 60 done, took: 7.283948 s
+Unfinished games: 0
+gen: 44, uid: 1439661357, fitness: 61746
+gen: 44, uid: 994264431, fitness: 62199
+gen: 60, uid: 1947585480, fitness: 82843
+gen: 44, uid: 1060241737, fitness: 92494
+gen: 60, uid: 1017609927, fitness: 102694
+gen: 60, uid: 585489309, fitness: 102894
+gen: 60, uid: 1287465468, fitness: 103035
+gen: 44, uid: 1747358443, fitness: 133294
+gen 44 fitness avg: 87433.250000
+gen 60 fitness avg: 97866.500000
+gen 60 lost to gen 44
+
+
+Comparing gen 45 and gen 60 done, took: 7.201748 s
+Unfinished games: 0
+gen: 45, uid: 465664765, fitness: 31649
+gen: 45, uid: 1307739557, fitness: 52148
+gen: 60, uid: 585489309, fitness: 82692
+gen: 45, uid: 1186303704, fitness: 92298
+gen: 60, uid: 1287465468, fitness: 102590
+gen: 45, uid: 322579905, fitness: 112694
+gen: 60, uid: 1017609927, fitness: 122944
+gen: 60, uid: 1947585480, fitness: 143342
+gen 45 fitness avg: 72197.250000
+gen 60 fitness avg: 112892.000000
+gen 60 lost to gen 45
+
+
+Comparing gen 46 and gen 60 done, took: 7.021063 s
+Unfinished games: 0
+gen: 46, uid: 322579905, fitness: 52289
+gen: 60, uid: 1947585480, fitness: 71948
+gen: 60, uid: 1017609927, fitness: 82442
+gen: 60, uid: 585489309, fitness: 82542
+gen: 46, uid: 465664765, fitness: 93141
+gen: 60, uid: 1287465468, fitness: 112644
+gen: 46, uid: 1857034463, fitness: 112797
+gen: 46, uid: 505405953, fitness: 133244
+gen 46 fitness avg: 97867.750000
+gen 60 fitness avg: 87394.000000
+gen 46 lost to gen 60
+
+
+Comparing gen 47 and gen 60 done, took: 7.003548 s
+Unfinished games: 0
+gen: 47, uid: 567802768, fitness: 61594
+gen: 60, uid: 1947585480, fitness: 62545
+gen: 60, uid: 1287465468, fitness: 82194
+gen: 47, uid: 17907527, fitness: 82695
+gen: 47, uid: 1671190868, fitness: 82839
+gen: 60, uid: 1017609927, fitness: 112795
+gen: 60, uid: 585489309, fitness: 123245
+gen: 47, uid: 140526773, fitness: 133142
+gen 47 fitness avg: 90067.500000
+gen 60 fitness avg: 95194.750000
+gen 60 lost to gen 47
+
+
+Comparing gen 48 and gen 60 done, took: 7.078804 s
+Unfinished games: 0
+gen: 48, uid: 1982403063, fitness: 71994
+gen: 60, uid: 1287465468, fitness: 72193
+gen: 48, uid: 1483075536, fitness: 72296
+gen: 60, uid: 1017609927, fitness: 82395
+gen: 48, uid: 1563546172, fitness: 92697
+gen: 60, uid: 585489309, fitness: 102292
+gen: 60, uid: 1947585480, fitness: 123187
+gen: 48, uid: 1536535518, fitness: 123392
+gen 48 fitness avg: 90094.750000
+gen 60 fitness avg: 95016.750000
+gen 60 lost to gen 48
+
+
+Comparing gen 49 and gen 60 done, took: 7.145182 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 41743
+gen: 60, uid: 1017609927, fitness: 62145
+gen: 60, uid: 1947585480, fitness: 91993
+gen: 49, uid: 645172518, fitness: 102447
+gen: 49, uid: 1982403063, fitness: 102941
+gen: 49, uid: 109105688, fitness: 103390
+gen: 60, uid: 585489309, fitness: 112944
+gen: 49, uid: 1563546172, fitness: 123642
+gen 49 fitness avg: 108105.000000
+gen 60 fitness avg: 77206.250000
+gen 49 lost to gen 60
+
+
+Comparing gen 50 and gen 60 done, took: 7.001217 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 82443
+gen: 50, uid: 404263984, fitness: 82594
+gen: 60, uid: 1287465468, fitness: 82791
+gen: 50, uid: 1588815602, fitness: 82944
+gen: 60, uid: 585489309, fitness: 92538
+gen: 50, uid: 546763284, fitness: 92743
+gen: 50, uid: 1186053274, fitness: 93142
+gen: 60, uid: 1017609927, fitness: 132841
+gen 50 fitness avg: 87855.750000
+gen 60 fitness avg: 97653.250000
+gen 60 lost to gen 50
+
+
+Comparing gen 51 and gen 60 done, took: 6.903620 s
+Unfinished games: 0
+gen: 51, uid: 1050782977, fitness: 72140
+gen: 60, uid: 585489309, fitness: 72440
+gen: 51, uid: 801535044, fitness: 82646
+gen: 51, uid: 1137776032, fitness: 82692
+gen: 60, uid: 1287465468, fitness: 92587
+gen: 60, uid: 1017609927, fitness: 93196
+gen: 60, uid: 1947585480, fitness: 123195
+gen: 51, uid: 844945457, fitness: 123293
+gen 51 fitness avg: 90192.750000
+gen 60 fitness avg: 95354.500000
+gen 60 lost to gen 51
+
+
+Comparing gen 52 and gen 60 done, took: 7.325376 s
+Unfinished games: 0
+gen: 52, uid: 1766621417, fitness: 51744
+gen: 60, uid: 1017609927, fitness: 52295
+gen: 60, uid: 1287465468, fitness: 72596
+gen: 60, uid: 1947585480, fitness: 102642
+gen: 52, uid: 645172518, fitness: 102795
+gen: 60, uid: 585489309, fitness: 112794
+gen: 52, uid: 1592002709, fitness: 112994
+gen: 52, uid: 1803882417, fitness: 133291
+gen 52 fitness avg: 100206.000000
+gen 60 fitness avg: 85081.750000
+gen 52 lost to gen 60
+
+
+Comparing gen 53 and gen 60 done, took: 6.934003 s
+Unfinished games: 0
+gen: 53, uid: 2125264354, fitness: 52546
+gen: 60, uid: 1287465468, fitness: 82795
+gen: 53, uid: 73462823, fitness: 82844
+gen: 53, uid: 38650760, fitness: 92493
+gen: 60, uid: 1947585480, fitness: 92689
+gen: 53, uid: 1616201416, fitness: 92839
+gen: 60, uid: 585489309, fitness: 123042
+gen: 60, uid: 1017609927, fitness: 123537
+gen 53 fitness avg: 80180.500000
+gen 60 fitness avg: 105515.750000
+gen 60 lost to gen 53
+
+
+Comparing gen 54 and gen 60 done, took: 7.092997 s
+Unfinished games: 0
+gen: 54, uid: 149200700, fitness: 31646
+gen: 60, uid: 1287465468, fitness: 72296
+gen: 54, uid: 763592606, fitness: 92794
+gen: 60, uid: 1017609927, fitness: 102543
+gen: 54, uid: 1924338936, fitness: 102791
+gen: 60, uid: 585489309, fitness: 102844
+gen: 60, uid: 1947585480, fitness: 112545
+gen: 54, uid: 1245515529, fitness: 123243
+gen 54 fitness avg: 87618.500000
+gen 60 fitness avg: 97557.000000
+gen 60 lost to gen 54
+
+
+Comparing gen 55 and gen 60 done, took: 7.126149 s
+Unfinished games: 0
+gen: 55, uid: 1177957121, fitness: 72449
+gen: 55, uid: 100766510, fitness: 72492
+gen: 60, uid: 1947585480, fitness: 82247
+gen: 60, uid: 1017609927, fitness: 92094
+gen: 55, uid: 1157760002, fitness: 92543
+gen: 55, uid: 839135484, fitness: 92695
+gen: 60, uid: 585489309, fitness: 112941
+gen: 60, uid: 1287465468, fitness: 122345
+gen 55 fitness avg: 82544.750000
+gen 60 fitness avg: 102406.750000
+gen 60 lost to gen 55
+
+
+Comparing gen 56 and gen 60 done, took: 6.780296 s
+Unfinished games: 0
+gen: 60, uid: 1947585480, fitness: 62343
+gen: 60, uid: 1287465468, fitness: 72496
+gen: 60, uid: 1017609927, fitness: 72588
+gen: 56, uid: 447865610, fitness: 72597
+gen: 60, uid: 585489309, fitness: 92790
+gen: 56, uid: 1741543758, fitness: 103494
+gen: 56, uid: 172124276, fitness: 133439
+gen: 56, uid: 89714224, fitness: 133545
+gen 56 fitness avg: 110768.750000
+gen 60 fitness avg: 75054.250000
+gen 56 lost to gen 60
+
+
+Comparing gen 57 and gen 60 done, took: 7.195294 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 21399
+gen: 60, uid: 585489309, fitness: 62247
+gen: 60, uid: 1947585480, fitness: 82495
+gen: 57, uid: 1580942014, fitness: 102397
+gen: 57, uid: 89714224, fitness: 102645
+gen: 60, uid: 1017609927, fitness: 112841
+gen: 57, uid: 613172400, fitness: 112890
+gen: 57, uid: 1349939858, fitness: 143089
+gen 57 fitness avg: 115255.250000
+gen 60 fitness avg: 69745.500000
+gen 57 lost to gen 60
+
+
+Comparing gen 58 and gen 60 done, took: 7.115714 s
+Unfinished games: 0
+gen: 60, uid: 1017609927, fitness: 51895
+gen: 58, uid: 830454212, fitness: 62443
+gen: 60, uid: 585489309, fitness: 72144
+gen: 60, uid: 1947585480, fitness: 82346
+gen: 58, uid: 1349939858, fitness: 92443
+gen: 58, uid: 1332130067, fitness: 103193
+gen: 60, uid: 1287465468, fitness: 132994
+gen: 58, uid: 351163453, fitness: 143639
+gen 58 fitness avg: 100429.500000
+gen 60 fitness avg: 84844.750000
+gen 58 lost to gen 60
+
+
+Comparing gen 59 and gen 60 done, took: 6.999700 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 52244
+gen: 60, uid: 585489309, fitness: 81994
+gen: 59, uid: 437056555, fitness: 82694
+gen: 60, uid: 1947585480, fitness: 92646
+gen: 59, uid: 1464058304, fitness: 102943
+gen: 60, uid: 1017609927, fitness: 102995
+gen: 59, uid: 1749098599, fitness: 112491
+gen: 59, uid: 255992545, fitness: 113090
+gen 59 fitness avg: 102804.500000
+gen 60 fitness avg: 82469.750000
+gen 59 lost to gen 60
+
+----------------------------------------------------------------------------
+Generation: 61
+Playing done, took: 32.632112 s
+uid: 71128823, fitness: 21081
+uid: 1598544377, fitness: 30984
+uid: 1287465468, fitness: 31130
+uid: 1685502687, fitness: 31135
+uid: 622430577, fitness: 31178
+uid: 585489309, fitness: 31185
+uid: 536634461, fitness: 31276
+uid: 257566633, fitness: 31279
+uid: 1365702701, fitness: 31382
+uid: 1900653616, fitness: 41379
+
+Unfinished games: 1
+Average fitness across population: 69408.653846
+Crossover and mutation took: 3.396998 s
+----------------------------------------------------------------------------
+Generation: 62
+Playing done, took: 30.898675 s
+uid: 213026807, fitness: 731
+uid: 257566633, fitness: 831
+uid: 235540579, fitness: 10734
+uid: 2141976451, fitness: 21182
+uid: 1713696541, fitness: 21329
+uid: 181218762, fitness: 31131
+uid: 221078909, fitness: 31183
+uid: 590407728, fitness: 31231
+uid: 1365702701, fitness: 41132
+uid: 6827178, fitness: 41429
+
+Unfinished games: 0
+Average fitness across population: 61721.557692
+Crossover and mutation took: 3.392017 s
+----------------------------------------------------------------------------
+Generation: 63
+Playing done, took: 32.473365 s
+uid: 991122175, fitness: 10834
+uid: 1095491723, fitness: 21178
+uid: 315124683, fitness: 21484
+uid: 683511274, fitness: 30882
+uid: 305160255, fitness: 30982
+uid: 6827178, fitness: 31382
+uid: 280835179, fitness: 40782
+uid: 1302526923, fitness: 40984
+uid: 1153796125, fitness: 40985
+uid: 778951171, fitness: 41086
+
+Unfinished games: 1
+Average fitness across population: 69346.538462
+Crossover and mutation took: 3.386977 s
+----------------------------------------------------------------------------
+Generation: 64
+Playing done, took: 32.271628 s
+uid: 762922910, fitness: 11036
+uid: 1153796125, fitness: 11081
+uid: 181596011, fitness: 21180
+uid: 1058332392, fitness: 21278
+uid: 885267045, fitness: 31580
+uid: 1327881157, fitness: 41332
+uid: 290749609, fitness: 41480
+uid: 1915918978, fitness: 41526
+uid: 683511274, fitness: 41628
+uid: 2666879, fitness: 41678
+
+Unfinished games: 1
+Average fitness across population: 69495.961538
+Crossover and mutation took: 3.390647 s
+----------------------------------------------------------------------------
+Generation: 65
+Playing done, took: 31.928444 s
+uid: 1863436742, fitness: 10882
+uid: 777281765, fitness: 31282
+uid: 1294742057, fitness: 31429
+uid: 669184738, fitness: 41283
+uid: 1206375194, fitness: 41381
+uid: 1709944705, fitness: 41429
+uid: 1104016814, fitness: 41581
+uid: 1058332392, fitness: 41878
+uid: 2025749496, fitness: 42026
+uid: 290749609, fitness: 50934
+
+Unfinished games: 1
+Average fitness across population: 69462.173077
+Crossover and mutation took: 3.391065 s
+----------------------------------------------------------------------------
+Generation: 66
+Playing done, took: 30.264610 s
+uid: 1800936967, fitness: 10731
+uid: 1459063317, fitness: 10932
+uid: 1831032910, fitness: 20781
+uid: 909198748, fitness: 20833
+uid: 888990273, fitness: 21082
+uid: 249403053, fitness: 21233
+uid: 1121306665, fitness: 31631
+uid: 2055768464, fitness: 40831
+uid: 21477838, fitness: 41231
+uid: 669184738, fitness: 41284
+
+Unfinished games: 0
+Average fitness across population: 61822.980769
+Crossover and mutation took: 3.383773 s
+----------------------------------------------------------------------------
+Generation: 67
+Playing done, took: 30.695053 s
+uid: 1001377233, fitness: 10383
+uid: 892711600, fitness: 21527
+uid: 849344029, fitness: 30932
+uid: 679687041, fitness: 31132
+uid: 2055768464, fitness: 31479
+uid: 1715229972, fitness: 31481
+uid: 1604243648, fitness: 41231
+uid: 1504267178, fitness: 41329
+uid: 1813193320, fitness: 41384
+uid: 1242014546, fitness: 41480
+
+Unfinished games: 0
+Average fitness across population: 61727.384615
+Crossover and mutation took: 3.395784 s
+----------------------------------------------------------------------------
+Generation: 68
+Playing done, took: 30.920202 s
+uid: 71714938, fitness: 10883
+uid: 176571931, fitness: 10929
+uid: 553683635, fitness: 20983
+uid: 892711600, fitness: 21080
+uid: 956693187, fitness: 31081
+uid: 797980438, fitness: 31232
+uid: 1001377233, fitness: 31330
+uid: 603560459, fitness: 31630
+uid: 405179152, fitness: 31729
+uid: 1400929146, fitness: 41831
+
+Unfinished games: 0
+Average fitness across population: 61745.653846
+Crossover and mutation took: 3.391008 s
+----------------------------------------------------------------------------
+Generation: 69
+Playing done, took: 30.488556 s
+uid: 128776767, fitness: 10984
+uid: 797980438, fitness: 20982
+uid: 311303149, fitness: 21282
+uid: 1621159765, fitness: 21330
+uid: 169786116, fitness: 31281
+uid: 593199678, fitness: 31282
+uid: 1969378668, fitness: 31579
+uid: 1090990610, fitness: 31628
+uid: 920860327, fitness: 40832
+uid: 1064389974, fitness: 41628
+
+Unfinished games: 0
+Average fitness across population: 61756.903846
+Crossover and mutation took: 3.407369 s
+----------------------------------------------------------------------------
+Generation: 70
+Playing done, took: 30.494437 s
+uid: 706048284, fitness: 10931
+uid: 1120564423, fitness: 20283
+uid: 1897976495, fitness: 20935
+uid: 80968275, fitness: 21131
+uid: 977357706, fitness: 21182
+uid: 311303149, fitness: 31181
+uid: 1031280803, fitness: 31231
+uid: 1149881994, fitness: 31432
+uid: 278598324, fitness: 31479
+uid: 2129973818, fitness: 41231
+
+Unfinished games: 0
+Average fitness across population: 61786.519231
+Crossover and mutation took: 3.392178 s
+
+Comparing gen 1 and gen 70 done, took: 7.421702 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 51755
+gen: 70, uid: 1120564423, fitness: 62146
+gen: 70, uid: 80968275, fitness: 62648
+gen: 70, uid: 706048284, fitness: 72196
+gen: 1, uid: 1372739908, fitness: 92839
+gen: 1, uid: 1410405470, fitness: 123543
+gen: 1, uid: 449906158, fitness: 133630
+gen: 1, uid: 1590313938, fitness: 143381
+gen 1 fitness avg: 123348.250000
+gen 70 fitness avg: 62186.250000
+gen 1 lost to gen 70
+
+
+Comparing gen 2 and gen 70 done, took: 7.291116 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 51950
+gen: 70, uid: 1120564423, fitness: 52050
+gen: 70, uid: 706048284, fitness: 62249
+gen: 70, uid: 80968275, fitness: 72495
+gen: 2, uid: 609899854, fitness: 93087
+gen: 2, uid: 881839918, fitness: 123596
+gen: 2, uid: 1322872257, fitness: 134229
+gen: 2, uid: 1410405470, fitness: 154426
+gen 2 fitness avg: 126334.500000
+gen 70 fitness avg: 59686.000000
+gen 2 lost to gen 70
+
+
+Comparing gen 3 and gen 70 done, took: 7.194579 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 21402
+gen: 70, uid: 80968275, fitness: 61946
+gen: 3, uid: 775333531, fitness: 72396
+gen: 70, uid: 1897976495, fitness: 82295
+gen: 3, uid: 1983385005, fitness: 112795
+gen: 70, uid: 706048284, fitness: 112889
+gen: 3, uid: 1410405470, fitness: 134030
+gen: 3, uid: 1079291762, fitness: 143635
+gen 3 fitness avg: 115714.000000
+gen 70 fitness avg: 69633.000000
+gen 3 lost to gen 70
+
+
+Comparing gen 4 and gen 70 done, took: 7.242039 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 62193
+gen: 70, uid: 1120564423, fitness: 71794
+gen: 70, uid: 80968275, fitness: 72098
+gen: 4, uid: 899512455, fitness: 92396
+gen: 4, uid: 1868946774, fitness: 92741
+gen: 4, uid: 1691195314, fitness: 93239
+gen: 4, uid: 102035771, fitness: 123439
+gen: 70, uid: 1897976495, fitness: 132697
+gen 4 fitness avg: 100453.750000
+gen 70 fitness avg: 84695.500000
+gen 4 lost to gen 70
+
+
+Comparing gen 5 and gen 70 done, took: 7.100195 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 41848
+gen: 70, uid: 1897976495, fitness: 61546
+gen: 5, uid: 636638383, fitness: 62044
+gen: 70, uid: 1120564423, fitness: 82295
+gen: 70, uid: 706048284, fitness: 82592
+gen: 5, uid: 102035771, fitness: 112943
+gen: 5, uid: 1884388166, fitness: 143829
+gen: 5, uid: 1038680060, fitness: 154245
+gen 5 fitness avg: 118265.250000
+gen 70 fitness avg: 67070.250000
+gen 5 lost to gen 70
+
+
+Comparing gen 6 and gen 70 done, took: 6.835314 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 52096
+gen: 70, uid: 1120564423, fitness: 62643
+gen: 70, uid: 706048284, fitness: 82837
+gen: 6, uid: 636638383, fitness: 92843
+gen: 70, uid: 1897976495, fitness: 102894
+gen: 6, uid: 1901628473, fitness: 113292
+gen: 6, uid: 2049873183, fitness: 113586
+gen: 6, uid: 2104840380, fitness: 123642
+gen 6 fitness avg: 110840.750000
+gen 70 fitness avg: 75117.500000
+gen 6 lost to gen 70
+
+
+Comparing gen 7 and gen 70 done, took: 7.154146 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 41598
+gen: 7, uid: 981443849, fitness: 41948
+gen: 70, uid: 1120564423, fitness: 61849
+gen: 70, uid: 1897976495, fitness: 72690
+gen: 70, uid: 706048284, fitness: 92691
+gen: 7, uid: 14872224, fitness: 122794
+gen: 7, uid: 1975427348, fitness: 153236
+gen: 7, uid: 116507942, fitness: 153388
+gen 7 fitness avg: 117841.500000
+gen 70 fitness avg: 67207.000000
+gen 7 lost to gen 70
+
+
+Comparing gen 8 and gen 70 done, took: 7.119029 s
+Unfinished games: 0
+gen: 8, uid: 102035771, fitness: 41646
+gen: 8, uid: 6180689, fitness: 72149
+gen: 70, uid: 1120564423, fitness: 82593
+gen: 70, uid: 706048284, fitness: 82595
+gen: 70, uid: 80968275, fitness: 82787
+gen: 70, uid: 1897976495, fitness: 113389
+gen: 8, uid: 456504022, fitness: 133535
+gen: 8, uid: 1538676197, fitness: 133545
+gen 8 fitness avg: 95218.750000
+gen 70 fitness avg: 90341.000000
+gen 8 lost to gen 70
+
+
+Comparing gen 9 and gen 70 done, took: 7.002980 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 52248
+gen: 9, uid: 156397104, fitness: 82492
+gen: 70, uid: 706048284, fitness: 82544
+gen: 70, uid: 1120564423, fitness: 92343
+gen: 9, uid: 293931840, fitness: 92897
+gen: 9, uid: 2129878723, fitness: 102890
+gen: 9, uid: 39146345, fitness: 113237
+gen: 70, uid: 1897976495, fitness: 123687
+gen 9 fitness avg: 97879.000000
+gen 70 fitness avg: 87705.500000
+gen 9 lost to gen 70
+
+
+Comparing gen 10 and gen 70 done, took: 7.014073 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 61997
+gen: 10, uid: 1201073523, fitness: 62295
+gen: 70, uid: 706048284, fitness: 62590
+gen: 70, uid: 1897976495, fitness: 72196
+gen: 10, uid: 777743131, fitness: 92642
+gen: 70, uid: 1120564423, fitness: 92645
+gen: 10, uid: 1845803901, fitness: 133339
+gen: 10, uid: 342137364, fitness: 163492
+gen 10 fitness avg: 112942.000000
+gen 70 fitness avg: 72357.000000
+gen 10 lost to gen 70
+
+
+Comparing gen 11 and gen 70 done, took: 7.146703 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 51946
+gen: 70, uid: 1897976495, fitness: 72489
+gen: 11, uid: 199722600, fitness: 82194
+gen: 11, uid: 1884238404, fitness: 92646
+gen: 70, uid: 706048284, fitness: 92790
+gen: 11, uid: 1985230166, fitness: 102647
+gen: 70, uid: 1120564423, fitness: 102838
+gen: 11, uid: 1499929149, fitness: 143336
+gen 11 fitness avg: 105205.750000
+gen 70 fitness avg: 80015.750000
+gen 11 lost to gen 70
+
+
+Comparing gen 12 and gen 70 done, took: 6.884067 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 41945
+gen: 70, uid: 80968275, fitness: 52388
+gen: 70, uid: 1897976495, fitness: 72342
+gen: 70, uid: 706048284, fitness: 103045
+gen: 12, uid: 1499929149, fitness: 103289
+gen: 12, uid: 1202907918, fitness: 112842
+gen: 12, uid: 1726638829, fitness: 123838
+gen: 12, uid: 1565142344, fitness: 133893
+gen 12 fitness avg: 118465.500000
+gen 70 fitness avg: 67430.000000
+gen 12 lost to gen 70
+
+
+Comparing gen 13 and gen 70 done, took: 6.993729 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 42196
+gen: 70, uid: 80968275, fitness: 51845
+gen: 70, uid: 1897976495, fitness: 92542
+gen: 13, uid: 1459016131, fitness: 102791
+gen: 70, uid: 1120564423, fitness: 102991
+gen: 13, uid: 32942080, fitness: 113297
+gen: 13, uid: 367321906, fitness: 113579
+gen: 13, uid: 1017724364, fitness: 123494
+gen 13 fitness avg: 113290.250000
+gen 70 fitness avg: 72393.500000
+gen 13 lost to gen 70
+
+
+Comparing gen 14 and gen 70 done, took: 7.221137 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 51496
+gen: 14, uid: 1102091616, fitness: 62046
+gen: 14, uid: 998855536, fitness: 62345
+gen: 70, uid: 80968275, fitness: 72193
+gen: 14, uid: 1024097147, fitness: 92448
+gen: 70, uid: 706048284, fitness: 103191
+gen: 70, uid: 1120564423, fitness: 122694
+gen: 14, uid: 275638151, fitness: 174588
+gen 14 fitness avg: 97856.750000
+gen 70 fitness avg: 87393.500000
+gen 14 lost to gen 70
+
+
+Comparing gen 15 and gen 70 done, took: 7.201568 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 51843
+gen: 70, uid: 706048284, fitness: 52094
+gen: 15, uid: 688635345, fitness: 72091
+gen: 70, uid: 1120564423, fitness: 72244
+gen: 15, uid: 2037886644, fitness: 102597
+gen: 15, uid: 455120197, fitness: 112598
+gen: 70, uid: 1897976495, fitness: 112738
+gen: 15, uid: 275638151, fitness: 163641
+gen 15 fitness avg: 112731.750000
+gen 70 fitness avg: 72229.750000
+gen 15 lost to gen 70
+
+
+Comparing gen 16 and gen 70 done, took: 6.957332 s
+Unfinished games: 0
+gen: 16, uid: 1436884976, fitness: 42296
+gen: 70, uid: 706048284, fitness: 62246
+gen: 70, uid: 1897976495, fitness: 82338
+gen: 70, uid: 1120564423, fitness: 82840
+gen: 16, uid: 859167902, fitness: 92942
+gen: 70, uid: 80968275, fitness: 113087
+gen: 16, uid: 455120197, fitness: 122995
+gen: 16, uid: 1717437295, fitness: 143437
+gen 16 fitness avg: 100417.500000
+gen 70 fitness avg: 85127.750000
+gen 16 lost to gen 70
+
+
+Comparing gen 17 and gen 70 done, took: 7.127747 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 51593
+gen: 17, uid: 236325622, fitness: 72147
+gen: 17, uid: 373409063, fitness: 81998
+gen: 70, uid: 1897976495, fitness: 92936
+gen: 17, uid: 859167902, fitness: 93238
+gen: 70, uid: 1120564423, fitness: 112442
+gen: 17, uid: 129141432, fitness: 112747
+gen: 70, uid: 706048284, fitness: 122545
+gen 17 fitness avg: 90032.500000
+gen 70 fitness avg: 94879.000000
+gen 70 lost to gen 17
+
+
+Comparing gen 18 and gen 70 done, took: 6.867587 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 11497
+gen: 70, uid: 706048284, fitness: 31641
+gen: 18, uid: 1535504753, fitness: 72293
+gen: 18, uid: 373409063, fitness: 92747
+gen: 18, uid: 1264278232, fitness: 113092
+gen: 70, uid: 1897976495, fitness: 123190
+gen: 70, uid: 80968275, fitness: 143486
+gen: 18, uid: 1624451738, fitness: 153740
+gen 18 fitness avg: 107968.000000
+gen 70 fitness avg: 77453.500000
+gen 18 lost to gen 70
+
+
+Comparing gen 19 and gen 70 done, took: 7.197987 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 41794
+gen: 70, uid: 1120564423, fitness: 51747
+gen: 70, uid: 1897976495, fitness: 72293
+gen: 70, uid: 80968275, fitness: 92591
+gen: 19, uid: 1707127078, fitness: 102541
+gen: 19, uid: 1508699209, fitness: 102896
+gen: 19, uid: 532935567, fitness: 112538
+gen: 19, uid: 1566681063, fitness: 163795
+gen 19 fitness avg: 120442.500000
+gen 70 fitness avg: 64606.250000
+gen 19 lost to gen 70
+
+
+Comparing gen 20 and gen 70 done, took: 7.149425 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 61948
+gen: 70, uid: 1120564423, fitness: 61990
+gen: 20, uid: 709864227, fitness: 72343
+gen: 20, uid: 195682722, fitness: 82745
+gen: 20, uid: 889091339, fitness: 92691
+gen: 70, uid: 1897976495, fitness: 102492
+gen: 70, uid: 706048284, fitness: 123185
+gen: 20, uid: 2090970977, fitness: 143648
+gen 20 fitness avg: 97856.750000
+gen 70 fitness avg: 87403.750000
+gen 20 lost to gen 70
+
+
+Comparing gen 21 and gen 70 done, took: 7.000451 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 42247
+gen: 21, uid: 759934790, fitness: 52103
+gen: 21, uid: 463408482, fitness: 72294
+gen: 70, uid: 1897976495, fitness: 82490
+gen: 21, uid: 142744137, fitness: 92692
+gen: 70, uid: 1120564423, fitness: 112892
+gen: 21, uid: 215812676, fitness: 132541
+gen: 70, uid: 80968275, fitness: 153240
+gen 21 fitness avg: 87407.500000
+gen 70 fitness avg: 97717.250000
+gen 70 lost to gen 21
+
+
+Comparing gen 22 and gen 70 done, took: 6.966686 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 42245
+gen: 22, uid: 479606159, fitness: 42344
+gen: 70, uid: 1120564423, fitness: 82092
+gen: 70, uid: 706048284, fitness: 102844
+gen: 22, uid: 889091339, fitness: 103047
+gen: 22, uid: 1773721540, fitness: 113241
+gen: 22, uid: 2128468846, fitness: 123338
+gen: 70, uid: 1897976495, fitness: 133238
+gen 22 fitness avg: 95492.500000
+gen 70 fitness avg: 90104.750000
+gen 22 lost to gen 70
+
+
+Comparing gen 23 and gen 70 done, took: 7.076359 s
+Unfinished games: 0
+gen: 23, uid: 707560100, fitness: 62149
+gen: 23, uid: 2020034786, fitness: 82146
+gen: 70, uid: 1897976495, fitness: 82244
+gen: 70, uid: 1120564423, fitness: 91992
+gen: 23, uid: 1863873683, fitness: 92292
+gen: 23, uid: 339425511, fitness: 92596
+gen: 70, uid: 706048284, fitness: 113437
+gen: 70, uid: 80968275, fitness: 123290
+gen 23 fitness avg: 82295.750000
+gen 70 fitness avg: 102740.750000
+gen 70 lost to gen 23
+
+
+Comparing gen 24 and gen 70 done, took: 6.959873 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 41647
+gen: 70, uid: 80968275, fitness: 42091
+gen: 24, uid: 60534648, fitness: 82487
+gen: 70, uid: 1897976495, fitness: 82544
+gen: 24, uid: 2046351730, fitness: 102744
+gen: 24, uid: 2118228951, fitness: 123244
+gen: 24, uid: 1988902058, fitness: 123487
+gen: 70, uid: 1120564423, fitness: 143638
+gen 24 fitness avg: 107990.500000
+gen 70 fitness avg: 77480.000000
+gen 24 lost to gen 70
+
+
+Comparing gen 25 and gen 70 done, took: 7.133132 s
+Unfinished games: 0
+gen: 25, uid: 491616364, fitness: 51599
+gen: 70, uid: 1120564423, fitness: 51797
+gen: 70, uid: 80968275, fitness: 82195
+gen: 70, uid: 706048284, fitness: 82397
+gen: 70, uid: 1897976495, fitness: 82441
+gen: 25, uid: 163262404, fitness: 112942
+gen: 25, uid: 2073651071, fitness: 123142
+gen: 25, uid: 1823198775, fitness: 153834
+gen 25 fitness avg: 110379.250000
+gen 70 fitness avg: 74707.500000
+gen 25 lost to gen 70
+
+
+Comparing gen 26 and gen 70 done, took: 6.895649 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 51650
+gen: 70, uid: 1897976495, fitness: 72241
+gen: 26, uid: 756529530, fitness: 82194
+gen: 26, uid: 854772668, fitness: 82991
+gen: 70, uid: 706048284, fitness: 92490
+gen: 26, uid: 475598569, fitness: 113338
+gen: 26, uid: 121027183, fitness: 122848
+gen: 70, uid: 1120564423, fitness: 123336
+gen 26 fitness avg: 100342.750000
+gen 70 fitness avg: 84929.250000
+gen 26 lost to gen 70
+
+
+Comparing gen 27 and gen 70 done, took: 7.106463 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 31347
+gen: 70, uid: 706048284, fitness: 41893
+gen: 27, uid: 1327745682, fitness: 61895
+gen: 70, uid: 1120564423, fitness: 82990
+gen: 27, uid: 433175475, fitness: 122893
+gen: 70, uid: 1897976495, fitness: 122945
+gen: 27, uid: 1298432242, fitness: 132997
+gen: 27, uid: 624250961, fitness: 143542
+gen 27 fitness avg: 115331.750000
+gen 70 fitness avg: 69793.750000
+gen 27 lost to gen 70
+
+
+Comparing gen 28 and gen 70 done, took: 8.408824 s
+Unfinished games: 1
+gen: 70, uid: 706048284, fitness: 62638
+gen: 28, uid: 647429818, fitness: 82789
+gen: 28, uid: 640181650, fitness: 123091
+gen: 28, uid: 247736863, fitness: 142995
+gen: 70, uid: 80968275, fitness: 152788
+gen: 70, uid: 1897976495, fitness: 152987
+gen: 70, uid: 1120564423, fitness: 182339
+gen: 28, uid: 1208600164, fitness: 244138
+gen 28 fitness avg: 148253.250000
+gen 70 fitness avg: 137688.000000
+gen 28 lost to gen 70
+
+
+Comparing gen 29 and gen 70 done, took: 6.837293 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 62042
+gen: 29, uid: 695245106, fitness: 62350
+gen: 70, uid: 1120564423, fitness: 62790
+gen: 29, uid: 1739569302, fitness: 72842
+gen: 70, uid: 80968275, fitness: 93137
+gen: 70, uid: 1897976495, fitness: 103087
+gen: 29, uid: 1435450585, fitness: 133046
+gen: 29, uid: 247736863, fitness: 154036
+gen 29 fitness avg: 105568.500000
+gen 70 fitness avg: 80264.000000
+gen 29 lost to gen 70
+
+
+Comparing gen 30 and gen 70 done, took: 7.032347 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 62347
+gen: 70, uid: 80968275, fitness: 82493
+gen: 70, uid: 1120564423, fitness: 82688
+gen: 30, uid: 147992401, fitness: 92793
+gen: 30, uid: 699247464, fitness: 92794
+gen: 70, uid: 1897976495, fitness: 92842
+gen: 30, uid: 1432071287, fitness: 103147
+gen: 30, uid: 248186322, fitness: 133142
+gen 30 fitness avg: 105469.000000
+gen 70 fitness avg: 80092.500000
+gen 30 lost to gen 70
+
+
+Comparing gen 31 and gen 70 done, took: 7.000799 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 41800
+gen: 70, uid: 706048284, fitness: 82393
+gen: 70, uid: 80968275, fitness: 82537
+gen: 31, uid: 147992401, fitness: 93192
+gen: 31, uid: 1384204817, fitness: 102597
+gen: 70, uid: 1897976495, fitness: 112688
+gen: 31, uid: 907673531, fitness: 113043
+gen: 31, uid: 1872125354, fitness: 113185
+gen 31 fitness avg: 105504.250000
+gen 70 fitness avg: 79854.500000
+gen 31 lost to gen 70
+
+
+Comparing gen 32 and gen 70 done, took: 6.941374 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 41999
+gen: 32, uid: 2025215966, fitness: 82398
+gen: 32, uid: 980629202, fitness: 83192
+gen: 70, uid: 80968275, fitness: 92594
+gen: 32, uid: 1943022039, fitness: 102692
+gen: 32, uid: 40363780, fitness: 102746
+gen: 70, uid: 1120564423, fitness: 112990
+gen: 70, uid: 706048284, fitness: 123580
+gen 32 fitness avg: 92757.000000
+gen 70 fitness avg: 92790.750000
+gen 70 lost to gen 32
+
+
+Comparing gen 33 and gen 70 done, took: 6.993013 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 31693
+gen: 33, uid: 1080101558, fitness: 51543
+gen: 70, uid: 1120564423, fitness: 72546
+gen: 70, uid: 706048284, fitness: 82746
+gen: 33, uid: 1872125354, fitness: 112895
+gen: 33, uid: 1245239236, fitness: 113090
+gen: 33, uid: 2061503421, fitness: 132994
+gen: 70, uid: 1897976495, fitness: 143785
+gen 33 fitness avg: 102630.500000
+gen 70 fitness avg: 82692.500000
+gen 33 lost to gen 70
+
+
+Comparing gen 34 and gen 70 done, took: 7.019993 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 52046
+gen: 70, uid: 706048284, fitness: 62146
+gen: 34, uid: 1245239236, fitness: 72091
+gen: 34, uid: 2140297496, fitness: 82592
+gen: 70, uid: 1120564423, fitness: 82644
+gen: 34, uid: 1112151237, fitness: 102545
+gen: 70, uid: 1897976495, fitness: 142889
+gen: 34, uid: 1535560748, fitness: 143190
+gen 34 fitness avg: 100104.500000
+gen 70 fitness avg: 84931.250000
+gen 34 lost to gen 70
+
+
+Comparing gen 35 and gen 70 done, took: 6.992283 s
+Unfinished games: 0
+gen: 35, uid: 1699397713, fitness: 61897
+gen: 70, uid: 1120564423, fitness: 72345
+gen: 70, uid: 80968275, fitness: 82244
+gen: 35, uid: 1839002177, fitness: 92245
+gen: 70, uid: 706048284, fitness: 92591
+gen: 70, uid: 1897976495, fitness: 103137
+gen: 35, uid: 331789857, fitness: 112894
+gen: 35, uid: 675329758, fitness: 122993
+gen 35 fitness avg: 97507.250000
+gen 70 fitness avg: 87579.250000
+gen 35 lost to gen 70
+
+
+Comparing gen 36 and gen 70 done, took: 7.235438 s
+Unfinished games: 0
+gen: 36, uid: 844952004, fitness: 42292
+gen: 36, uid: 1946382252, fitness: 72046
+gen: 70, uid: 80968275, fitness: 82395
+gen: 70, uid: 1120564423, fitness: 92145
+gen: 36, uid: 130669881, fitness: 92298
+gen: 70, uid: 706048284, fitness: 102190
+gen: 36, uid: 536317256, fitness: 122890
+gen: 70, uid: 1897976495, fitness: 132791
+gen 36 fitness avg: 82381.500000
+gen 70 fitness avg: 102380.250000
+gen 70 lost to gen 36
+
+
+Comparing gen 37 and gen 70 done, took: 7.103774 s
+Unfinished games: 0
+gen: 37, uid: 762373103, fitness: 72341
+gen: 70, uid: 80968275, fitness: 72447
+gen: 37, uid: 480946605, fitness: 72593
+gen: 70, uid: 1897976495, fitness: 82492
+gen: 70, uid: 1120564423, fitness: 82890
+gen: 70, uid: 706048284, fitness: 92395
+gen: 37, uid: 1098865831, fitness: 92993
+gen: 37, uid: 314688983, fitness: 173695
+gen 37 fitness avg: 102905.500000
+gen 70 fitness avg: 82556.000000
+gen 37 lost to gen 70
+
+
+Comparing gen 38 and gen 70 done, took: 7.000053 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 21595
+gen: 38, uid: 442931248, fitness: 21848
+gen: 38, uid: 1644776248, fitness: 82496
+gen: 38, uid: 301063294, fitness: 92494
+gen: 70, uid: 1897976495, fitness: 112991
+gen: 38, uid: 643202333, fitness: 123442
+gen: 70, uid: 706048284, fitness: 133394
+gen: 70, uid: 80968275, fitness: 153837
+gen 38 fitness avg: 80070.000000
+gen 70 fitness avg: 105454.250000
+gen 70 lost to gen 38
+
+
+Comparing gen 39 and gen 70 done, took: 7.127172 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 72344
+gen: 70, uid: 1897976495, fitness: 72440
+gen: 39, uid: 773362593, fitness: 92592
+gen: 70, uid: 80968275, fitness: 92644
+gen: 39, uid: 265158675, fitness: 92644
+gen: 39, uid: 41719336, fitness: 93140
+gen: 70, uid: 1120564423, fitness: 102894
+gen: 39, uid: 541566861, fitness: 123292
+gen 39 fitness avg: 100417.000000
+gen 70 fitness avg: 85080.500000
+gen 39 lost to gen 70
+
+
+Comparing gen 40 and gen 70 done, took: 7.140483 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 62247
+gen: 70, uid: 80968275, fitness: 81945
+gen: 70, uid: 706048284, fitness: 82393
+gen: 40, uid: 251259745, fitness: 82639
+gen: 70, uid: 1120564423, fitness: 92443
+gen: 40, uid: 519976525, fitness: 102444
+gen: 40, uid: 1722514703, fitness: 102495
+gen: 40, uid: 173118140, fitness: 133546
+gen 40 fitness avg: 105281.000000
+gen 70 fitness avg: 79757.000000
+gen 40 lost to gen 70
+
+
+Comparing gen 41 and gen 70 done, took: 6.998670 s
+Unfinished games: 0
+gen: 41, uid: 1115221447, fitness: 41645
+gen: 41, uid: 1766848493, fitness: 72543
+gen: 70, uid: 1120564423, fitness: 82144
+gen: 70, uid: 80968275, fitness: 92397
+gen: 41, uid: 2068120519, fitness: 92495
+gen: 41, uid: 1509314419, fitness: 102192
+gen: 70, uid: 1897976495, fitness: 112992
+gen: 70, uid: 706048284, fitness: 143488
+gen 41 fitness avg: 77218.750000
+gen 70 fitness avg: 107755.250000
+gen 70 lost to gen 41
+
+
+Comparing gen 42 and gen 70 done, took: 7.006915 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 62342
+gen: 70, uid: 80968275, fitness: 62395
+gen: 42, uid: 1362019808, fitness: 82596
+gen: 42, uid: 1115221447, fitness: 82597
+gen: 70, uid: 1897976495, fitness: 92546
+gen: 42, uid: 93419456, fitness: 103539
+gen: 42, uid: 738968427, fitness: 122745
+gen: 70, uid: 706048284, fitness: 133589
+gen 42 fitness avg: 97869.250000
+gen 70 fitness avg: 87718.000000
+gen 42 lost to gen 70
+
+
+Comparing gen 43 and gen 70 done, took: 7.161574 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 42097
+gen: 70, uid: 1120564423, fitness: 62541
+gen: 70, uid: 1897976495, fitness: 72197
+gen: 43, uid: 110785536, fitness: 72692
+gen: 43, uid: 1439661357, fitness: 92642
+gen: 43, uid: 480717777, fitness: 123442
+gen: 43, uid: 641446563, fitness: 132993
+gen: 70, uid: 706048284, fitness: 143888
+gen 43 fitness avg: 105442.250000
+gen 70 fitness avg: 80180.750000
+gen 43 lost to gen 70
+
+
+Comparing gen 44 and gen 70 done, took: 7.155962 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 41747
+gen: 70, uid: 1120564423, fitness: 62148
+gen: 70, uid: 1897976495, fitness: 72297
+gen: 70, uid: 706048284, fitness: 92592
+gen: 44, uid: 1060241737, fitness: 92791
+gen: 44, uid: 1747358443, fitness: 113093
+gen: 44, uid: 994264431, fitness: 133093
+gen: 44, uid: 1439661357, fitness: 133435
+gen 44 fitness avg: 118103.000000
+gen 70 fitness avg: 67196.000000
+gen 44 lost to gen 70
+
+
+Comparing gen 45 and gen 70 done, took: 7.042405 s
+Unfinished games: 0
+gen: 45, uid: 465664765, fitness: 32046
+gen: 70, uid: 80968275, fitness: 72743
+gen: 45, uid: 1307739557, fitness: 82391
+gen: 70, uid: 1897976495, fitness: 92053
+gen: 45, uid: 1186303704, fitness: 102843
+gen: 45, uid: 322579905, fitness: 102844
+gen: 70, uid: 706048284, fitness: 103090
+gen: 70, uid: 1120564423, fitness: 153638
+gen 45 fitness avg: 80031.000000
+gen 70 fitness avg: 105381.000000
+gen 70 lost to gen 45
+
+
+Comparing gen 46 and gen 70 done, took: 7.246946 s
+Unfinished games: 0
+gen: 46, uid: 505405953, fitness: 62199
+gen: 70, uid: 80968275, fitness: 62243
+gen: 46, uid: 322579905, fitness: 62538
+gen: 70, uid: 1120564423, fitness: 82195
+gen: 70, uid: 706048284, fitness: 93091
+gen: 70, uid: 1897976495, fitness: 112595
+gen: 46, uid: 465664765, fitness: 113043
+gen: 46, uid: 1857034463, fitness: 153747
+gen 46 fitness avg: 97881.750000
+gen 70 fitness avg: 87531.000000
+gen 46 lost to gen 70
+
+
+Comparing gen 47 and gen 70 done, took: 7.000874 s
+Unfinished games: 0
+gen: 47, uid: 140526773, fitness: 51998
+gen: 47, uid: 17907527, fitness: 62142
+gen: 70, uid: 1120564423, fitness: 72698
+gen: 70, uid: 80968275, fitness: 72888
+gen: 70, uid: 706048284, fitness: 103192
+gen: 47, uid: 1671190868, fitness: 123094
+gen: 70, uid: 1897976495, fitness: 123340
+gen: 47, uid: 567802768, fitness: 133243
+gen 47 fitness avg: 92619.250000
+gen 70 fitness avg: 93029.500000
+gen 70 lost to gen 47
+
+
+Comparing gen 48 and gen 70 done, took: 6.940752 s
+Unfinished games: 0
+gen: 48, uid: 1563546172, fitness: 41792
+gen: 70, uid: 1120564423, fitness: 52245
+gen: 48, uid: 1982403063, fitness: 82242
+gen: 48, uid: 1483075536, fitness: 92894
+gen: 70, uid: 80968275, fitness: 92989
+gen: 70, uid: 706048284, fitness: 112892
+gen: 70, uid: 1897976495, fitness: 123537
+gen: 48, uid: 1536535518, fitness: 143294
+gen 48 fitness avg: 90055.500000
+gen 70 fitness avg: 95415.750000
+gen 70 lost to gen 48
+
+
+Comparing gen 49 and gen 70 done, took: 6.986851 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 21447
+gen: 49, uid: 109105688, fitness: 41893
+gen: 49, uid: 1982403063, fitness: 62144
+gen: 70, uid: 1120564423, fitness: 82693
+gen: 49, uid: 1563546172, fitness: 112939
+gen: 70, uid: 706048284, fitness: 123293
+gen: 70, uid: 1897976495, fitness: 133195
+gen: 49, uid: 645172518, fitness: 163541
+gen 49 fitness avg: 95129.250000
+gen 70 fitness avg: 90157.000000
+gen 49 lost to gen 70
+
+
+Comparing gen 50 and gen 70 done, took: 7.116485 s
+Unfinished games: 0
+gen: 50, uid: 1186053274, fitness: 61899
+gen: 50, uid: 404263984, fitness: 62098
+gen: 70, uid: 1120564423, fitness: 82095
+gen: 70, uid: 706048284, fitness: 82343
+gen: 50, uid: 1588815602, fitness: 82495
+gen: 50, uid: 546763284, fitness: 102244
+gen: 70, uid: 80968275, fitness: 123093
+gen: 70, uid: 1897976495, fitness: 143090
+gen 50 fitness avg: 77184.000000
+gen 70 fitness avg: 107655.250000
+gen 70 lost to gen 50
+
+
+Comparing gen 51 and gen 70 done, took: 6.991057 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 11302
+gen: 70, uid: 1120564423, fitness: 72344
+gen: 51, uid: 1050782977, fitness: 83291
+gen: 51, uid: 801535044, fitness: 112841
+gen: 70, uid: 706048284, fitness: 113190
+gen: 51, uid: 844945457, fitness: 113488
+gen: 51, uid: 1137776032, fitness: 113791
+gen: 70, uid: 1897976495, fitness: 123490
+gen 51 fitness avg: 105852.750000
+gen 70 fitness avg: 80081.500000
+gen 51 lost to gen 70
+
+
+Comparing gen 52 and gen 70 done, took: 7.039122 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 31596
+gen: 52, uid: 1766621417, fitness: 82397
+gen: 70, uid: 706048284, fitness: 82891
+gen: 52, uid: 1803882417, fitness: 92344
+gen: 52, uid: 1592002709, fitness: 92397
+gen: 70, uid: 1897976495, fitness: 112746
+gen: 52, uid: 645172518, fitness: 113239
+gen: 70, uid: 80968275, fitness: 133689
+gen 52 fitness avg: 95094.250000
+gen 70 fitness avg: 90230.500000
+gen 52 lost to gen 70
+
+
+Comparing gen 53 and gen 70 done, took: 6.914891 s
+Unfinished games: 0
+gen: 53, uid: 73462823, fitness: 21548
+gen: 70, uid: 1897976495, fitness: 72292
+gen: 53, uid: 1616201416, fitness: 72396
+gen: 53, uid: 2125264354, fitness: 82447
+gen: 70, uid: 1120564423, fitness: 102596
+gen: 70, uid: 706048284, fitness: 112987
+gen: 53, uid: 38650760, fitness: 133538
+gen: 70, uid: 80968275, fitness: 144039
+gen 53 fitness avg: 77482.250000
+gen 70 fitness avg: 107978.500000
+gen 70 lost to gen 53
+
+
+Comparing gen 54 and gen 70 done, took: 6.946324 s
+Unfinished games: 0
+gen: 54, uid: 1924338936, fitness: 62442
+gen: 54, uid: 763592606, fitness: 72443
+gen: 54, uid: 149200700, fitness: 72594
+gen: 70, uid: 1897976495, fitness: 92339
+gen: 70, uid: 1120564423, fitness: 92693
+gen: 70, uid: 706048284, fitness: 102792
+gen: 54, uid: 1245515529, fitness: 113245
+gen: 70, uid: 80968275, fitness: 132743
+gen 54 fitness avg: 80181.000000
+gen 70 fitness avg: 105141.750000
+gen 70 lost to gen 54
+
+
+Comparing gen 55 and gen 70 done, took: 7.029597 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 72199
+gen: 70, uid: 706048284, fitness: 82397
+gen: 55, uid: 1177957121, fitness: 82496
+gen: 70, uid: 1897976495, fitness: 82895
+gen: 70, uid: 1120564423, fitness: 92786
+gen: 55, uid: 839135484, fitness: 92787
+gen: 55, uid: 1157760002, fitness: 103289
+gen: 55, uid: 100766510, fitness: 133492
+gen 55 fitness avg: 103016.000000
+gen 70 fitness avg: 82569.250000
+gen 55 lost to gen 70
+
+
+Comparing gen 56 and gen 70 done, took: 7.148856 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 51699
+gen: 56, uid: 89714224, fitness: 62293
+gen: 70, uid: 706048284, fitness: 72346
+gen: 70, uid: 1120564423, fitness: 92149
+gen: 56, uid: 172124276, fitness: 92449
+gen: 56, uid: 447865610, fitness: 102493
+gen: 70, uid: 80968275, fitness: 113241
+gen: 56, uid: 1741543758, fitness: 153638
+gen 56 fitness avg: 102718.250000
+gen 70 fitness avg: 82358.750000
+gen 56 lost to gen 70
+
+
+Comparing gen 57 and gen 70 done, took: 8.363916 s
+Unfinished games: 1
+gen: 57, uid: 1580942014, fitness: 62493
+gen: 57, uid: 613172400, fitness: 72594
+gen: 70, uid: 1897976495, fitness: 113244
+gen: 70, uid: 1120564423, fitness: 113583
+gen: 57, uid: 89714224, fitness: 172991
+gen: 70, uid: 80968275, fitness: 183284
+gen: 70, uid: 706048284, fitness: 193338
+gen: 57, uid: 1349939858, fitness: 233933
+gen 57 fitness avg: 135502.750000
+gen 70 fitness avg: 150862.250000
+gen 70 lost to gen 57
+
+
+Comparing gen 58 and gen 70 done, took: 6.965171 s
+Unfinished games: 0
+gen: 70, uid: 80968275, fitness: 52198
+gen: 58, uid: 351163453, fitness: 62492
+gen: 70, uid: 1120564423, fitness: 72592
+gen: 58, uid: 1349939858, fitness: 82939
+gen: 58, uid: 830454212, fitness: 93139
+gen: 70, uid: 706048284, fitness: 102896
+gen: 70, uid: 1897976495, fitness: 123194
+gen: 58, uid: 1332130067, fitness: 153696
+gen 58 fitness avg: 98066.500000
+gen 70 fitness avg: 87720.000000
+gen 58 lost to gen 70
+
+
+Comparing gen 59 and gen 70 done, took: 7.087164 s
+Unfinished games: 0
+gen: 59, uid: 437056555, fitness: 42097
+gen: 70, uid: 1897976495, fitness: 51845
+gen: 59, uid: 1749098599, fitness: 72598
+gen: 70, uid: 80968275, fitness: 82097
+gen: 59, uid: 1464058304, fitness: 102490
+gen: 70, uid: 706048284, fitness: 122596
+gen: 70, uid: 1120564423, fitness: 133341
+gen: 59, uid: 255992545, fitness: 133541
+gen 59 fitness avg: 87681.500000
+gen 70 fitness avg: 97469.750000
+gen 70 lost to gen 59
+
+
+Comparing gen 60 and gen 70 done, took: 7.096562 s
+Unfinished games: 0
+gen: 60, uid: 1287465468, fitness: 61950
+gen: 60, uid: 1017609927, fitness: 62444
+gen: 70, uid: 706048284, fitness: 72495
+gen: 70, uid: 80968275, fitness: 72591
+gen: 70, uid: 1120564423, fitness: 92695
+gen: 60, uid: 1947585480, fitness: 92745
+gen: 60, uid: 585489309, fitness: 133194
+gen: 70, uid: 1897976495, fitness: 153739
+gen 60 fitness avg: 87583.250000
+gen 70 fitness avg: 97880.000000
+gen 70 lost to gen 60
+
+
+Comparing gen 61 and gen 70 done, took: 7.278982 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 41595
+gen: 70, uid: 1120564423, fitness: 61844
+gen: 70, uid: 80968275, fitness: 82848
+gen: 61, uid: 71128823, fitness: 92700
+gen: 61, uid: 1685502687, fitness: 102993
+gen: 61, uid: 1598544377, fitness: 112544
+gen: 61, uid: 1287465468, fitness: 112895
+gen: 70, uid: 1897976495, fitness: 132944
+gen 61 fitness avg: 105283.000000
+gen 70 fitness avg: 79807.750000
+gen 61 lost to gen 70
+
+
+Comparing gen 62 and gen 70 done, took: 7.086074 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 51996
+gen: 62, uid: 213026807, fitness: 72691
+gen: 62, uid: 2141976451, fitness: 82694
+gen: 62, uid: 235540579, fitness: 82944
+gen: 70, uid: 80968275, fitness: 92445
+gen: 62, uid: 257566633, fitness: 102845
+gen: 70, uid: 1897976495, fitness: 123588
+gen: 70, uid: 706048284, fitness: 133190
+gen 62 fitness avg: 85293.500000
+gen 70 fitness avg: 100304.750000
+gen 70 lost to gen 62
+
+
+Comparing gen 63 and gen 70 done, took: 7.101914 s
+Unfinished games: 0
+gen: 63, uid: 315124683, fitness: 72691
+gen: 63, uid: 1095491723, fitness: 82043
+gen: 70, uid: 80968275, fitness: 82096
+gen: 70, uid: 706048284, fitness: 82492
+gen: 70, uid: 1120564423, fitness: 82696
+gen: 63, uid: 683511274, fitness: 102644
+gen: 70, uid: 1897976495, fitness: 112943
+gen: 63, uid: 991122175, fitness: 122398
+gen 63 fitness avg: 94944.000000
+gen 70 fitness avg: 90056.750000
+gen 63 lost to gen 70
+
+
+Comparing gen 64 and gen 70 done, took: 7.006365 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 61294
+gen: 64, uid: 1153796125, fitness: 62197
+gen: 64, uid: 181596011, fitness: 62296
+gen: 70, uid: 706048284, fitness: 83039
+gen: 64, uid: 1058332392, fitness: 103191
+gen: 70, uid: 80968275, fitness: 112943
+gen: 64, uid: 762922910, fitness: 113344
+gen: 70, uid: 1897976495, fitness: 143487
+gen 64 fitness avg: 85257.000000
+gen 70 fitness avg: 100190.750000
+gen 70 lost to gen 64
+
+
+Comparing gen 65 and gen 70 done, took: 6.868605 s
+Unfinished games: 0
+gen: 70, uid: 706048284, fitness: 21497
+gen: 65, uid: 777281765, fitness: 62198
+gen: 70, uid: 1897976495, fitness: 92593
+gen: 65, uid: 1863436742, fitness: 92791
+gen: 65, uid: 669184738, fitness: 92796
+gen: 70, uid: 1120564423, fitness: 93090
+gen: 70, uid: 80968275, fitness: 143689
+gen: 65, uid: 1294742057, fitness: 143890
+gen 65 fitness avg: 97918.750000
+gen 70 fitness avg: 87717.250000
+gen 65 lost to gen 70
+
+
+Comparing gen 66 and gen 70 done, took: 6.997581 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 61745
+gen: 70, uid: 80968275, fitness: 62391
+gen: 66, uid: 1800936967, fitness: 92490
+gen: 66, uid: 1459063317, fitness: 92551
+gen: 70, uid: 1897976495, fitness: 92689
+gen: 66, uid: 909198748, fitness: 92996
+gen: 70, uid: 706048284, fitness: 113191
+gen: 66, uid: 1831032910, fitness: 133538
+gen 66 fitness avg: 102893.750000
+gen 70 fitness avg: 82504.000000
+gen 66 lost to gen 70
+
+
+Comparing gen 67 and gen 70 done, took: 7.067690 s
+Unfinished games: 0
+gen: 67, uid: 1001377233, fitness: 21596
+gen: 67, uid: 849344029, fitness: 52641
+gen: 70, uid: 80968275, fitness: 61398
+gen: 70, uid: 1120564423, fitness: 62441
+gen: 70, uid: 1897976495, fitness: 122444
+gen: 67, uid: 892711600, fitness: 123247
+gen: 67, uid: 679687041, fitness: 143494
+gen: 70, uid: 706048284, fitness: 153339
+gen 67 fitness avg: 85244.500000
+gen 70 fitness avg: 99905.500000
+gen 70 lost to gen 67
+
+
+Comparing gen 68 and gen 70 done, took: 6.782733 s
+Unfinished games: 0
+gen: 70, uid: 1120564423, fitness: 52145
+gen: 68, uid: 892711600, fitness: 61950
+gen: 68, uid: 176571931, fitness: 72795
+gen: 70, uid: 80968275, fitness: 82642
+gen: 68, uid: 71714938, fitness: 103043
+gen: 70, uid: 1897976495, fitness: 113190
+gen: 70, uid: 706048284, fitness: 123430
+gen: 68, uid: 553683635, fitness: 133392
+gen 68 fitness avg: 92795.000000
+gen 70 fitness avg: 92851.750000
+gen 70 lost to gen 68
+
+
+Comparing gen 69 and gen 70 done, took: 7.435251 s
+Unfinished games: 0
+gen: 70, uid: 1897976495, fitness: 71899
+gen: 69, uid: 1621159765, fitness: 71997
+gen: 70, uid: 80968275, fitness: 82242
+gen: 69, uid: 311303149, fitness: 92094
+gen: 69, uid: 128776767, fitness: 92248
+gen: 70, uid: 706048284, fitness: 102642
+gen: 69, uid: 797980438, fitness: 112546
+gen: 70, uid: 1120564423, fitness: 112644
+gen 69 fitness avg: 92221.250000
+gen 70 fitness avg: 92356.750000
+gen 70 lost to gen 69
+
+----------------------------------------------------------------------------
+Generation: 71
+Playing done, took: 31.240237 s
+uid: 1883198728, fitness: 833
+uid: 1469874658, fitness: 21182
+uid: 376246525, fitness: 21280
+uid: 849769884, fitness: 21626
+uid: 1234282967, fitness: 31086
+uid: 80968275, fitness: 31431
+uid: 641151874, fitness: 31678
+uid: 1079829208, fitness: 41231
+uid: 1833435090, fitness: 41233
+uid: 680933123, fitness: 41280
+
+Unfinished games: 0
+Average fitness across population: 61704.326923
+Crossover and mutation took: 3.409222 s
+----------------------------------------------------------------------------
+Generation: 72
+Playing done, took: 30.799233 s
+uid: 1377187564, fitness: 20934
+uid: 292824717, fitness: 21030
+uid: 873411580, fitness: 21134
+uid: 2015656284, fitness: 21181
+uid: 29676460, fitness: 21333
+uid: 275176965, fitness: 31079
+uid: 684449525, fitness: 31379
+uid: 1883198728, fitness: 31426
+uid: 1545654371, fitness: 31481
+uid: 941753952, fitness: 31729
+
+Unfinished games: 0
+Average fitness across population: 61769.211538
+Crossover and mutation took: 3.417843 s
+----------------------------------------------------------------------------
+Generation: 73
+Playing done, took: 32.017570 s
+uid: 928429753, fitness: 11030
+uid: 1506589039, fitness: 31084
+uid: 275176965, fitness: 31281
+uid: 1545654371, fitness: 31379
+uid: 1377187564, fitness: 31383
+uid: 2015656284, fitness: 31479
+uid: 1083604987, fitness: 41282
+uid: 1883198728, fitness: 41431
+uid: 1911526508, fitness: 41875
+uid: 1469886727, fitness: 41877
+
+Unfinished games: 1
+Average fitness across population: 69490.711538
+Crossover and mutation took: 3.414468 s
+----------------------------------------------------------------------------
+Generation: 74
+Playing done, took: 31.085413 s
+uid: 1883198728, fitness: 882
+uid: 928429753, fitness: 11080
+uid: 301293724, fitness: 20783
+uid: 915772819, fitness: 21129
+uid: 350352428, fitness: 21382
+uid: 1100554664, fitness: 31379
+uid: 724764665, fitness: 41180
+uid: 341660827, fitness: 41180
+uid: 809654352, fitness: 41379
+uid: 245403669, fitness: 41379
+
+Unfinished games: 0
+Average fitness across population: 61716.692308
+Crossover and mutation took: 3.401991 s
+----------------------------------------------------------------------------
+Generation: 75
+Playing done, took: 30.569799 s
+uid: 301293724, fitness: 732
+uid: 1100554664, fitness: 11133
+uid: 256664575, fitness: 21282
+uid: 64320811, fitness: 21580
+uid: 262461432, fitness: 31182
+uid: 1480571201, fitness: 31631
+uid: 1004347564, fitness: 41281
+uid: 211053834, fitness: 41379
+uid: 350352428, fitness: 41429
+uid: 1974641738, fitness: 41430
+
+Unfinished games: 0
+Average fitness across population: 61800.865385
+Crossover and mutation took: 3.388748 s
+----------------------------------------------------------------------------
+Generation: 76
+Playing done, took: 30.496879 s
+uid: 1098505946, fitness: 10882
+uid: 394317006, fitness: 21280
+uid: 465621134, fitness: 31284
+uid: 301293724, fitness: 31332
+uid: 80467968, fitness: 31380
+uid: 881632355, fitness: 31382
+uid: 1927545673, fitness: 31775
+uid: 64320811, fitness: 41129
+uid: 1100554664, fitness: 41134
+uid: 1565263847, fitness: 41184
+
+Unfinished games: 0
+Average fitness across population: 61791.442308
+Crossover and mutation took: 3.394880 s
+----------------------------------------------------------------------------
+Generation: 77
+Playing done, took: 30.703774 s
+uid: 615528848, fitness: 10933
+uid: 997531007, fitness: 21129
+uid: 1098505946, fitness: 21227
+uid: 525838233, fitness: 30983
+uid: 23137326, fitness: 31080
+uid: 835501449, fitness: 31183
+uid: 2070806459, fitness: 31380
+uid: 394317006, fitness: 31482
+uid: 1680593553, fitness: 41332
+uid: 1573360744, fitness: 41480
+
+Unfinished games: 0
+Average fitness across population: 61724.403846
+Crossover and mutation took: 3.400601 s
+----------------------------------------------------------------------------
+Generation: 78
+Playing done, took: 30.554720 s
+uid: 740869263, fitness: 682
+uid: 86592731, fitness: 20484
+uid: 525838233, fitness: 20830
+uid: 1098505946, fitness: 30981
+uid: 394317006, fitness: 31381
+uid: 23137326, fitness: 41031
+uid: 2138510067, fitness: 41332
+uid: 835501449, fitness: 41381
+uid: 615528848, fitness: 41381
+uid: 2003101917, fitness: 41432
+
+Unfinished games: 0
+Average fitness across population: 61772.538462
+Crossover and mutation took: 3.389392 s
+----------------------------------------------------------------------------
+Generation: 79
+Playing done, took: 30.516936 s
+uid: 185940930, fitness: 736
+uid: 2074175274, fitness: 11083
+uid: 1480026367, fitness: 20981
+uid: 820790144, fitness: 21327
+uid: 716441436, fitness: 21432
+uid: 23137326, fitness: 31128
+uid: 2003101917, fitness: 31329
+uid: 157437057, fitness: 31480
+uid: 1225562692, fitness: 31530
+uid: 1546382851, fitness: 31632
+
+Unfinished games: 0
+Average fitness across population: 61828.653846
+Crossover and mutation took: 3.414493 s
+----------------------------------------------------------------------------
+Generation: 80
+Playing done, took: 31.529899 s
+uid: 287313699, fitness: 20980
+uid: 1546382851, fitness: 30982
+uid: 326859513, fitness: 31132
+uid: 1360698570, fitness: 31231
+uid: 373024585, fitness: 31232
+uid: 1948047188, fitness: 31379
+uid: 185940930, fitness: 31382
+uid: 1944936147, fitness: 40883
+uid: 1799513831, fitness: 40932
+uid: 1691440492, fitness: 41331
+
+Unfinished games: 0
+Average fitness across population: 61687.384615
+Crossover and mutation took: 3.452464 s
+
+Comparing gen 1 and gen 80 done, took: 7.046005 s
+Unfinished games: 0
+gen: 80, uid: 326859513, fitness: 41649
+gen: 80, uid: 1360698570, fitness: 41749
+gen: 80, uid: 1546382851, fitness: 62493
+gen: 1, uid: 449906158, fitness: 92984
+gen: 80, uid: 287313699, fitness: 93245
+gen: 1, uid: 1590313938, fitness: 133483
+gen: 1, uid: 1372739908, fitness: 133943
+gen: 1, uid: 1410405470, fitness: 144386
+gen 1 fitness avg: 126199.000000
+gen 80 fitness avg: 59784.000000
+gen 1 lost to gen 80
+
+
+Comparing gen 2 and gen 80 done, took: 7.404690 s
+Unfinished games: 0
+gen: 80, uid: 1360698570, fitness: 21251
+gen: 80, uid: 1546382851, fitness: 42198
+gen: 80, uid: 287313699, fitness: 61901
+gen: 80, uid: 326859513, fitness: 72346
+gen: 2, uid: 1410405470, fitness: 113347
+gen: 2, uid: 609899854, fitness: 113385
+gen: 2, uid: 881839918, fitness: 144039
+gen: 2, uid: 1322872257, fitness: 174227
+gen 2 fitness avg: 136249.500000
+gen 80 fitness avg: 49424.000000
+gen 2 lost to gen 80
+
+
+Comparing gen 3 and gen 80 done, took: 7.162312 s
+Unfinished games: 0
+gen: 80, uid: 1360698570, fitness: 62395
+gen: 3, uid: 775333531, fitness: 72493
+gen: 80, uid: 1546382851, fitness: 82247
+gen: 80, uid: 326859513, fitness: 82298
+gen: 3, uid: 1983385005, fitness: 102837
+gen: 80, uid: 287313699, fitness: 102886
+gen: 3, uid: 1079291762, fitness: 112986
+gen: 3, uid: 1410405470, fitness: 123542
+gen 3 fitness avg: 102964.500000
+gen 80 fitness avg: 82456.500000
+gen 3 lost to gen 80
+
+
+Comparing gen 4 and gen 80 done, took: 7.050371 s
+Unfinished games: 0
+gen: 80, uid: 287313699, fitness: 51801
+gen: 4, uid: 1691195314, fitness: 62544
+gen: 4, uid: 899512455, fitness: 82299
+gen: 80, uid: 1360698570, fitness: 82591
+gen: 80, uid: 1546382851, fitness: 82592
+gen: 80, uid: 326859513, fitness: 102943
+gen: 4, uid: 102035771, fitness: 134130
+gen: 4, uid: 1868946774, fitness: 143783
+gen 4 fitness avg: 105689.000000
+gen 80 fitness avg: 79981.750000
+gen 4 lost to gen 80
+
+
+Comparing gen 5 and gen 80 done, took: 7.364630 s
+Unfinished games: 0
+gen: 80, uid: 1546382851, fitness: 62096
+gen: 5, uid: 636638383, fitness: 72243
+gen: 80, uid: 1360698570, fitness: 82296
+gen: 80, uid: 326859513, fitness: 82443
+gen: 5, uid: 1038680060, fitness: 82447
+gen: 5, uid: 102035771, fitness: 102492
+gen: 80, uid: 287313699, fitness: 123242
+gen: 5, uid: 1884388166, fitness: 133481
+gen 5 fitness avg: 97665.750000
+gen 80 fitness avg: 87519.250000
+gen 5 lost to gen 80
+
+
+Comparing gen 6 and gen 80 done, took: 7.228051 s
+Unfinished games: 0
+gen: 80, uid: 1546382851, fitness: 52446
+gen: 6, uid: 636638383, fitness: 62393
+gen: 80, uid: 287313699, fitness: 82447
+gen: 80, uid: 1360698570, fitness: 92242
+gen: 6, uid: 2104840380, fitness: 102841
+gen: 6, uid: 2049873183, fitness: 102930
+gen: 80, uid: 326859513, fitness: 112847
+gen: 6, uid: 1901628473, fitness: 133346
+gen 6 fitness avg: 100377.500000
+gen 80 fitness avg: 84995.500000
+gen 6 lost to gen 80
+
+
+Comparing gen 7 and gen 80 done, took: 7.266813 s
+Unfinished games: 0
+gen: 80, uid: 326859513, fitness: 42394
+gen: 80, uid: 287313699, fitness: 71798
+gen: 7, uid: 1975427348, fitness: 72643
+gen: 7, uid: 981443849, fitness: 102596
+gen: 80, uid: 1360698570, fitness: 103145
+gen: 7, uid: 14872224, fitness: 103239
+gen: 80, uid: 1546382851, fitness: 113096
+gen: 7, uid: 116507942, fitness: 133284
+gen 7 fitness avg: 102940.500000
+gen 80 fitness avg: 82608.250000
+gen 7 lost to gen 80
+
+
+Comparing gen 8 and gen 80 done, took: 7.284285 s
+Unfinished games: 0
+gen: 80, uid: 1546382851, fitness: 31546
+gen: 80, uid: 326859513, fitness: 62347
+gen: 8, uid: 1538676197, fitness: 82347
+gen: 8, uid: 102035771, fitness: 82445
+gen: 80, uid: 287313699, fitness: 102047
+gen: 8, uid: 6180689, fitness: 112743
+gen: 80, uid: 1360698570, fitness: 123042
+gen: 8, uid: 456504022, fitness: 143334
+gen 8 fitness avg: 105217.250000
+gen 80 fitness avg: 79745.500000
+gen 8 lost to gen 80
+
+
+Comparing gen 9 and gen 80 done, took: 7.175714 s
+Unfinished games: 0
+gen: 80, uid: 326859513, fitness: 51742
+gen: 9, uid: 39146345, fitness: 52490
+gen: 80, uid: 1360698570, fitness: 62397
+gen: 9, uid: 2129878723, fitness: 72393
+gen: 80, uid: 1546382851, fitness: 92747
+gen: 80, uid: 287313699, fitness: 102694
+gen: 9, uid: 293931840, fitness: 153190
+gen: 9, uid: 156397104, fitness: 153841
+gen 9 fitness avg: 107978.500000
+gen 80 fitness avg: 77395.000000
+gen 9 lost to gen 80
+
