@@ -473,7 +473,7 @@ public:
         for(int i = 0; i < player_count; ++i)
         {
             // currently, linear progression but changing could be beneficial
-            results[player_scores[i].second] += (player_count - i) * 10000;
+            results[player_scores[i].second] += (player_count - i - 1) * 10000;
         }
 
         // bonus points for better win

@@ -21,25 +21,42 @@ using namespace std;
 class GeneticAlgorithm
 {
 public:
+    // data on objects
+    Board test_board;
+    vector<LayerBase> layers;
+
+    // population data
     int population_size;
     int rounds;
     int players;
     int generation;
+    vector<Agent> population;
+
+    // handling comparison between generations
+    int saved_agents;
+    int test_rounds;
+    [[maybe_unused]] string saved_networks;
+    vector<vector<Agent> > past_generations;
+
+    // mutations
     bool mutation_based;
     double mutation_rate;
     double mutation_range;
+
+    // output
     bool debug;
     bool print_fitness;
-    string saved_networks;
-    vector<Agent> population;
-    vector<LayerBase> layers;
-    RngGenerator rng;
-    Board test_board;
 
-    GeneticAlgorithm(int players, int population_size, int rounds, double mutation_rate, double mutation_range,
-                     vector<LayerBase> layers_l, bool rand_start, bool print_fitness, bool debug)
+    // rng
+    RngGenerator rng;
+
+    GeneticAlgorithm(int players, int population_size, int rounds,
+                     double mutation_rate, double mutation_range,
+                     vector<LayerBase> layers_l,
+                     bool rand_start, bool print_fitness, bool debug,
+                     int population_champions, int testRounds)
     {
-        generation = 1;
+        generation = 0;
         this->debug = debug;
         this->print_fitness = print_fitness;
 
@@ -48,6 +65,9 @@ public:
         this->mutation_range = mutation_range;
 
         saved_networks = "saved_networks.txt";
+        saved_agents = population_champions;
+        test_rounds = testRounds;
+
         this->players = players;
         // making population divisible by players number;
         if(population_size % players)
@@ -71,7 +91,7 @@ public:
     {
         // print separator and current generation number
         printf("----------------------------------------------------------------------------\n");
-        printf("Generation: %d\n", generation);
+        printf("Generation: %d\n", generation+1);
 
         // start measuring time for playing phase
         chrono::time_point<chrono::system_clock> start, end;
@@ -91,7 +111,13 @@ public:
         sort(population.begin(), population.end(),
              [](Agent const &a1, Agent const &a2) { return a1.fitness < a2.fitness; });
 
-        population[0].save_to_file(saved_networks);
+        // population[0].save_to_file(saved_networks);
+        vector<Agent> champions(saved_agents);
+        for(int i = 0; i < saved_agents; ++i)
+        {
+            champions[i] = population[i];
+        }
+        past_generations.push_back(champions);
 
         // if fitness printing enabled print top 10 best performers
         if(print_fitness)
@@ -100,8 +126,6 @@ public:
             for (int i = 0; i < min(population_size, 10); ++i) {
                 printf("uid: %d, fitness: %d\n", population[i].uid, population[i].fitness);
             }
-
-
         }
 
         // sum all fitnesses
@@ -150,7 +174,7 @@ public:
         generation++;
     }
 
-    int play_game(int max_move) // result changes depending on the shuffle of the deck
+    int play_game(int max_move) // result may change depending on the shuffle of the deck
     {
         int unfinished = 0;
 
@@ -185,6 +209,96 @@ public:
         }
 
         return unfinished;
+    }
+
+    void compare_generations(int gen1, int gen2, int max_move)
+    {
+        gen1--;
+        gen2--;
+
+        int unfinished = 0;
+
+        // start measuring time for playing phase
+        chrono::time_point<chrono::system_clock> start, end;
+        start = chrono::system_clock::now();
+
+        vector<pair<Agent, int> > temporary_population(2 * saved_agents);
+
+        for(int i = 0; i < saved_agents; ++i)
+        {
+            temporary_population[i*2] = {past_generations[gen1][i], 0};
+            temporary_population[i*2+1] = {past_generations[gen2][i], 1};
+            temporary_population[i*2].first.fitness = 0;
+            temporary_population[i*2+1].first.fitness = 0;
+        }
+
+        // printf("%d %d", saved_agents, temporary_population.size());
+
+        for(int i = 0; i < test_rounds; ++i)
+        {
+            shuffle(temporary_population.begin(), temporary_population.end(), rng.rng);
+            vector<Agent> players_batch;
+            for(int j = 0; j < (temporary_population.size() / players); ++j)
+            {
+                players_batch.clear();
+                for(int k = 0; k < players; ++k)
+                {
+                    players_batch.push_back(temporary_population[j * players + k].first);
+                }
+                SplendorGame game = SplendorGame(players, players_batch, test_board);
+                game.debug = debug;
+
+                vector<int> fitness_results = game.play_game(max_move);
+
+                if(fitness_results[0] > 100000)
+                {
+                    unfinished++;
+                }
+
+                for(int k = 0; k < players; ++k)
+                {
+                    temporary_population[j * players + k].first.fitness += fitness_results[k];
+                }
+            }
+        }
+
+        // finish measuring time for playing phase
+        end = chrono::system_clock::now();
+        chrono::duration<double> elapsed_seconds = end - start;
+
+        // print elapsed time
+        printf("\nComparing gen %d and gen %d done, took: %lf s\n", gen1+1, gen2+1, elapsed_seconds.count());
+
+        // sort by fitness
+        sort(temporary_population.begin(), temporary_population.end(),
+             [](pair<Agent, int> const &a1, pair<Agent, int> const &a2) { return a1.first.fitness < a2.first.fitness; });
+
+        printf("Unfinished games: %d\n", unfinished);
+
+        // print only top ten best
+        for (int i = 0; i < min(temporary_population.size(), 10ul); ++i) {
+            printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].second == 0) ? gen1+1 : gen2+1,
+                   temporary_population[i].first.uid, temporary_population[i].first.fitness);
+        }
+
+        int sum_over_gen1 = 0;
+        int sum_over_gen2 = 0;
+
+        for(auto & i : temporary_population)
+        {
+            if(i.second == 0)
+                sum_over_gen1 += i.first.fitness;
+            else
+                sum_over_gen2 += i.first.fitness;
+        }
+
+        printf("gen %d fitness avg: %lf\ngen %d fitness avg: %lf\n", gen1+1,
+               double(sum_over_gen1) / saved_agents, gen2+1, double(sum_over_gen2) / saved_agents);
+
+        if(sum_over_gen1 > sum_over_gen2)
+            printf("Improvement! (gen %d lost to gen %d)\n\n", gen1+1, gen2+1);
+        else
+            printf("Downgrade (gen %d lost to gen %d)\n\n", gen2+1, gen1+1);
     }
 
     // replace worst performing agents with new random ones
@@ -272,7 +386,7 @@ public:
                 {
                     gene += gene * rng.nextDouble(-mutation_range, mutation_range);
                 }
-                if(rng.nextDouble(0.0, 1.0) < mutation_rate / 3)
+                if(rng.nextDouble(0.0, 1.0) < mutation_rate / 20)
                 {
                     gene *= -1;
                 }
@@ -292,28 +406,41 @@ vector<LayerBase> layers;
 
 int main()
 {
-    int thread_count = 10;
     setbuf(stdout, nullptr);
+
+    int thread_count = 1;
+    int player_count = 4;
+    int population_champions = 4;
+    int max_move = 100;
+
     layers.emplace_back(0, "sigmoid"); // first layer will automatically initialise
     layers.emplace_back(300, "linear");
     layers.emplace_back(200, "relu");
     layers.emplace_back(100, "sigmoid");
     layers.emplace_back(60, "relu");
-    int player_count = 2;
+
     // training time is mostly dependent on population_size * rounds
-    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 40, 4, 0.01, 0.05,
-                                                layers, true, true, false);
+    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 52, 4, 0.01, 0.05,
+                                                layers, true, true, false, population_champions, 6);
 
+    long double nn_vectified_size = handler.population[0].nn.vectify().size();
 
-    printf("Approximate memory usage (neural network): %.3LfMB, (boards): %.3LfMB\n",
-           (long double)handler.population[0].nn.vectify().size() * 8.0 * handler.population_size / 1048576.0,
+    printf("Approximate memory usage (neural network): %.3LfMB, (boards): %.3LfMB, (saved networks per generation): %.3LfMB\n",
+           nn_vectified_size * 8.0 * handler.population_size / 1048576.0,
            ((long double)handler.test_board.vectify(0).size() * 8.0 / 1048576.0 +
-           (long double)handler.population[0].nn.vectify().size() * 8.0 * player_count / 1048576.0) * thread_count);
+           nn_vectified_size * 8.0 * player_count / 1048576.0) * thread_count,
+           nn_vectified_size * 8.0 * population_champions / 1048576.0);
 
     for(int i = 0; i < 100; ++i)
     {
         // TODO some multithreading wouldn't hurt
-        // TODO fitness is bad distinction across generations
-        handler.proceed_one_generation(5, 100, "divide_parents");
+        // TODO add few members from past generations for learning
+        // TODO more crossovers
+        // TODO add way to play with ai
+        handler.proceed_one_generation(10, max_move, "divide_parents");
+        if(handler.generation != 1)
+        {
+            handler.compare_generations(handler.generation - 1, handler.generation, max_move);
+        }
     }
 }

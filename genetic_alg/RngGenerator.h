@@ -62,7 +62,7 @@ public:
         res = abs(res);
 
         res *= double(to - from) / 5.0;
-        return int(res) + from;
+        return min(int(res) + from, to);
     }
 };
 

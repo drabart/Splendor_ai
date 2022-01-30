@@ -18,9 +18,15 @@ public:
     NeuralNetwork nn;
     int fitness;
     int uid{};
-    bool mutation_based;
+    bool mutation_based{};
     vector<LayerBase> layers;
     RngGenerator rng;
+
+    Agent()
+    {
+        this->layers = move(layers);
+        fitness = 0;
+    }
 
     Agent(vector<LayerBase> layers, bool rng)
     {
