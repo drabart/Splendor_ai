@@ -18,6 +18,7 @@ public:
     NeuralNetwork nn;
     int fitness;
     int uid{};
+    int gen{};
     bool mutation_based{};
     vector<LayerBase> layers;
     RngGenerator rng;

@@ -33,6 +33,7 @@ public:
     vector<Agent> population;
 
     // handling comparison between generations
+    int past_gen_trainees;
     int saved_agents;
     int test_rounds;
     [[maybe_unused]] string saved_networks;
@@ -54,7 +55,7 @@ public:
                      double mutation_rate, double mutation_range,
                      vector<LayerBase> layers_l,
                      bool rand_start, bool print_fitness, bool debug,
-                     int population_champions, int testRounds)
+                     int past_gen_help, int population_champions, int testRounds)
     {
         generation = 0;
         this->debug = debug;
@@ -66,6 +67,7 @@ public:
 
         saved_networks = "saved_networks.txt";
         saved_agents = population_champions;
+        past_gen_trainees = past_gen_help;
         test_rounds = testRounds;
 
         this->players = players;
@@ -111,12 +113,19 @@ public:
         sort(population.begin(), population.end(),
              [](Agent const &a1, Agent const &a2) { return a1.fitness < a2.fitness; });
 
+        // save best network to file
         // population[0].save_to_file(saved_networks);
+
+        // pick 'saved_agents' best Agents for use in future generations
         vector<Agent> champions(saved_agents);
         for(int i = 0; i < saved_agents; ++i)
         {
+            // sets the gen variable to differentiate during comparison
+            population[i].gen = generation;
+            // append to buffer
             champions[i] = population[i];
         }
+        // add buffer to the main object holding past Agents
         past_generations.push_back(champions);
 
         // if fitness printing enabled print top 10 best performers
@@ -142,10 +151,15 @@ public:
         start = chrono::system_clock::now();
 
         // pick crossover from argument
+        // every crossover leaves of 'threshold' best performing Agents to the next generation
+        // every crossover picks randomly 'past_gen_trainee' Agents from past generations
+        // 'old Agents' used later refers to the Agents not mentioned above
+        // this crossover creates new random Agents in place of old Agents
         if(crossover_type == "cut_fill")
         {
             crossover_cut_fill(threshold);
         }
+        // replaces old Agents with new ones created with prefix of one parent genes and suffix of second parent
         else if(crossover_type == "divide_parents")
         {
             crossover_divide_parents(threshold);
@@ -174,22 +188,25 @@ public:
         generation++;
     }
 
-    int play_game(int max_move) // result may change depending on the shuffle of the deck
+    // TODO add multithreading here
+    // calculates and sets fitness values, and returns number of unfinished games
+    int play_games(vector<Agent> &temp_population, int game_rounds, int max_move)
     {
         int unfinished = 0;
 
-        for(int i = 0; i < population_size; ++i)
-            population[i].fitness = 0;
-        for(int i = 0; i < rounds; ++i)
+        for(auto & agent : temp_population)
+            agent.fitness = 0;
+
+        for(int i = 0; i < game_rounds; ++i)
         {
-            shuffle(population.begin(), population.end(), rng.rng);
+            shuffle(temp_population.begin(), temp_population.end(), rng.rng);
             vector<Agent> players_batch;
-            for(int j = 0; j < (population_size / players); ++j)
+            for(int j = 0; j < (temp_population.size() / players); ++j)
             {
                 players_batch.clear();
                 for(int k = 0; k < players; ++k)
                 {
-                    players_batch.push_back(population[j * players + k]);
+                    players_batch.push_back(temp_population[j * players + k]);
                 }
                 SplendorGame game = SplendorGame(players, players_batch, test_board);
                 game.debug = debug;
@@ -203,64 +220,41 @@ public:
 
                 for(int k = 0; k < players; ++k)
                 {
-                    population[j * players + k].fitness += fitness_results[k];
+                    temp_population[j * players + k].fitness += fitness_results[k];
                 }
             }
         }
-
         return unfinished;
     }
 
-    void compare_generations(int gen1, int gen2, int max_move)
+    int play_game(int max_move) // result may change depending on the shuffle of the deck
+    {
+        return play_games(population, rounds, max_move);
+    }
+
+    [[maybe_unused]] void compare_generations(int gen1, int gen2, int max_move)
     {
         gen1--;
         gen2--;
-
-        int unfinished = 0;
 
         // start measuring time for playing phase
         chrono::time_point<chrono::system_clock> start, end;
         start = chrono::system_clock::now();
 
-        vector<pair<Agent, int> > temporary_population(2 * saved_agents);
+        vector<Agent>temporary_population(2 * saved_agents);
 
         for(int i = 0; i < saved_agents; ++i)
         {
-            temporary_population[i*2] = {past_generations[gen1][i], 0};
-            temporary_population[i*2+1] = {past_generations[gen2][i], 1};
-            temporary_population[i*2].first.fitness = 0;
-            temporary_population[i*2+1].first.fitness = 0;
+            temporary_population[i*2] = past_generations[gen1][i];
+            temporary_population[i*2+1] = past_generations[gen2][i];
+            temporary_population[i*2].fitness = 0;
+            temporary_population[i*2+1].fitness = 0;
         }
 
         // printf("%d %d", saved_agents, temporary_population.size());
 
-        for(int i = 0; i < test_rounds; ++i)
-        {
-            shuffle(temporary_population.begin(), temporary_population.end(), rng.rng);
-            vector<Agent> players_batch;
-            for(int j = 0; j < (temporary_population.size() / players); ++j)
-            {
-                players_batch.clear();
-                for(int k = 0; k < players; ++k)
-                {
-                    players_batch.push_back(temporary_population[j * players + k].first);
-                }
-                SplendorGame game = SplendorGame(players, players_batch, test_board);
-                game.debug = debug;
-
-                vector<int> fitness_results = game.play_game(max_move);
-
-                if(fitness_results[0] > 100000)
-                {
-                    unfinished++;
-                }
-
-                for(int k = 0; k < players; ++k)
-                {
-                    temporary_population[j * players + k].first.fitness += fitness_results[k];
-                }
-            }
-        }
+        int unfinished;
+        unfinished = play_games(temporary_population, test_rounds, max_move);
 
         // finish measuring time for playing phase
         end = chrono::system_clock::now();
@@ -271,16 +265,17 @@ public:
 
         // sort by fitness
         sort(temporary_population.begin(), temporary_population.end(),
-             [](pair<Agent, int> const &a1, pair<Agent, int> const &a2) { return a1.first.fitness < a2.first.fitness; });
+             [](Agent const &a1, Agent const &a2) { return a1.fitness < a2.fitness; });
 
         printf("Unfinished games: %d\n", unfinished);
 
+        // printing best performers
         if(print_fitness)
         {
             // print only top ten best
             for (int i = 0; i < min(temporary_population.size(), 10ul); ++i) {
-                printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].second == 0) ? gen1 + 1 : gen2 + 1,
-                       temporary_population[i].first.uid, temporary_population[i].first.fitness);
+                printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].gen == gen1) ? gen1 + 1 : gen2 + 1,
+                       temporary_population[i].uid, temporary_population[i].fitness);
             }
         }
 
@@ -289,10 +284,10 @@ public:
 
         for(auto & i : temporary_population)
         {
-            if(i.second == 0)
-                sum_over_gen1 += i.first.fitness;
+            if(i.gen == gen1)
+                sum_over_gen1 += i.fitness;
             else
-                sum_over_gen2 += i.first.fitness;
+                sum_over_gen2 += i.fitness;
         }
 
         printf("gen %d fitness avg: %lf\ngen %d fitness avg: %lf\n", gen1+1,
@@ -320,62 +315,69 @@ public:
     // how many agents pass without selection
     void crossover_divide_parents(int threshold)
     {
+        // population is already sorted by fitness from best to worst
         vector<Agent> new_population = population;
 
-        for(int i = threshold; i < population_size; i+=2)
+        // leaves off threshold of the best performers
+        // if there have been
+        for(int i = threshold; i < population_size - (generation > 0 ? past_gen_trainees : 0); i++)
         {
+            // pick 2 parents with gaussian distribution
             int parent_id1 = rng.nextNormalInt(0, population_size - 1);
             int parent_id2 = rng.nextNormalInt(0, population_size - 1);
-            // printf("%d %d\n", parent_id1, parent_id2);
+            // copy parents for ease of use later
             Agent parent1 = population[parent_id1];
             Agent parent2 = population[parent_id2];
+            // getting numerical values from parents
             vector<double> genes1 = parent1.nn.vectify();
             vector<double> genes2 = parent2.nn.vectify();
 
+            // TODO check if not obsolete
+            // counting number of weights and biases
             int weights_count = int(genes1[genes1.size()-2]);
             int biases_count = int(genes1[genes1.size()-1]);
 
-            vector<double> new_weights1(weights_count);
-            vector<double> new_weights2(weights_count);
+            // vectors for new weights and biases
+            vector<double> new_weights(weights_count);
+            vector<double> new_biases(biases_count);
 
-            vector<double> new_biases1(biases_count);
-            vector<double> new_biases2(biases_count);
-
+            // choosing place to split parents with uniform distribution
             int cutoff_w = rng.nextInt(1, weights_count-2);
             int cutoff_b = rng.nextInt(1, biases_count-2);
             // int cutoff_b = 0;
 
             for(int j = 0; j < cutoff_w; ++j)
-            {
-                new_weights1[j] = genes1[j];
-                new_weights2[j] = genes2[j];
-            }
+                new_weights[j] = genes1[j];
 
             for(int j = cutoff_w; j < weights_count; ++j)
-            {
-                new_weights1[j] = genes2[j];
-                new_weights2[j] = genes1[j];
-            }
+                new_weights[j] = genes2[j];
 
             for(int j = 0; j < cutoff_b; ++j)
-            {
-                new_weights1[j] = genes1[j + weights_count];
-                new_weights2[j] = genes2[j + weights_count];
-            }
+                new_weights[j] = genes1[j + weights_count];
 
             for(int j = cutoff_b; j < biases_count; ++j)
-            {
-                new_weights1[j] = genes2[j + weights_count];
-                new_weights2[j] = genes1[j + weights_count];
-            }
+                new_weights[j] = genes2[j + weights_count];
 
-            new_population[i].new_network(new_weights1, new_biases1);
-            if(i+1 < population_size)
-                new_population[i+1].new_network(new_weights2, new_biases2);
+            new_population[i].new_network(new_weights, new_biases);
+        }
+
+        if(generation == 0)
+        {
+            population = new_population;
+            return;
+        }
+
+        for(int i = 0; i < past_gen_trainees; ++i)
+        {
+            // pick generation from past (uniform distribution)
+            int picked_gen = rng.nextInt(0, generation);
+            // pick individual from there (gaussian distribution)
+            int picked_individual = rng.nextNormalInt(0, int(past_generations[picked_gen].size()) - 1);
+            // set the new Agent to one from past gen
+            new_population[population_size -  past_gen_trainees + i] = past_generations[picked_gen][picked_individual];
         }
 
         population = new_population;
-        new_population.clear();
     }
 
     void mutate()
@@ -423,8 +425,10 @@ int main()
     layers.emplace_back(60, "relu");
 
     // training time is mostly dependent on population_size * rounds
-    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 52, 4, 0.01, 0.05,
-                                                layers, true, true, false, population_champions, 6);
+    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 52, 4,
+                                                0.01, 0.05,
+                                                layers, true, true, false,
+                                                10, population_champions, 6);
 
     long double nn_vectified_size = handler.population[0].nn.vectify().size();
 
@@ -437,16 +441,8 @@ int main()
     for(int i = 0; i < 100; ++i)
     {
         // TODO some multithreading wouldn't hurt
-        // TODO add few members from past generations for learning
         // TODO more crossovers
         // TODO add way to play with ai
         handler.proceed_one_generation(10, max_move, "divide_parents");
-        if(handler.generation % 10 == 0)
-        {
-            for(int j = 0; j < handler.generation - 1; ++j)
-            {
-                handler.compare_generations(j+1, handler.generation, max_move);
-            }
-        }
     }
 }
