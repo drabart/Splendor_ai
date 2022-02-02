@@ -11,6 +11,8 @@ PBs:
 
 
 #include <bits/stdc++.h>
+#include <thread>
+#include <utility>
 #include "NeuralNetwork.h"
 #include "SplendorGame.h"
 #include "Agent.h"
@@ -24,6 +26,10 @@ public:
     // data on objects
     Board test_board;
     vector<LayerBase> layers;
+
+    // shared data for threads
+    int unfinished{};
+    vector<int> fitness_results;
 
     // population data
     int population_size;
@@ -100,7 +106,7 @@ public:
         start = chrono::system_clock::now();
 
         // play games across population to determine best players
-        int unfinished_games = play_game(max_move);
+        play_game(max_move);
 
         // finish measuring time for playing phase
         end = chrono::system_clock::now();
@@ -144,7 +150,7 @@ public:
         }
 
         // print some data about current generation
-        printf("\nUnfinished games: %d\n", unfinished_games);
+        printf("\nUnfinished games: %d\n", unfinished);
         printf("Average fitness across population: %lf\n", double(sum) / double(population_size));
 
         // start measuring for crossover and mutation phase
@@ -188,48 +194,70 @@ public:
         generation++;
     }
 
+    void single_game(int iterator, int player_number, vector<Agent> current_players, int max_move)
+    {
+        SplendorGame game = SplendorGame(player_number, std::move(current_players), test_board);
+        game.debug = debug;
+
+        vector<int> batch_results = game.play_game(max_move);
+
+        if(batch_results[0] > 100000)
+        {
+            unfinished++;
+        }
+
+        for(int i = 0; i < player_number; ++i)
+        {
+            fitness_results[iterator * player_number + i] = batch_results[i];
+        }
+    }
+
     // TODO add multithreading here
     // calculates and sets fitness values, and returns number of unfinished games
-    int play_games(vector<Agent> &temp_population, int game_rounds, int max_move)
+    void play_games(vector<Agent> &temp_population, int game_rounds, int max_move)
     {
-        int unfinished = 0;
+        unfinished = 0;
 
         for(auto & agent : temp_population)
             agent.fitness = 0;
 
+        int games_in_round = int(temp_population.size()) / players;
+        vector<thread> threads(games_in_round);
+
         for(int i = 0; i < game_rounds; ++i)
         {
+            fitness_results.clear();
             shuffle(temp_population.begin(), temp_population.end(), rng.rng);
             vector<Agent> players_batch;
-            for(int j = 0; j < (temp_population.size() / players); ++j)
+            for(int j = 0; j < games_in_round; ++j)
             {
                 players_batch.clear();
                 for(int k = 0; k < players; ++k)
                 {
                     players_batch.push_back(temp_population[j * players + k]);
                 }
-                SplendorGame game = SplendorGame(players, players_batch, test_board);
-                game.debug = debug;
 
-                vector<int> fitness_results = game.play_game(max_move);
+                threads[j] = thread(single_game, j, players, players_batch, max_move);
 
-                if(fitness_results[0] > 100000)
-                {
-                    unfinished++;
-                }
+                // TODO use function and add handling results from it
+                // TODO ---------------------------------------------
+            }
 
+            for(int j = 0; j < games_in_round; ++j)
+            {
+                threads[j].join();
                 for(int k = 0; k < players; ++k)
-                {
                     temp_population[j * players + k].fitness += fitness_results[k];
-                }
             }
         }
-        return unfinished;
+
+        for(int i = 0; i < games_in_round; ++i)
+            threads[i].detach();
     }
 
-    int play_game(int max_move) // result may change depending on the shuffle of the deck
+    void play_game(int max_move) // result may change depending on the shuffle of the deck
     {
-        return play_games(population, rounds, max_move);
+        play_games(population, rounds, max_move);
     }
 
     [[maybe_unused]] void compare_generations(int gen1, int gen2, int max_move)
@@ -252,9 +280,7 @@ public:
         }
 
         // printf("%d %d", saved_agents, temporary_population.size());
-
-        int unfinished;
-        unfinished = play_games(temporary_population, test_rounds, max_move);
+        play_games(temporary_population, test_rounds, max_move);
 
         // finish measuring time for playing phase
         end = chrono::system_clock::now();
@@ -440,9 +466,9 @@ int main()
 
     for(int i = 0; i < 100; ++i)
     {
-        // TODO some multithreading wouldn't hurt
-        // TODO more crossovers
+        // TODO some multithreading 'wouldn't' hurt
         // TODO add way to play with ai
+        // TODO more crossovers
         handler.proceed_one_generation(10, max_move, "divide_parents");
     }
 }
