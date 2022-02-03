@@ -29,7 +29,6 @@ public:
 
     // shared data for threads
     int unfinished{};
-    vector<int> fitness_results;
 
     // population data
     int population_size;
@@ -194,25 +193,21 @@ public:
         generation++;
     }
 
-    void single_game(int iterator, int player_number, vector<Agent> current_players, int max_move)
+    static void single_game(int player_number, vector<Agent> current_players, int max_move,
+                            vector<int>& batch_results, int& finished, const Board& test_board, const bool& debug)
     {
         SplendorGame game = SplendorGame(player_number, std::move(current_players), test_board);
         game.debug = debug;
 
-        vector<int> batch_results = game.play_game(max_move);
+        batch_results = game.play_game(max_move);
 
+        finished = 1;
         if(batch_results[0] > 100000)
         {
-            unfinished++;
-        }
-
-        for(int i = 0; i < player_number; ++i)
-        {
-            fitness_results[iterator * player_number + i] = batch_results[i];
+            finished = 0;
         }
     }
 
-    // TODO add multithreading here
     // calculates and sets fitness values, and returns number of unfinished games
     void play_games(vector<Agent> &temp_population, int game_rounds, int max_move)
     {
@@ -226,9 +221,10 @@ public:
 
         for(int i = 0; i < game_rounds; ++i)
         {
-            fitness_results.clear();
             shuffle(temp_population.begin(), temp_population.end(), rng.rng);
             vector<Agent> players_batch;
+            vector<vector<int> > player_batches(games_in_round, vector<int>(players));
+            vector<int> finished(games_in_round);
             for(int j = 0; j < games_in_round; ++j)
             {
                 players_batch.clear();
@@ -237,22 +233,21 @@ public:
                     players_batch.push_back(temp_population[j * players + k]);
                 }
 
-                threads[j] = thread(single_game, j, players, players_batch, max_move);
-
-                // TODO use function and add handling results from it
-                // TODO ---------------------------------------------
+                threads[j] = thread(single_game, players, players_batch, max_move, ref(player_batches[j]),
+                                    ref(finished[j]), ref(test_board), ref(debug));
             }
 
             for(int j = 0; j < games_in_round; ++j)
             {
+                // all threads need to arrive, and I believe it's not worth optimizing
+                // this further as the latter loops take little time
                 threads[j].join();
+
+                unfinished += (1 - finished[j]);
                 for(int k = 0; k < players; ++k)
-                    temp_population[j * players + k].fitness += fitness_results[k];
+                    temp_population[j * players + k].fitness += player_batches[j][k];
             }
         }
-
-        for(int i = 0; i < games_in_round; ++i)
-            threads[i].detach();
     }
 
     void play_game(int max_move) // result may change depending on the shuffle of the deck
@@ -358,7 +353,6 @@ public:
             vector<double> genes1 = parent1.nn.vectify();
             vector<double> genes2 = parent2.nn.vectify();
 
-            // TODO check if not obsolete
             // counting number of weights and biases
             int weights_count = int(genes1[genes1.size()-2]);
             int biases_count = int(genes1[genes1.size()-1]);
@@ -451,7 +445,7 @@ int main()
     layers.emplace_back(60, "relu");
 
     // training time is mostly dependent on population_size * rounds
-    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 52, 4,
+    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 100, 5,
                                                 0.01, 0.05,
                                                 layers, true, true, false,
                                                 10, population_champions, 6);
@@ -464,9 +458,8 @@ int main()
            nn_vectified_size * 8.0 * player_count / 1048576.0) * thread_count,
            nn_vectified_size * 8.0 * population_champions / 1048576.0);
 
-    for(int i = 0; i < 100; ++i)
+    for(int i = 0; i < 5; ++i)
     {
-        // TODO some multithreading 'wouldn't' hurt
         // TODO add way to play with ai
         // TODO more crossovers
         handler.proceed_one_generation(10, max_move, "divide_parents");
