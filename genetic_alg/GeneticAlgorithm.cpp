@@ -2,14 +2,6 @@
 // Created by drabart on 03/01/2022.
 //
 
-/*
-PBs:
-    2 player: win in 28
-    3 player:
-    4 player: win in 29
-*/
-
-
 #include <bits/stdc++.h>
 #include <thread>
 #include <utility>
@@ -507,17 +499,14 @@ public:
     }
 };
 
-vector<LayerBase> layers;
-
-int main()
+int train()
 {
-    setbuf(stdout, nullptr);
-
     int thread_count = 16;
     int player_count = 4;
     int population_champions = 4;
     int max_move = 35;
 
+    vector<LayerBase> layers;
     layers.emplace_back(0, "sigmoid"); // first layer will automatically initialise
     layers.emplace_back(300, "linear");
     layers.emplace_back(200, "relu");

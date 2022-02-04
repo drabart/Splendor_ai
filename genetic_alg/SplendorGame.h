@@ -223,6 +223,28 @@ public:
         }
     }
 
+    void drop_man(int player_pos, int overflow)
+    {
+
+        for(int i = 0; i < overflow; ++i)
+        {
+            int token;
+            while(true)
+            {
+                printf("Input token to drop (1-5): ");
+                scanf("%d", &token);
+                if(token < 1 || token > 5)
+                    continue;
+                if(board.players[player_pos].tokens[token-1] < 1)
+                    continue;
+                // will only exit if correct token is dropped
+                break;
+            }
+
+            board.drop(player_pos, token-1);
+        }
+    }
+
     bool buy_reserved(int player, int pos)
     {
         PlayerInventory inventory = board.players[player];
@@ -249,7 +271,125 @@ public:
         return true;
     }
 
-    // return true when need to move again to remove excess
+    // return true if move could have been done
+    // return false if move has be picked again
+    [[maybe_unused]] bool make_move(int player_pos, int it)
+    {
+        int overflow;
+
+        if(it < 12) // buying cards
+        {
+            int tier = it / 4 + 1;
+            int pos = it % 4;
+
+            if(buy_card(player_pos, tier, pos))
+            {
+                board.buy_card(player_pos, tier, pos);
+                return true;
+            }
+
+            return false;
+        }
+        if(it < 12 + 15) // reserving cards
+        {
+            int j = it - 12;
+
+            int tier = j / 5 + 1;
+            int pos = j % 5;
+
+            // printf("1");
+            if(reserve_card(player_pos, tier, pos))
+            {
+                // printf("2");
+                board.reserve_card(player_pos, tier, pos);
+                return true;
+            }
+
+            return false;
+        }
+        if(it < 12 + 15 + 3) // buying a reserved card
+        {
+            int j = it - 12 - 15;
+
+            if(buy_reserved(player_pos, j))
+            {
+                board.buy_reserved(player_pos, j);
+                return true;
+            }
+
+            return false;
+        }
+        if(it < 12 + 15 + 3 + 10) // take 111 tokens
+        {
+            int j = it - 12 - 15 - 3;
+
+            int tokens[5]{};
+
+            for(auto & token : tokens)
+                token = 1;
+
+            if(j < 4)
+            {
+                tokens[0] = 0;
+                tokens[j - 0 + 1] = 0;
+            }
+            else if(j < 4 + 3)
+            {
+                tokens[1] = 0;
+                tokens[j - 4 + 2] = 0;
+            }
+            else if(j < 4 + 3 + 2)
+            {
+                tokens[2] = 0;
+                tokens[j - 4 - 3 + 3] = 0;
+            }
+            else
+            {
+                tokens[3] = 0;
+                tokens[4] = 0;
+            }
+
+            if(take_111(tokens))
+            {
+                overflow = board.take(player_pos, tokens);
+                // Board::print_tokens(board.players[player_pos].tokens);
+                if(overflow)
+                {
+                    // printf("   %d ", overflow);
+                    drop_man(player_pos, overflow);
+                }
+                // Board::print_tokens(board.players[player_pos].tokens);
+                return true;
+            }
+
+            return false;
+        }
+        if(it < 12 + 15 + 3 + 10 + 5) // take 2 tokens
+        {
+            int j = it - 12 - 15 - 3 - 10;
+
+            int tokens[5]{};
+            tokens[j] = 2;
+
+            if(take_2(tokens))
+            {
+                overflow = board.take(player_pos, tokens);
+                // Board::print_tokens(board.players[player_pos].tokens);
+                if(overflow)
+                {
+                    // printf("   %d ", overflow);
+                    drop_man(player_pos, overflow);
+                }
+                // Board::print_tokens(board.players[player_pos].tokens);
+                return true;
+            }
+
+            return false;
+        }
+        return false;
+    }
+
+    // TODO probably merge with function above
     void make_move(Agent player, int player_pos)
     {
         vector<double> input = board.vectify(player_pos);
