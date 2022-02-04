@@ -35,6 +35,7 @@ public:
     int rounds;
     int players;
     int generation;
+    int max_generation{};
     vector<Agent> population;
 
     // handling comparison between generations
@@ -94,11 +95,20 @@ public:
         }
     }
 
+    double static float_mod(double x, int mod)
+    {
+        return x - int(x / mod) * mod;
+    }
+
     void proceed_one_generation(int threshold, int max_move, const string& crossover_type)
     {
         // print separator and current generation number
         printf("----------------------------------------------------------------------------\n");
         printf("Generation: %d\n", generation+1);
+
+        // start measuring total generation time
+        chrono::time_point<chrono::system_clock> t_start, t_end;
+        t_start = chrono::system_clock::now();
 
         // start measuring time for playing phase
         chrono::time_point<chrono::system_clock> start, end;
@@ -189,6 +199,13 @@ public:
         // print elapsed time
         printf("Crossover and mutation took: %lf s\n", elapsed_seconds.count());
 
+        // finish counting time
+        t_end = chrono::system_clock::now();
+        elapsed_seconds = t_end - t_start;
+        double expected_seconds = elapsed_seconds.count() * (max_generation - generation - 1);
+        printf("Generation took in total: %lf s, Expected time to finish: %d min %.2lf s\n", elapsed_seconds.count(),
+               int(expected_seconds / 60), float_mod(expected_seconds, 60));
+
         // increment generation
         generation++;
     }
@@ -209,7 +226,7 @@ public:
     }
 
     // calculates and sets fitness values, and returns number of unfinished games
-    void play_games(vector<Agent> &temp_population, int game_rounds, int max_move)
+    void play_games(vector<Agent> &temp_population, int game_rounds, int max_move, bool print_round_completion = false)
     {
         unfinished = 0;
 
@@ -247,6 +264,9 @@ public:
                 for(int k = 0; k < players; ++k)
                     temp_population[j * players + k].fitness += player_batches[j][k];
             }
+
+            if(print_round_completion)
+                printf("Round %d completed\n", i+1);
         }
     }
 
@@ -295,7 +315,7 @@ public:
         {
             // print only top ten best
             for (int i = 0; i < min(temporary_population.size(), 10ul); ++i) {
-                printf("gen: %d, uid: %d, fitness: %d\n", (temporary_population[i].gen == gen1) ? gen1 + 1 : gen2 + 1,
+                printf("gen: %d, uid: %d, fitness: %d\n", temporary_population[i].gen + 1,
                        temporary_population[i].uid, temporary_population[i].fitness);
             }
         }
@@ -318,6 +338,66 @@ public:
             printf("gen %d lost to gen %d\n\n", gen1+1, gen2+1);
         else
             printf("gen %d lost to gen %d\n\n", gen2+1, gen1+1);
+    }
+
+    // save = 0 don't save
+    // save = 1 append to file
+    // save = 2 truncate file and save
+    [[maybe_unused]] void compare_all(int from_each, int max_move, int save)
+    {
+        printf("\n\nComparing past generations\n");
+
+        vector<Agent> temp_population;
+
+        for(int i = 0; i < generation; ++i)
+        {
+            for(int j = 0; j < from_each; ++j)
+            {
+                temp_population.push_back(past_generations[i][j]);
+            }
+        }
+
+        play_games(temp_population, test_rounds, max_move, true);
+
+        // sort by fitness
+        sort(temp_population.begin(), temp_population.end(),
+             [](Agent const &a1, Agent const &a2) { return a1.fitness < a2.fitness; });
+
+        printf("Unfinished games: %d\n", unfinished);
+
+        // if so truncate file
+        if(save == 2)
+        {
+            fstream save_file("saved_networks.txt", fstream::out | fstream::trunc);
+            save_file.close();
+        }
+
+        // printing best performers
+        if(print_fitness)
+        {
+            // print only top ten best
+            for (int i = 0; i < min(temp_population.size(), 10ul); ++i) {
+                printf("gen: %d, uid: %d, fitness: %d\n", temp_population[i].gen + 1,
+                       temp_population[i].uid, temp_population[i].fitness);
+
+                if(save)
+                    temp_population[i].save_to_file(saved_networks);
+            }
+        }
+
+        vector<pair<int, int> > sums(generation);
+
+        for(int i = 0; i < generation; ++i)
+            sums[i].second = i;
+
+        for(auto & agent : temp_population)
+            sums[agent.gen].first += agent.fitness;
+
+        sort(sums.begin(), sums.end());
+
+        printf("Best generations:\n");
+        for(int i = 0; i < min(generation, 10); ++i)
+            printf("generation: %d, total fitness: %d\n", sums[i].second + 1, sums[i].first);
     }
 
     // replace worst performing agents with new random ones
@@ -433,10 +513,10 @@ int main()
 {
     setbuf(stdout, nullptr);
 
-    int thread_count = 1;
+    int thread_count = 16;
     int player_count = 4;
     int population_champions = 4;
-    int max_move = 100;
+    int max_move = 35;
 
     layers.emplace_back(0, "sigmoid"); // first layer will automatically initialise
     layers.emplace_back(300, "linear");
@@ -445,23 +525,31 @@ int main()
     layers.emplace_back(60, "relu");
 
     // training time is mostly dependent on population_size * rounds
-    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 100, 5,
-                                                0.01, 0.05,
-                                                layers, true, true, false,
-                                                10, population_champions, 6);
+    GeneticAlgorithm handler = GeneticAlgorithm(player_count, 100, 8,
+                                                0.005, 0.05,
+                                                layers, true, false, false,
+                                                8, population_champions, 10);
 
     long double nn_vectified_size = handler.population[0].nn.vectify().size();
 
+    // TODO redo this probably
     printf("Approximate memory usage (neural network): %.3LfMB, (boards): %.3LfMB, (saved networks per generation): %.3LfMB\n",
            nn_vectified_size * 8.0 * handler.population_size / 1048576.0,
            ((long double)handler.test_board.vectify(0).size() * 8.0 / 1048576.0 +
            nn_vectified_size * 8.0 * player_count / 1048576.0) * thread_count,
            nn_vectified_size * 8.0 * population_champions / 1048576.0);
 
-    for(int i = 0; i < 5; ++i)
+    handler.max_generation = 100;
+
+    for(int i = 0; i < handler.max_generation; ++i)
     {
         // TODO add way to play with ai
         // TODO more crossovers
+        // TODO multithreading for crossover
+        // TODO play around with hyperparameters
         handler.proceed_one_generation(10, max_move, "divide_parents");
     }
+
+    handler.print_fitness = true;
+    handler.compare_all(population_champions, max_move, 2);
 }
