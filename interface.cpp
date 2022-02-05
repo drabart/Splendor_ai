@@ -7,63 +7,112 @@
 #include "Agent.h"
 #include "SplendorGame.h"
 
+SplendorGame game;
 bool training = false;
 
 // TODO finish this
 int ask_for_move(int player_pos)
 {
-    char s[256];
-    int sl;
-    printf("Player %d, input your move: ", player_pos+1);
-    scanf("%s", s);
-    sl = int(strlen(s));
-
-    stringstream ss;
-    ss << s;
-
-    char t;
-    string l;
-    int type[5];
-    int a, b, c;
-
-    ss >> t;
-
-    if(t == 't')
+    bool incorrect_move = true;
+    while(incorrect_move)
     {
-        ss >> l;
-        for(int i = 0; i < 5; ++i)
-        {
-            if(l[i] == '1')
-                type[i] = 1;
-            else
-                type[i] = 0;
-        }
+        printf("Player %d, input your move: ", player_pos + 1);
 
-    }
-    if(t == 'b')
-    {
-        ss >> l;
-        if(l == "r")
-        {
+        char t;
+        string l;
+        int type[5];
+        int a, b, it;
 
-        }
-        else
+        cin >> t;
+
+        if (t == 't')
         {
-            ss >> l;
-            for(int i = 0; i < 5; ++i)
+            cin >> l;
+            // cout << l << "\n";
+            int sum = 0;
+            int xr = 0;
+            for (int i = 0; i < 5; ++i)
             {
-                if(l[i] == '1')
+                if (l[i] == '2')
+                    type[i] = 2;
+                else if (l[i] == '1')
                     type[i] = 1;
                 else
                     type[i] = 0;
+                sum += type[i];
+                xr ^= type[i];
+            }
+
+            // printf("%d %d\n", sum, xr);
+
+            if(sum > 3 || sum < 2 || (sum == 2 && xr == 0) || (sum == 3 && xr == 3))
+                continue;
+
+            if(sum == 2)
+            {
+                for(int i = 0; i < 5; ++i)
+                {
+                    if(type[i])
+                        it = i;
+                }
+                it += 12 + 15 + 3 + 10;
+            }
+
+            if(sum == 3)
+            {
+                if(type[0] == 0)
+                {
+                    for(int i = 1; i < 5; ++i)
+                    {
+                        if(type[i] == 0)
+                            it = i - 1;
+                    }
+                }
+                else if(type[1] == 0)
+                {
+                    for(int i = 2; i < 5; ++i)
+                    {
+                        if(type[i] == 0)
+                            it = i + 2;
+                    }
+                }
+                else if(type[2] == 0)
+                {
+                    for(int i = 3; i < 5; ++i)
+                    {
+                        if(type[i] == 0)
+                            it = i + 4;
+                    }
+                }
+                else
+                {
+                    it = 9;
+                }
+
+                it += 12 + 15 + 3;
+            }
+
+            // printf("it: %d, good: %d\n", it, game.take_111(type));
+        }
+        if (t == 'b')
+        {
+            cin >> l;
+            if (l == "r") {
+                cin >> a;
+                it = a - 1 + 12 + 15;
+            } else {
+                cin >> a >> b;
+                it = (a - 1) * 4 + b - 1;
             }
         }
-    }
-    if(t == 'r')
-    {
-        ss >> a;
-    }
+        if (t == 'r')
+        {
+            cin >> a >> b;
+            it = (a - 1) * 5 + b - 1 + 12;
+        }
 
+        incorrect_move = !game.make_move(player_pos, it);
+    }
     return 0;
 }
 
@@ -75,10 +124,10 @@ int main()
         train();
 
     int player_count = 4;
-    int ai_player_count = 3;
+    int ai_player_count = 4;
     vector<Agent> ai_players;
     ai_players.reserve(ai_player_count);
-    vector<int> sitting = {1, 0, 0, 0}; // 0 - AI player; 1 - human player
+    vector<int> sitting = {0, 0, 0, 0}; // 0 - AI player; 1 - human player
 
     for(int i = 0; i < ai_player_count; ++i)
     {
@@ -86,7 +135,9 @@ int main()
         ai_players.back().load_from_file_line("saved_networks.txt", i);
     }
 
-    SplendorGame game = SplendorGame(player_count, ai_players);
+    game = SplendorGame(player_count, ai_players);
+
+    printf("Game loaded!\n");
 
     bool win = false;
     int move = 1;
@@ -97,9 +148,12 @@ int main()
         for(int i = 0; i < player_count; ++i)
         {
             if(sitting[i] == 0)
-                game.make_move(game.players[it], i);
+                game.make_move(game.players[it], i, true);
             else
+            {
+                game.board.print();
                 game.make_move(i, ask_for_move(i));
+            }
 
             printf("\033[2J\033[1;1H");
         }
@@ -113,4 +167,43 @@ int main()
 
         move++;
     }
+
+    printf("Final board state:\n");
+
+    game.board.print();
+
+    printf("Game over!\nEnded at move: %d\n", move);
+
+    vector<int> results(player_count);
+    // bigger score the better (should not be bigger than 2M)
+    for(int i = 0; i < player_count; ++i)
+    {
+        // bigger score the better
+        game.player_scores[i].first = game.board.players[i].score;
+        game.player_scores[i].first *= 100;
+        // fewer cards more flex
+        for(int resource : game.board.players[i].resources)
+        {
+            game.player_scores[i].first -= resource;
+        }
+        game.player_scores[i].first *= 1000;
+        // check not from official guide book but if you have more tokens at the end to flex, then win if yours
+        for(int j = 0; j < 5; ++j)
+        {
+            game.player_scores[i].first += game.board.players[i].tokens[j];
+        }
+    }
+    // if now there are ties then F for the player
+    sort(game.player_scores.begin(), game.player_scores.end());
+    reverse(game.player_scores.begin(), game.player_scores.end());
+
+    for(int i = 0; i < player_count; ++i)
+    {
+        printf("player: %d ", game.player_scores[i].second + 1);
+        if(i == 0)
+            printf("won ");
+        printf("with %d victory points (%d score points)\n",
+               game.board.players[game.player_scores[i].second].score, game.player_scores[i].first);
+    }
+
 }

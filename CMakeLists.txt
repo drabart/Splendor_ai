@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(genetic_alg)
 include_directories(Scratches)
 
-add_executable(Splendor_ai genetic_alg/GeneticAlgorithm.cpp genetic_alg/MemoryTool.h interface.cpp)
+add_executable(Splendor_ai interface.cpp)
 add_executable(scratch Scratches/scratch.cpp)

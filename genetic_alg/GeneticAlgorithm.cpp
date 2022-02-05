@@ -541,4 +541,6 @@ int train()
 
     handler.print_fitness = true;
     handler.compare_all(population_champions, max_move, 2);
+
+    return 0;
 }

@@ -131,7 +131,6 @@ public:
             ss >> node_count >> activation_type;
             layers.emplace_back(node_count, activation_type);
         }
-        printf("hi");
 
         nn = NeuralNetwork(layers, mutation_based);
         vector<double> weights_and_biases(nn.weights_count + nn.biases_count);
@@ -141,7 +140,6 @@ public:
             ss >> variable;
             weights_and_biases[i] = variable;
         }
-        printf("hi");
 
         nn.load_from_vector(weights_and_biases);
     }

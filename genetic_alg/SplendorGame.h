@@ -390,7 +390,7 @@ public:
     }
 
     // TODO probably merge with function above
-    void make_move(Agent player, int player_pos)
+    void make_move(Agent player, int player_pos, bool print_move = false)
     {
         vector<double> input = board.vectify(player_pos);
         vector<double> output = player.nn.propagate(input);
@@ -441,6 +441,8 @@ public:
                 if(buy_card(player_pos, tier, pos))
                 {
                     board.buy_card(player_pos, tier, pos);
+                    if(print_move)
+                        printf("Player %d, BOUGHT card tier: %d, pos: %d\n", player_pos+1, tier, pos+1);
                     break;
                 }
 
@@ -458,6 +460,8 @@ public:
                 {
                     // printf("2");
                     board.reserve_card(player_pos, tier, pos);
+                    if(print_move)
+                        printf("Player %d, RESERVED card tier: %d, pos: %d\n", player_pos+1, tier, pos+1);
                     break;
                 }
 
@@ -470,6 +474,8 @@ public:
                 if(buy_reserved(player_pos, j))
                 {
                     board.buy_reserved(player_pos, j);
+                    if(print_move)
+                        printf("Player %d, BOUGHT RESERVED card pos: %d\n", player_pos+1, j+1);
                     break;
                 }
 
@@ -515,6 +521,9 @@ public:
                         drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                     }
                     // Board::print_tokens(board.players[player_pos].tokens);
+                    if(print_move)
+                        printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
+                               tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                     break;
                 }
 
@@ -537,6 +546,9 @@ public:
                         drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                     }
                     // Board::print_tokens(board.players[player_pos].tokens);
+                    if(print_move)
+                        printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
+                               tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                     break;
                 }
 
