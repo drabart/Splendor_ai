@@ -29,3 +29,8 @@ Commands:
  
  - 't' [tokens] Take 'tokens' from the board
      - [tokens] are in format xxxxx where x is any digit (will accept only legal takes) eg. 02000, 11010
+
+eg. 
+b b 2 3 (buys 3rd card from 2nd tier from board)
+t 01101 (takes 0 green, 1 white, 1 blue, 0 black, 1 red)
+r 1 4 (reserves 4th card from 1st tier)
