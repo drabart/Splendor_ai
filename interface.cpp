@@ -10,8 +10,10 @@
 SplendorGame game;
 bool training = false;
 
-// TODO finish this
-int ask_for_move(int player_pos)
+// TODO test some more
+// TODO make players inline
+// TODO add card input
+void ask_for_move(int player_pos)
 {
     bool incorrect_move = true;
     while(incorrect_move)
@@ -111,9 +113,8 @@ int ask_for_move(int player_pos)
             it = (a - 1) * 5 + b - 1 + 12;
         }
 
-        incorrect_move = !game.make_move(player_pos, it);
+        incorrect_move = !game.single_move(player_pos, it);
     }
-    return 0;
 }
 
 int main()
@@ -124,20 +125,76 @@ int main()
         train();
 
     int player_count = 4;
-    int ai_player_count = 4;
+    vector<int> sitting = {1, 1, 1, 0}; // 0 - AI player; 1 - human player
+    int ai_player_count = 0;
+    for(auto a:sitting)
+        if(a == 0)
+            ai_player_count++;
     vector<Agent> ai_players;
     ai_players.reserve(ai_player_count);
-    vector<int> sitting = {0, 0, 0, 0}; // 0 - AI player; 1 - human player
 
     for(int i = 0; i < ai_player_count; ++i)
     {
         ai_players.emplace_back();
-        ai_players.back().load_from_file_line("saved_networks.txt", i);
+        ai_players.back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen100_0.txt", i);
     }
 
     game = SplendorGame(player_count, ai_players);
 
     printf("Game loaded!\n");
+    printf("\033[48;5;239m");
+    /*
+    for(auto a:game.board.tier1)
+    {
+        for(int i=0; i^5; ++i)
+        {
+            if(a.type[i])
+                printf("t: %d  ", i+1);
+        }
+        for(int i=0; i^5; ++i)
+        {
+            printf("%d ", a.cost[i]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(auto a:game.board.tier2)
+    {
+        for(int i=0; i^5; ++i)
+        {
+            if(a.type[i])
+                printf("t: %d  ", i+1);
+        }
+        for(int i=0; i^5; ++i)
+        {
+            printf("%d ", a.cost[i]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(auto a:game.board.tier3)
+    {
+        for(int i=0; i^5; ++i)
+        {
+            if(a.type[i])
+                printf("t: %d  ", i+1);
+        }
+        for(int i=0; i^5; ++i)
+        {
+            printf("%d ", a.cost[i]);
+        }
+        printf("\n");
+    }
+    printf("\n");
+    for(auto a:game.board.nobles)
+    {
+        for(int i=0; i^5; ++i)
+        {
+            printf("%d ", a.cost[i]);
+        }
+        printf("\n");
+    }
+    */
 
     bool win = false;
     int move = 1;
@@ -148,14 +205,16 @@ int main()
         for(int i = 0; i < player_count; ++i)
         {
             if(sitting[i] == 0)
+            {
                 game.make_move(game.players[it], i, true);
+            }
             else
             {
                 game.board.print();
-                game.make_move(i, ask_for_move(i));
+                ask_for_move(i);
             }
 
-            printf("\033[2J\033[1;1H");
+            // printf("\033[2J\033[1;1H");
         }
 
         for(int i = 0; i < player_count; ++i)
@@ -206,4 +265,5 @@ int main()
                game.board.players[game.player_scores[i].second].score, game.player_scores[i].first);
     }
 
+    return 0;
 }

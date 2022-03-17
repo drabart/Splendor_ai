@@ -174,8 +174,10 @@ public:
     int left_tier1{};
     int left_tier2{};
     int left_tier3{};
+    int colors[6] = {2, 15, 4, 52, 9, 3};
     vector<Noble> nobles_raw;
     vector<Noble> nobles;
+    string print_lines[6];
     RngGenerator rng;
     [[maybe_unused]] bool init;
 
@@ -256,7 +258,7 @@ public:
         tier3.clear();
 
         fstream cards_file;
-        cards_file.open(R"(/home/drabart/CLionProjects/Splendor_ai/genetic_alg/cards.csv)", fstream::in);
+        cards_file.open(R"(/home/drabart/Splendor_ai/genetic_alg/cards.csv)", fstream::in);
         string line;
         int tier;
         int cost[5];
@@ -310,7 +312,7 @@ public:
         nobles_raw.clear();
 
         fstream nobles_file;
-        nobles_file.open(R"(/home/drabart/CLionProjects/Splendor_ai/genetic_alg/nobles.csv)", fstream::in);
+        nobles_file.open(R"(/home/drabart/Splendor_ai/genetic_alg/nobles.csv)", fstream::in);
         string line;
         int cost[5];
 
@@ -606,46 +608,106 @@ public:
 
     static void print_tokens(int printed_tokens[5])
     {
-        printf("Green: %d; White: %d; Blue: %d; Black: %d; Red: %d\n", printed_tokens[0],
-               printed_tokens[1], printed_tokens[2], printed_tokens[3], printed_tokens[4]);
+        for(int i = 0; i < printed_tokens[0]; ++i)
+        {
+            printf("\033[38;5;2m0");
+        }
+        if(printed_tokens[0])
+            printf("\n");
+        for(int i = 0; i < printed_tokens[1]; ++i)
+        {
+            printf("\033[38;5;15m0");
+        }
+        if(printed_tokens[1])
+            printf("\n");
+        for(int i = 0; i < printed_tokens[2]; ++i)
+        {
+            printf("\033[38;5;4m0");
+        }
+        if(printed_tokens[2])
+            printf("\n");
+        for(int i = 0; i < printed_tokens[3]; ++i)
+        {
+            printf("\033[38;5;52m0");
+        }
+        if(printed_tokens[3])
+            printf("\n");
+        for(int i = 0; i < printed_tokens[4]; ++i)
+        {
+            printf("\033[38;5;9m0");
+        }
+        if(printed_tokens[4])
+            printf("\n");
+        printf("\n");
+        printf("\033[38;5;7m");
     }
 
     static void print_tokens_g(int printed_tokens[6])
     {
-        printf("Green: %d; White: %d; Blue: %d; Black: %d; Red: %d; Gold %d\n", printed_tokens[0],
-               printed_tokens[1], printed_tokens[2], printed_tokens[3], printed_tokens[4], printed_tokens[5]);
-        /*
+        //printf("Green: %d; White: %d; Blue: %d; Black: %d; Red: %d; Gold %d\n", printed_tokens[0],
+        //       printed_tokens[1], printed_tokens[2], printed_tokens[3], printed_tokens[4], printed_tokens[5]);
+
         for(int i = 0; i < printed_tokens[0]; ++i)
         {
-            printf("/033[38;5;2m0/033[0m");
+            printf("\033[38;5;2m0");
         }
-        printf("\n");
+        if(printed_tokens[0])
+            printf("\n");
         for(int i = 0; i < printed_tokens[1]; ++i)
         {
-            printf("/033[38;5;15m0/033[0m");
+            printf("\033[38;5;15m0");
         }
-        printf("\n");
+        if(printed_tokens[1])
+            printf("\n");
         for(int i = 0; i < printed_tokens[2]; ++i)
         {
-            printf("/033[38;5;4m0/033[0m");
+            printf("\033[38;5;4m0");
         }
-        printf("\n");
+        if(printed_tokens[2])
+            printf("\n");
         for(int i = 0; i < printed_tokens[3]; ++i)
         {
-            printf("/033[38;5;52m0/033[0m");
+            printf("\033[38;5;52m0");
         }
-        printf("\n");
+        if(printed_tokens[3])
+            printf("\n");
         for(int i = 0; i < printed_tokens[4]; ++i)
         {
-            printf("/033[38;5;9m0/033[0m");
+            printf("\033[38;5;9m0");
         }
-        printf("\n");
+        if(printed_tokens[4])
+            printf("\n");
         for(int i = 0; i < printed_tokens[5]; ++i)
         {
-            printf("/033[38;5;3m0/033[0m");
+            printf("\033[38;5;3m0");
         }
+        if(printed_tokens[5])
+            printf("\n");
         printf("\n");
-         */
+        printf("\033[38;5;7m");
+    }
+
+    void add_to_print(int printed_tokens[5], int height, int width)
+    {
+        int line = 1;
+        for(int j = 0; j < 5; ++j)
+        {
+            if(printed_tokens[j])
+            {
+                print_lines[line] += "\033[38;5;" + to_string(colors[j]) + "m";
+                for(int k = 0; k < printed_tokens[j]; ++k)
+                    print_lines[line] += "0";
+                for(int k = printed_tokens[j]; k < width; ++k)
+                    print_lines[line] += " ";
+                print_lines[line] += "\033[38;5;7m";
+                line++;
+            }
+        }
+        for(int j = line; j < height; ++j)
+        {
+            for(int k = 0; k < width; ++k)
+                print_lines[j] += " ";
+        }
     }
 
     [[maybe_unused]] void print()
@@ -659,57 +721,68 @@ public:
          * /033[38;5;3m - gold
          * /033[0m - reset
          */
-
+        
         printf("Tokens:\n");
         print_tokens_g(tokens);
-        printf("\n");
 
-        int card_tokens[5];
         printf("Cards tier 1 (%d left):\n", left_tier1);
         for(int i = 0; i < min(4, left_tier1); ++i)
         {
-            printf("Score: %d, Type: %d\n", tier1[i].score, tier1[i].type_f);
-            for(int j = 0; j < 5; ++j)
-            {
-                card_tokens[j] = tier1[i].cost[j];
-            }
-            print_tokens(card_tokens);
+            print_lines[0] += "Score: " + to_string(tier1[i].score) + ", Type: " + to_string(tier1[i].type_f);
+            while(print_lines[0].length() % 25)
+                print_lines[0] += " ";
+            add_to_print(tier1[i].cost, 5, 25);
         }
-        printf("\n");
+        for(int i = 0; i < 5; ++i)
+        {
+            cout << print_lines[i] << "\n";
+            print_lines[i] = "";
+        }
+        cout << "\n";
+
         printf("Cards tier 2 (%d left):\n", left_tier2);
         for(int i = 0; i < min(4, left_tier2); ++i)
         {
-            printf("Score: %d, Type: %d\n", tier2[i].score, tier2[i].type_f);
-            for(int j = 0; j < 5; ++j)
-            {
-                card_tokens[j] = tier2[i].cost[j];
-            }
-            print_tokens(card_tokens);
+            print_lines[0] += "Score: " + to_string(tier2[i].score) + ", Type: " + to_string(tier2[i].type_f);
+            while(print_lines[0].length() % 25)
+                print_lines[0] += " ";
+            add_to_print(tier2[i].cost, 4, 25);
         }
-        printf("\n");
+        for(int i = 0; i < 4; ++i)
+        {
+            cout << print_lines[i] << "\n";
+            print_lines[i] = "";
+        }
+        cout << "\n";
+
         printf("Cards tier 3 (%d left):\n", left_tier3);
         for(int i = 0; i < min(4, left_tier3); ++i)
         {
-            printf("Score: %d, Type: %d\n", tier3[i].score, tier3[i].type_f);
-            for(int j = 0; j < 5; ++j)
-            {
-                card_tokens[j] = tier3[i].cost[j];
-            }
-            print_tokens(card_tokens);
+            print_lines[0] += "Score: " + to_string(tier3[i].score) + ", Type: " + to_string(tier3[i].type_f);
+            while(print_lines[0].length() % 25)
+                print_lines[0] += " ";
+            add_to_print(tier3[i].cost, 5, 25);
         }
-        printf("\n");
+        for(int i = 0; i < 5; ++i)
+        {
+            cout << print_lines[i] << "\n";
+            print_lines[i] = "";
+        }
+        cout << "\n";
 
         printf("Nobles:\n");
         for(auto & noble : nobles)
         {
-            for(int j = 0; j < 5; ++j)
-            {
-                card_tokens[j] = noble.cost[j];
-            }
-            print_tokens(card_tokens);
+            add_to_print(noble.cost, 4, 10);
+        }
+        for(int i = 1; i < 4; ++i)
+        {
+            cout << print_lines[i] << "\n";
+            print_lines[i] = "";
         }
         printf("\n");
 
+        int card_tokens[5];
         for(int i = 0; i < player_count; ++i)
         {
             printf("Player %d:\n", i+1);
@@ -725,16 +798,19 @@ public:
             printf("Reservations:\n");
             for(auto & reservation : players[i].reservations)
             {
-                if(reservation.init)
-                {
-                    printf("Score: %d, Type: %d\n", reservation.score, reservation.type_f);
-                    for(int k = 0; k < 5; ++k)
-                    {
-                        card_tokens[k] = reservation.cost[k];
-                    }
-                    print_tokens(card_tokens);
-                }
+                if(!reservation.init) continue;
+                
+                print_lines[0] += "Score: " + to_string(reservation.score) + ", Type: " + to_string(reservation.type_f);
+                while(print_lines[0].length() % 25)
+                    print_lines[0] += " ";
+                add_to_print(reservation.cost, 5, 25);
             }
+            for(int i = 0; i < 5; ++i)
+            {
+                cout << print_lines[i] << "\n";
+                print_lines[i] = "";
+            }
+            cout << "\n";
         }
         printf("\n--------------------------------------------------------------------------------------\n\n");
     }

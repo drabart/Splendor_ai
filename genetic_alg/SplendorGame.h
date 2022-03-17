@@ -273,9 +273,20 @@ public:
 
     // return true if move could have been done
     // return false if move has be picked again
-    [[maybe_unused]] bool make_move(int player_pos, int it)
+    bool single_move(int player_pos, int it, bool manual = true, vector<double> output = {})
     {
         int overflow;
+
+        /*
+        3 * 4 (12)              - buying card
+        3 * 5 (15)              - reserving
+        3                       - buy reserved
+        5 choose 3 (10)         - take 111
+        5 choose 1 (5)          - take 2
+        5 * 3 (15)          - drop
+
+        60 total
+        */
 
         if(it < 12) // buying cards
         {
@@ -285,6 +296,10 @@ public:
             if(buy_card(player_pos, tier, pos))
             {
                 board.buy_card(player_pos, tier, pos);
+
+                if(!manual)
+                    printf("Player %d, BOUGHT card: tier %d, position %d\n", player_pos+1, tier, pos+1);
+
                 return true;
             }
 
@@ -297,11 +312,17 @@ public:
             int tier = j / 5 + 1;
             int pos = j % 5;
 
+            // printf("%d %d  ", tier, pos);
+
             // printf("1");
             if(reserve_card(player_pos, tier, pos))
             {
-                // printf("2");
+                // printf("inside");
                 board.reserve_card(player_pos, tier, pos);
+
+                if(!manual)
+                    printf("Player %d, RESERVED card: tier %d, position %d\n", player_pos+1, tier, pos+1);
+
                 return true;
             }
 
@@ -314,6 +335,10 @@ public:
             if(buy_reserved(player_pos, j))
             {
                 board.buy_reserved(player_pos, j);
+
+                if(!manual)
+                    printf("Player %d, BOUGHT RESERVED card: position %d\n", player_pos+1, j+1);
+
                 return true;
             }
 
@@ -355,9 +380,14 @@ public:
                 // Board::print_tokens(board.players[player_pos].tokens);
                 if(overflow)
                 {
-                    // printf("   %d ", overflow);
-                    drop_man(player_pos, overflow);
+                    if(manual)
+                        drop_man(player_pos, overflow);
+                    else
+                        drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                 }
+                if(!manual)
+                    printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
+                           tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                 // Board::print_tokens(board.players[player_pos].tokens);
                 return true;
             }
@@ -377,9 +407,14 @@ public:
                 // Board::print_tokens(board.players[player_pos].tokens);
                 if(overflow)
                 {
-                    // printf("   %d ", overflow);
-                    drop_man(player_pos, overflow);
+                    if(manual)
+                        drop_man(player_pos, overflow);
+                    else
+                        drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                 }
+                if(!manual)
+                    printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
+                           tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                 // Board::print_tokens(board.players[player_pos].tokens);
                 return true;
             }
@@ -389,22 +424,10 @@ public:
         return false;
     }
 
-    // TODO probably merge with function above
     void make_move(Agent player, int player_pos, bool print_move = false)
     {
         vector<double> input = board.vectify(player_pos);
         vector<double> output = player.nn.propagate(input);
-
-        /*
-        3 * 4 (12)              - buying card
-        3 * 5 (15)              - reserving
-        3                       - buy reserved
-        5 choose 3 (10)         - take 111
-        5 choose 1 (5)          - take 2
-        5 * 3 (15)          - drop
-
-        60 total
-        */
 
         // sort for moves remember the index (doing this because it's possible that many 'best moves' will be unavailable)
         vector<pair<double, int> > sorted;
@@ -419,143 +442,17 @@ public:
         sort(sorted.begin(), sorted.end());
         reverse(sorted.begin(), sorted.end());
 
-        /*
-        for(auto & i : sorted)
-        {
-            printf("%d %lf\n", i.second, i.first);
-        }
-        */
-
         int overflow;
 
         for(auto & i : sorted)
         {
             int it = i.second;
-            // printf("%d ", i.second);
+            // printf("%d ", it);
 
-            if(it < 12) // buying cards
-            {
-                int tier = it / 4 + 1;
-                int pos = it % 4;
-
-                if(buy_card(player_pos, tier, pos))
-                {
-                    board.buy_card(player_pos, tier, pos);
-                    if(print_move)
-                        printf("Player %d, BOUGHT card tier: %d, pos: %d\n", player_pos+1, tier, pos+1);
-                    break;
-                }
-
-                continue;
-            }
-            if(it < 12 + 15) // reserving cards
-            {
-                int j = it - 12;
-
-                int tier = j / 5 + 1;
-                int pos = j % 5;
-
-                // printf("1");
-                if(reserve_card(player_pos, tier, pos))
-                {
-                    // printf("2");
-                    board.reserve_card(player_pos, tier, pos);
-                    if(print_move)
-                        printf("Player %d, RESERVED card tier: %d, pos: %d\n", player_pos+1, tier, pos+1);
-                    break;
-                }
-
-                continue;
-            }
-            if(it < 12 + 15 + 3) // buying a reserved card
-            {
-                int j = it - 12 - 15;
-
-                if(buy_reserved(player_pos, j))
-                {
-                    board.buy_reserved(player_pos, j);
-                    if(print_move)
-                        printf("Player %d, BOUGHT RESERVED card pos: %d\n", player_pos+1, j+1);
-                    break;
-                }
-
-                continue;
-            }
-            if(it < 12 + 15 + 3 + 10) // take 111 tokens
-            {
-                int j = it - 12 - 15 - 3;
-
-                int tokens[5]{};
-
-                for(auto & token : tokens)
-                    token = 1;
-
-                if(j < 4)
-                {
-                    tokens[0] = 0;
-                    tokens[j - 0 + 1] = 0;
-                }
-                else if(j < 4 + 3)
-                {
-                    tokens[1] = 0;
-                    tokens[j - 4 + 2] = 0;
-                }
-                else if(j < 4 + 3 + 2)
-                {
-                    tokens[2] = 0;
-                    tokens[j - 4 - 3 + 3] = 0;
-                }
-                else
-                {
-                    tokens[3] = 0;
-                    tokens[4] = 0;
-                }
-
-                if(take_111(tokens))
-                {
-                    overflow = board.take(player_pos, tokens);
-                    // Board::print_tokens(board.players[player_pos].tokens);
-                    if(overflow)
-                    {
-                        // printf("   %d ", overflow);
-                        drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
-                    }
-                    // Board::print_tokens(board.players[player_pos].tokens);
-                    if(print_move)
-                        printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
-                               tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
-                    break;
-                }
-
-                continue;
-            }
-            if(it < 12 + 15 + 3 + 10 + 5) // take 2 tokens
-            {
-                int j = it - 12 - 15 - 3 - 10;
-
-                int tokens[5]{};
-                tokens[j] = 2;
-
-                if(take_2(tokens))
-                {
-                    overflow = board.take(player_pos, tokens);
-                    // Board::print_tokens(board.players[player_pos].tokens);
-                    if(overflow)
-                    {
-                        // printf("   %d ", overflow);
-                        drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
-                    }
-                    // Board::print_tokens(board.players[player_pos].tokens);
-                    if(print_move)
-                        printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
-                               tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
-                    break;
-                }
-
-                continue;
-            }
-            // there are drop output nodes but they are considered above
+            if(single_move(player_pos, it, false, output))
+                break;
         }
+        // printf("\n");
     }
 
     vector<int> play_game(int max_move)
