@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread   CMakeFiles/Splendor_ai.dir/interface.cpp.o  -o Splendor_ai 
