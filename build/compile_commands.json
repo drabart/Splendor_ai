@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/drabart/Splendor_ai/build",
+  "command": "/usr/bin/g++  -I/home/drabart/Splendor_ai/genetic_alg  -pthread -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/Splendor_ai.dir/interface.cpp.o -c /home/drabart/Splendor_ai/interface.cpp",
+  "file": "/home/drabart/Splendor_ai/interface.cpp"
+}
+]

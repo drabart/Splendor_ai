@@ -8,11 +8,11 @@
 #include "SplendorGame.h"
 
 SplendorGame game;
-bool training = false;
+bool training = true;
 
+// TODO fix manual card input
+// TODO add graphics interface
 // TODO test some more
-// TODO make players inline
-// TODO add card input
 void ask_for_move(int player_pos)
 {
     bool incorrect_move = true;
@@ -122,16 +122,18 @@ int main()
     setbuf(stdout, nullptr);
 
     if(training)
+    {
         train();
+        return 0;
+    }
 
     int player_count = 4;
-    vector<int> sitting = {1, 1, 1, 0}; // 0 - AI player; 1 - human player
+    vector<int> sitting = {0, 0, 0, 0}; // 0 - AI player; 1 - human player
     int ai_player_count = 0;
     for(auto a:sitting)
         if(a == 0)
             ai_player_count++;
     vector<Agent> ai_players;
-    ai_players.reserve(ai_player_count);
 
     for(int i = 0; i < ai_player_count; ++i)
     {
@@ -139,62 +141,10 @@ int main()
         ai_players.back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen100_0.txt", i);
     }
 
-    game = SplendorGame(player_count, ai_players);
+    game = SplendorGame(player_count, ai_players, true);
 
     printf("Game loaded!\n");
     printf("\033[48;5;239m");
-    /*
-    for(auto a:game.board.tier1)
-    {
-        for(int i=0; i^5; ++i)
-        {
-            if(a.type[i])
-                printf("t: %d  ", i+1);
-        }
-        for(int i=0; i^5; ++i)
-        {
-            printf("%d ", a.cost[i]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    for(auto a:game.board.tier2)
-    {
-        for(int i=0; i^5; ++i)
-        {
-            if(a.type[i])
-                printf("t: %d  ", i+1);
-        }
-        for(int i=0; i^5; ++i)
-        {
-            printf("%d ", a.cost[i]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    for(auto a:game.board.tier3)
-    {
-        for(int i=0; i^5; ++i)
-        {
-            if(a.type[i])
-                printf("t: %d  ", i+1);
-        }
-        for(int i=0; i^5; ++i)
-        {
-            printf("%d ", a.cost[i]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    for(auto a:game.board.nobles)
-    {
-        for(int i=0; i^5; ++i)
-        {
-            printf("%d ", a.cost[i]);
-        }
-        printf("\n");
-    }
-    */
 
     bool win = false;
     int move = 1;

@@ -47,6 +47,7 @@ public:
         init = true;
     }
 
+    // vectified it has size 11
     vector<double> vectify()
     {
         vector<double> result;
@@ -179,6 +180,7 @@ public:
     vector<Noble> nobles;
     string print_lines[6];
     RngGenerator rng;
+    bool manual_mode;
     [[maybe_unused]] bool init;
 
     Board()
@@ -186,12 +188,13 @@ public:
         init = false;
     }
 
-    Board(int player_count, int default_tokens, int gold_tokens, int nobles_number, bool auto_load)
+    Board(int player_count, int default_tokens, int gold_tokens, int nobles_number, bool auto_load, bool manual_cards = false)
     {
         this->player_count = player_count;
         this->default_tokens = default_tokens;
         this->gold_tokens = gold_tokens;
         this->nobles_number = nobles_number;
+        manual_mode = manual_cards;
 
         for(int i = 0; i < 5; ++i)
         {
@@ -214,23 +217,52 @@ public:
 
     void load_resources()
     {
-        if(nobles_raw.empty())
+        if(!manual_mode)
         {
-            load_nobles();
+            if(nobles_raw.empty())
+            {
+                load_nobles();
+            }
+            if(tier1.empty())
+            {
+                load_cards();
+            }
+
+            pick_nobles();
+
+            shuffle_cards();
+            left_tier1 = int(tier1.size());
+            left_tier2 = int(tier2.size());
+            left_tier3 = int(tier3.size());
         }
-        if(tier1.empty())
+        else
         {
-            load_cards();
+            pick_nobles();
+
+            for(int i = 0; i < 4; ++i)
+                tier1.push_back(ask_for_card());
+            for(int i = 0; i < 4; ++i)
+                tier2.push_back(ask_for_card());
+            for(int i = 0; i < 4; ++i)
+                tier3.push_back(ask_for_card());
+            left_tier1 = 40;
+            left_tier2 = 30;
+            left_tier3 = 20;
         }
-
-        pick_nobles();
-
-        shuffle_cards();
-        left_tier1 = int(tier1.size());
-        left_tier2 = int(tier2.size());
-        left_tier3 = int(tier3.size());
 
         init = true;
+    }
+
+    Card ask_for_card()
+    {
+        int cost[5];
+        int score;
+        int resource;
+        char sep;
+        cout << "Input card data (score, resource, cost): ";
+        cin >> score >> sep >> resource >> sep >> cost[0] >> sep >> cost[1] >> sep >> cost[2] >> sep >> cost[3] >> sep >> cost[4];
+        Card card(cost, resource, score);
+        return card;
     }
 
     void shuffle_cards()
@@ -242,12 +274,29 @@ public:
 
     void pick_nobles()
     {
-        shuffle(nobles_raw.begin(), nobles_raw.end(), rng.rng);
-
-        nobles.clear();
-        for(int i = 0; i < nobles_number; ++i)
+        if(!manual_mode)
         {
-            nobles.push_back(nobles_raw[i]);
+            shuffle(nobles_raw.begin(), nobles_raw.end(), rng.rng);
+
+            nobles.clear();
+            for(int i = 0; i < nobles_number; ++i)
+            {
+                nobles.push_back(nobles_raw[i]);
+            }
+        }
+        else
+        {
+            int cost[5];
+            nobles.clear();
+            for(int i = 0; i < nobles_number; ++i)
+            {
+                cout << "Input " << i+1 << " noble: ";
+                for(int j = 0; j < 5; ++j)
+                    cin >> cost[j];
+
+                Noble noble(cost);
+                nobles.push_back(noble);
+            }
         }
     }
 
@@ -378,31 +427,37 @@ public:
             }
         }
 
-        for(auto & card : tier1)
+        for(int i = 0; i < 4; ++i)
         {
-            vector<double> v = card.vectify();
+            vector<double> v;
+            if(i < left_tier1)
+                v = tier1[i].vectify();
+            else
+                v.resize(11, 0);
             for(auto a : v)
-            {
                 result.push_back(a);
-            }
         }
 
-        for(auto & card : tier2)
+        for(int i = 0; i < 4; ++i)
         {
-            vector<double> v = card.vectify();
+            vector<double> v;
+            if(i < left_tier2)
+                v = tier2[i].vectify();
+            else
+                v.resize(11, 0);
             for(auto a : v)
-            {
                 result.push_back(a);
-            }
         }
 
-        for(auto & card : tier3)
+        for(int i = 0; i < 4; ++i)
         {
-            vector<double> v = card.vectify();
+            vector<double> v;
+            if(i < left_tier3)
+                v = tier3[i].vectify();
+            else
+                v.resize(11, 0);
             for(auto a : v)
-            {
                 result.push_back(a);
-            }
         }
 
         for(auto & noble : nobles)
@@ -448,8 +503,16 @@ public:
         {
             card = tier1[pos];
 
-            tier1.erase(tier1.begin() + pos);
-            tier1.push_back(card);
+            if(manual_mode)
+            {
+                tier1.push_back(card);
+                tier1[pos] = ask_for_card();
+            }
+            else
+            {
+                tier1.erase(tier1.begin() + pos);
+                tier1.push_back(card);
+            }
 
             left_tier1--;
         }
@@ -458,8 +521,16 @@ public:
         {
             card = tier2[pos];
 
-            tier2.erase(tier2.begin() + pos);
-            tier2.push_back(card);
+            if(manual_mode)
+            {
+                tier2.push_back(card);
+                tier2[pos] = ask_for_card();
+            }
+            else
+            {
+                tier2.erase(tier2.begin() + pos);
+                tier2.push_back(card);
+            }
 
             left_tier2--;
         }
@@ -468,8 +539,16 @@ public:
         {
             card = tier3[pos];
 
-            tier3.erase(tier3.begin() + pos);
-            tier3.push_back(card);
+            if(manual_mode)
+            {
+                tier3.push_back(card);
+                tier3[pos] = ask_for_card();
+            }
+            else
+            {
+                tier3.erase(tier3.begin() + pos);
+                tier3.push_back(card);
+            }
 
             left_tier3--;
         }
@@ -521,19 +600,41 @@ public:
         // players[player_pos] - inventory
         Card card;
 
-        if(tier == 1)
+        if(pos == 4 && manual_mode)
         {
-            card = tier1[pos];
+            card = ask_for_card();
+            if(tier == 1)
+            {
+                tier1.push_back(card);
+                left_tier1--;
+            }
+            if(tier == 2)
+            {
+                tier2.push_back(card);
+                left_tier2--;
+            }
+            if(tier == 3)
+            {
+                tier3.push_back(card);
+                left_tier3--;
+            }
         }
-
-        if(tier == 2)
+        else
         {
-            card = tier2[pos];
-        }
+            if(tier == 1)
+            {
+                card = tier1[pos];
+            }
 
-        if(tier == 3)
-        {
-            card = tier3[pos];
+            if(tier == 2)
+            {
+                card = tier2[pos];
+            }
+
+            if(tier == 3)
+            {
+                card = tier3[pos];
+            }
         }
 
         if(tokens[5])
@@ -551,7 +652,8 @@ public:
             }
         }
 
-        remove_card(tier, pos);
+        if(!(pos == 4 && manual_mode))
+            remove_card(tier, pos);
     }
 
     void buy_reserved(int player_pos, int pos)

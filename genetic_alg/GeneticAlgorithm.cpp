@@ -207,6 +207,7 @@ public:
     {
         SplendorGame game = SplendorGame(player_number, std::move(current_players), test_board);
         game.debug = debug;
+        game.train = true;
 
         batch_results = game.play_game(max_move);
 
@@ -521,7 +522,6 @@ int train()
 
     long double nn_vectified_size = handler.population[0].nn.vectify().size();
 
-    // TODO redo this probably
     printf("Approximate memory usage (neural network): %.3LfMB, (boards): %.3LfMB, (saved networks per generation): %.3LfMB\n",
            nn_vectified_size * 8.0 * handler.population_size / 1048576.0,
            ((long double)handler.test_board.vectify(0).size() * 8.0 / 1048576.0 +
@@ -532,9 +532,7 @@ int train()
 
     for(int i = 0; i < handler.max_generation; ++i)
     {
-        // TODO add way to play with ai
         // TODO more crossovers
-        // TODO multithreading for crossover
         // TODO play around with hyperparameters
         handler.proceed_one_generation(10, max_move, "divide_parents");
     }

@@ -19,6 +19,7 @@ public:
     vector<pair<int, int> > player_scores;
     Board board;
     bool debug{};
+    bool train{};
     [[maybe_unused]] bool init;
 
     SplendorGame()
@@ -26,7 +27,7 @@ public:
         init = false;
     }
 
-    [[maybe_unused]] SplendorGame(int player_count, vector<Agent> players)
+    [[maybe_unused]] SplendorGame(int player_count, vector<Agent> players, bool manual_mode = false)
     {
         this->player_count = player_count;
         this->players = move(players);
@@ -35,9 +36,9 @@ public:
             player_scores.emplace_back(0, i);
         }
 
-        board = Board(player_count, 7, 5, 5, true);
+        board = Board(player_count, 7, 5, 5, true, manual_mode);
 
-        // board.print();
+        board.print();
 
         init = true;
     }
@@ -297,7 +298,7 @@ public:
             {
                 board.buy_card(player_pos, tier, pos);
 
-                if(!manual)
+                if(!manual && !train)
                     printf("Player %d, BOUGHT card: tier %d, position %d\n", player_pos+1, tier, pos+1);
 
                 return true;
@@ -320,7 +321,7 @@ public:
                 // printf("inside");
                 board.reserve_card(player_pos, tier, pos);
 
-                if(!manual)
+                if(!manual && !train)
                     printf("Player %d, RESERVED card: tier %d, position %d\n", player_pos+1, tier, pos+1);
 
                 return true;
@@ -336,7 +337,7 @@ public:
             {
                 board.buy_reserved(player_pos, j);
 
-                if(!manual)
+                if(!manual && !train)
                     printf("Player %d, BOUGHT RESERVED card: position %d\n", player_pos+1, j+1);
 
                 return true;
@@ -385,7 +386,7 @@ public:
                     else
                         drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                 }
-                if(!manual)
+                if(!manual && !train)
                     printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
                            tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                 // Board::print_tokens(board.players[player_pos].tokens);
@@ -412,7 +413,7 @@ public:
                     else
                         drop(player_pos, overflow, output, 12 + 15 + 3 + 10 + 5);
                 }
-                if(!manual)
+                if(!manual && !train)
                     printf("Player %d, TOOK tokens: %d%d%d%d%d\n", player_pos+1,
                            tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
                 // Board::print_tokens(board.players[player_pos].tokens);
@@ -432,7 +433,7 @@ public:
         // sort for moves remember the index (doing this because it's possible that many 'best moves' will be unavailable)
         vector<pair<double, int> > sorted;
         int out_size = 12 + 15 + 3 + 10 + 5 + 15;
-        sorted.reserve(out_size);
+
         for(int i = 0; i < out_size; ++i)
         {
             sorted.emplace_back(output[i], i);

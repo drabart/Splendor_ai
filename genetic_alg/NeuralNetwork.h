@@ -103,6 +103,12 @@ public:
 
     vector<double> move_to_next(vector<double> input)
     {
+        if(input.size() != nodes)
+        {
+            cout << "Fatal: Input is in wrong shape!";
+            exit(0);
+        }
+
         int is = nodes;
         int os = next_layer_nodes;
 
@@ -118,11 +124,7 @@ public:
         }
 
         vector<double> output;
-        output.reserve(os);
-        for(int i = 0; i < os; ++i)
-        {
-            output.push_back(0.0);
-        }
+        output.resize(os);
 
         for(int i = 0; i < is; ++i)
         {
@@ -166,7 +168,7 @@ public:
 
     vector<double> propagate(vector<double> input)
     {
-        for(int i=0; i^layer_count; ++i)
+        for(int i=0; i < layer_count; ++i)
         {
             input = layers[i].move_to_next(input);
         }
