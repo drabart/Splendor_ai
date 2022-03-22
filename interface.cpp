@@ -8,7 +8,7 @@
 #include "SplendorGame.h"
 
 SplendorGame game;
-bool training = true;
+bool training = false;
 
 // TODO fix manual card input
 // TODO add graphics interface
