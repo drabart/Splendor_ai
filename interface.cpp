@@ -141,7 +141,7 @@ int main()
         ai_players.back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen100_0.txt", i);
     }
 
-    game = SplendorGame(player_count, ai_players, true);
+    game = SplendorGame(player_count, ai_players);
 
     printf("Game loaded!\n");
     printf("\033[48;5;239m");
