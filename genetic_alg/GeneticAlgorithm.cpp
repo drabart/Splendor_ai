@@ -24,7 +24,7 @@ int train()
     layers.emplace_back(60, "relu");
 
     // training time is mostly dependent on population_size * rounds
-    int generations = 40;
+    int generations = 80;
     int population = 10080 / generations; // size of population
     int agents_from_before = population / 10; // number of agents added from previous generations
     int population_champions = 4; // number of saved Agents to use in following generations
