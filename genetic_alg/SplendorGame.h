@@ -233,7 +233,7 @@ public:
             while(true)
             {
                 printf("Input token to drop (1-5): ");
-                scanf("%d", &token);
+                cin >> token;
                 if(token < 1 || token > 5)
                     continue;
                 if(board.players[player_pos].tokens[token-1] < 1)

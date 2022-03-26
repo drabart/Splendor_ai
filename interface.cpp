@@ -8,7 +8,8 @@
 #include "SplendorGame.h"
 
 SplendorGame game;
-bool training = false;
+bool training = true;
+bool special = false;
 
 // TODO fix manual card input
 // TODO add graphics interface
@@ -117,6 +118,54 @@ void ask_for_move(int player_pos)
     }
 }
 
+void special_task()
+{
+    vector<LayerBase> layers;
+    layers.emplace_back(0, "linear");
+    int player_count = 4;
+    int generations = 0;
+    int population = 0; // size of population
+    int agents_from_before = 0; // number of agents added from previous generations
+    int population_champions = 4; // number of saved Agents to use in following generations
+    int training_rounds = 0; // number of rounds used for comparing Agents
+    int test_rounds = 10; // number of rounds used for final assesment
+    int mutation_rate = 0; // frequency of mutations
+    int mutation_range = 0; // intensity of mutations
+    bool random_start = false; // decides if starting neural networks will be 0-es or random
+    bool print_generation_finesses = true; // prints fitness of each generation top 10 performers
+    bool debug_info = false; // prints some additional info
+
+    GeneticAlgorithm handler = GeneticAlgorithm(
+                                player_count, population, training_rounds, mutation_rate, mutation_range,
+                                layers, random_start, print_generation_finesses, debug_info, 
+                                agents_from_before, population_champions, test_rounds);
+
+    for(int i = 0; i < 5; ++i)
+        handler.past_generations.emplace_back();
+    for(int i = 0; i < 10; ++i)
+    {
+        handler.past_generations[0].emplace_back();
+        handler.past_generations[0].back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen10pop1008.txt", i);
+        handler.past_generations[0].back().gen = 0;
+        handler.past_generations[1].emplace_back();
+        handler.past_generations[1].back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen30pop336.txt", i);
+        handler.past_generations[1].back().gen = 1;
+        handler.past_generations[2].emplace_back();
+        handler.past_generations[2].back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen105pop96.txt", i);
+        handler.past_generations[2].back().gen = 2;
+        handler.past_generations[3].emplace_back();
+        handler.past_generations[3].back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen315pop32.txt", i);
+        handler.past_generations[3].back().gen = 3;
+        handler.past_generations[4].emplace_back();
+        handler.past_generations[4].back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen1008pop10.txt", i);
+        handler.past_generations[4].back().gen = 4;
+    }
+
+    handler.generation = 5;
+
+    handler.compare_all(10, 35, 0);
+}
+
 int main()
 {
     setbuf(stdout, nullptr);
@@ -124,6 +173,12 @@ int main()
     if(training)
     {
         train();
+        return 0;
+    }
+
+    if(special)
+    {
+        special_task();
         return 0;
     }
 
@@ -138,7 +193,7 @@ int main()
     for(int i = 0; i < ai_player_count; ++i)
     {
         ai_players.emplace_back();
-        ai_players.back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen100_0.txt", i);
+        ai_players.back().load_from_file_line("/home/drabart/Splendor_ai/PastRuns/pla4gen100pop100.txt", i);
     }
 
     game = SplendorGame(player_count, ai_players);

@@ -5,6 +5,7 @@ CMakeFiles/Splendor_ai.dir/interface.cpp.o
  ../genetic_alg/Agent.h
  ../genetic_alg/Board.h
  ../genetic_alg/GeneticAlgorithm.cpp
+ ../genetic_alg/GeneticAlgorithm.h
  ../genetic_alg/MemoryTool.h
  ../genetic_alg/NeuralNetwork.h
  ../genetic_alg/RngGenerator.h
