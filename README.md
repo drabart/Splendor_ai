@@ -1,8 +1,12 @@
 
 # Splendor AI
 
-In this project I try to create neural network  
-playing Splendor capable of defeating me in a game.
+In this project I create a program to play bard game Splendor and create neural network playing it.
+Whole program is terminal based with minimal UI, but simulates all aspects of Splendor board game. 
+
+My attempt of creating AI to play the game was to create a neural network taking in 
+game state as input and returning the moves with coefficients of how good every possible 
+move the AI thinks is.
 
 ### How to train
 
