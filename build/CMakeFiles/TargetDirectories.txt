@@ -1,3 +1,0 @@
-/home/drabart/Documents/GitHub/Splendor_ai/build/CMakeFiles/Splendor_ai.dir
-/home/drabart/Documents/GitHub/Splendor_ai/build/CMakeFiles/edit_cache.dir
-/home/drabart/Documents/GitHub/Splendor_ai/build/CMakeFiles/rebuild_cache.dir
