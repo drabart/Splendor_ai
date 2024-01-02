@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Splendor_ai.dir/interface.cpp.o"
+  "CMakeFiles/Splendor_ai.dir/interface.cpp.o.d"
   "Splendor_ai"
   "Splendor_ai.pdb"
 )
