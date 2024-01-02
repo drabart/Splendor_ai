@@ -307,7 +307,7 @@ public:
         tier3.clear();
 
         fstream cards_file;
-        cards_file.open(R"(/home/drabart/Splendor_ai/genetic_alg/cards.csv)", fstream::in);
+        cards_file.open("cards.csv", fstream::in);
         string line;
         int tier;
         int cost[5];
@@ -361,7 +361,7 @@ public:
         nobles_raw.clear();
 
         fstream nobles_file;
-        nobles_file.open(R"(/home/drabart/Splendor_ai/genetic_alg/nobles.csv)", fstream::in);
+        nobles_file.open("nobles.csv", fstream::in);
         string line;
         int cost[5];
 
